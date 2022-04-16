@@ -1,0 +1,10 @@
+﻿.banner-img {
+    width: auto;
+    min-width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+}
+
+.smallest-text {
+    font-size: .8rem;
+}
