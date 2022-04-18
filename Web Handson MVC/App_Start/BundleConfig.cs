@@ -24,7 +24,8 @@ namespace Web_Handson_MVC
                       "~/Scripts/bootstrap.bundle.js"));
 
             bundles.Add(new Bundle("~/bundles/app").Include(
-                "~/Scripts/app.js"));
+                "~/Scripts/app.js",
+                "~/Scripts/mainMenu.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",

@@ -8,3 +8,23 @@
 .smallest-text {
     font-size: .8rem;
 }
+
+.h-7 {
+    height: 6rem;
+}
+
+.main-menu {
+    position: fixed;
+    min-height: calc(100vh - 6rem);
+    max-height: 100vh;
+    top: 6rem;
+    bottom: 0;
+    z-index: 10;
+    min-width: 0%;
+    transition: all .2s ease-in-out;
+    filter: drop-shadow(25px 0px 25px rgb(0 0 0 / 0.22));
+}
+
+.main-menu-opened {
+    min-width: 25%;
+}
