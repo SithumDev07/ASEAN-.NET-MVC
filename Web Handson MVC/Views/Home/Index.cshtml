@@ -2,20 +2,37 @@
     ViewBag.Title = "Home Page";
 }
 
-<aside class="main-menu bg-light mw-25" id="side-menu">
-</aside>
-
-<main class="container pt-4 mb-5">
+<main class="container pt-4 mb-5" style="margin-top: 6rem;">
+    <!-- <main class="" style="margin-top: 6rem;"> -->
     <img class="img-fluid rounded banner-img" src="https://images.unsplash.com/photo-1649825080594-4253ad0f0db1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Banner">
 
     <!-- TOP RATED COURSES -->
-    <div class="top-rated-courses mt-4">
+    <div class="mt-4">
         <div class="title-container d-flex align-items-center justify-content-between">
-            <h2>Top Rated Courses</h2>
-            <a href="#">See more...</a>
+            <h2>In Progress Courses</h2>
         </div>
+        <div class="wrapper">
 
-        <div class="row mt-2 gy-4" id="topRatedCourses">
+            <div class="news-slider">
+                <button type="button" class="news-slider__arrow news-slider-prev">
+                    <span class="icon-font">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </span>
+                </button>
+                <div class="news-slider__wrp swiper-wrapper">
+                </div>
+
+                <button class="news-slider__arrow news-slider-next">
+                    <span class="icon-font">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </span>
+                </button>
+            </div>
+
         </div>
     </div>
     <!-- END OF TOP RATED COURSES -->
@@ -23,10 +40,30 @@
     <div class="top-rated-courses mt-4">
         <div class="title-container d-flex align-items-center justify-content-between">
             <h2>In Progress Courses</h2>
-            <a href="#">See more...</a>
         </div>
 
-        <div class="row mt-2 gy-4" id="inProgressCourses">
+        <div class="wrapper">
+
+            <div class="news-slider">
+                <button type="button" class="news-slider__arrow news-slider-prev">
+                    <span class="icon-font">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </span>
+                </button>
+                <div class="news-slider__wrp swiper-wrapper" id="in_progress_courses">
+                </div>
+
+                <button class="news-slider__arrow news-slider-next">
+                    <span class="icon-font">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </span>
+                </button>
+            </div>
+
         </div>
     </div>
     <!-- END OF IN PROGRESS COURSES -->

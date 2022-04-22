@@ -1,11 +1,11 @@
-﻿const mainMenuElement = document.querySelector('#side-menu');
+﻿const mainMenuElement = document.querySelector('#HomeSideBar');
 const sideBarHandler = document.querySelector('#SideBarHandler');
 
 sideBarHandler.addEventListener('click', () => {
-    mainMenuElement.classList.toggle('main-menu-opened');
+    mainMenuElement.classList.toggle('close');
 })
 
 sideBarHandler.addEventListener('blur', () => {
-    if (mainMenuElement.classList.contains('main-menu-opened'))
-        mainMenuElement.classList.toggle('main-menu-opened');
+    if (!mainMenuElement.classList.contains('close'))
+        mainMenuElement.classList.toggle('close');
 })

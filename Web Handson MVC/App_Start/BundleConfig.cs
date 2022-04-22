@@ -24,13 +24,16 @@ namespace Web_Handson_MVC
                       "~/Scripts/bootstrap.bundle.js"));
 
             bundles.Add(new Bundle("~/bundles/app").Include(
+                "~/Scripts/swiper-bundle.min.js",
                 "~/Scripts/app.js",
                 "~/Scripts/mainMenu.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css",
-                      "~/Content/app.css"));
+                      "~/Content/app.css",
+                      "~/Content/boxicons.min.css",
+                      "~/Content/HomeSideBar.css"));
         }
     }
 }
