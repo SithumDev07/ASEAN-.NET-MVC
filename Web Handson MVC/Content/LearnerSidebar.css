@@ -37,9 +37,9 @@ body {
 /* ===== Sidebar ===== */
 .sidebar {
     position: fixed;
-    top: 0;
+    bottom: 0;
     left: 0;
-    height: 100%;
+    height: calc(100% - 6rem);
     width: 280px;
     padding: 10px 14px;
     background: var(--sidebar-color);
@@ -196,4 +196,8 @@ header .image-text .profession {
     background-color: var(--primary-color-light);
     position: relative;
     transition: var(--tran-05);
+}
+
+.aside-links{
+    padding-left: 0 !important;
 }
