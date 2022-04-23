@@ -1,0 +1,66 @@
+﻿.navigation-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+}
+
+.brand-name {
+    margin-left: -1rem;
+}
+
+@media screen and (max-width: 480px) {
+    .header-logo-wrapper {
+        justify-content: space-between;
+        height: 5rem;
+    }
+}
+
+.header-logo {
+    width: 8rem;
+}
+
+@media screen and (max-width: 768px) {
+    .header-logo {
+        width: 7rem;
+        margin-left: -1rem;
+    }
+}
+
+.icon-wrapper {
+    margin-top: 1rem;
+}
+
+.user-icon {
+    border-radius: 4rem;
+    width: 3rem;
+    height: 3rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.mobile-usericon-wrapper {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .mobile-usericon-wrapper {
+        display: flex;
+    }
+}
+
+.h-7 {
+    height: 6rem;
+}
+
+@media screen and (max-width: 480px) {
+    .h-7 {
+        height: 9rem;
+    }
+}

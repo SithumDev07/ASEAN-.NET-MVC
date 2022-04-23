@@ -8,7 +8,7 @@ const dataSet = [
         courseTitle: "Introduction to project Managment",
         courseCategory: "Orientation",
         courseStatus: "In Progress",
-        dueDate: "25-MAR-2022 (12 Days Remaining",
+        dueDate: "25-MAR-2022 (12 Days Remaining)",
         action: "Resume"
     },
     {
@@ -16,7 +16,7 @@ const dataSet = [
         courseTitle: "Basic Mathematics",
         courseCategory: "Skill Development",
         courseStatus: "Completed",
-        dueDate: "15-APR-2022 (30 Days Remaining",
+        dueDate: "15-APR-2022 (30 Days Remaining)",
         action: "Print Certificate"
     },
     {
@@ -24,7 +24,7 @@ const dataSet = [
         courseTitle: "Basic Concept of Management",
         courseCategory: "Orientation",
         courseStatus: "Pending Action",
-        dueDate: "15-APR-2022 (30 Days Remaining",
+        dueDate: "15-APR-2022 (30 Days Remaining)",
         action: "Register"
     }
 ]

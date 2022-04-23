@@ -123,6 +123,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CourseAdministrationController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LearningPlanController.cs" />
     <Compile Include="Global.asax.cs">
@@ -150,6 +151,10 @@
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\boxicons.min.css" />
+    <Content Include="Content\CourseAdmin.css" />
+    <Content Include="Content\CourseAdminSideBar.css" />
+    <Content Include="Content\Footer.css" />
+    <Content Include="Content\Header.css" />
     <Content Include="Content\HomeSideBar.css" />
     <Content Include="Content\Icons\Bell.svg" />
     <Content Include="Content\Icons\HambugerMenu.svg" />
@@ -191,6 +196,7 @@
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\Charts.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.js" />
@@ -217,7 +223,10 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\swiper-bundle.min.js.map" />
-    <Content Include="Views\LearningPlan\LearningPlan.cshtml" />
+    <Content Include="Views\LearningPlan\Index.cshtml" />
+    <Content Include="Views\Shared\_LayoutCourseAdministration.cshtml" />
+    <Content Include="Views\CourseAdministration\Index.cshtml" />
+    <Content Include="Views\Shared\_LayoutLearner.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
