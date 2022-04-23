@@ -36,6 +36,7 @@ namespace Web_Handson_MVC
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/Content/ColorsTypography.css",
                       "~/Content/app.css",
                       "~/Content/boxicons.min.css",
                       "~/Content/HomeSideBar.css"));
@@ -43,6 +44,7 @@ namespace Web_Handson_MVC
             bundles.Add(new StyleBundle("~/Content/learner").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/boxicons.min.css",
+                      "~/Content/ColorsTypography.css",
                       "~/Content/LearningPlan.css",
                       "~/Content/LearnerSidebar.css",
                       "~/Content/Header.css",
@@ -51,6 +53,7 @@ namespace Web_Handson_MVC
             bundles.Add(new StyleBundle("~/Content/courseadmin").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/boxicons.min.css",
+                      "~/Content/ColorsTypography.css",
                       "~/Content/CourseAdmin.css",
                       "~/Content/CourseAdminSideBar.css",
                       "~/Content/Header.css",
