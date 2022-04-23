@@ -1,0 +1,84 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutCourseAdministration.cshtml";
+}
+
+<main class="py-3 bg-light border-2 border-danger" style="margin-top: 6rem;">
+    <div class="container">
+        <div class="flex-row hr-title">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            <h3>Course Adiministration</h3>
+        </div>
+
+        <ul class="nav nav-tabs mb-3 mt-3" id="ex-with-icons" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="ex-with-icons-tab-1" data-mdb-toggle="tab" href="#ex-with-icons-tabs-1" role="tab"
+                   aria-controls="ex-with-icons-tabs-1" aria-selected="true"><i class="fas fa-chart-pie fa-fw me-2"></i>Categories</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="ex-with-icons-tab-2" data-mdb-toggle="tab" href="#ex-with-icons-tabs-2" role="tab"
+                   aria-controls="ex-with-icons-tabs-2" aria-selected="false"><i class="fas fa-chart-line fa-fw me-2"></i>Courses</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="ex-with-icons-tab-3" data-mdb-toggle="tab" href="#ex-with-icons-tabs-3" role="tab"
+                   aria-controls="ex-with-icons-tabs-3" aria-selected="false"><i class="fas fa-cogs fa-fw me-2"></i>Modules</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="ex-with-icons-tab-3" data-mdb-toggle="tab" href="#ex-with-icons-tabs-3" role="tab"
+                   aria-controls="ex-with-icons-tabs-3" aria-selected="false"><i class="fas fa-cogs fa-fw me-2"></i>Questions</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="ex-with-icons-tab-3" data-mdb-toggle="tab" href="#ex-with-icons-tabs-3" role="tab"
+                   aria-controls="ex-with-icons-tabs-3" aria-selected="false"><i class="fas fa-cogs fa-fw me-2"></i>Quizes</a>
+            </li>
+        </ul>
+        <!-- Tabs navs -->
+
+        <h3 class="hr-title-single mt-5 mb-3">Courses</h3>
+
+        <table class="table table-borderless">
+            <thead>
+                <tr>
+                    <th scope="col">Course ID</th>
+                    <th scope="col">Course Title</th>
+                    <th scope="col">Course Category</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Start Date</th>
+                    <th scope="col">End Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Bootstrap 4 CDN and Starter Template</td>
+                    <td>Cristina</td>
+                    <td>913</td>
+                    <td>2.846</td>
+                    <td>2.846</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Bootstrap Grid 4 Tutorial and Examples</td>
+                    <td>Cristina</td>
+                    <td>1.434</td>
+                    <td>3.417</td>
+                    <td>3.417</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Bootstrap Flexbox Tutorial and Examples</td>
+                    <td>1.877</td>
+                    <td>1.234</td>
+                    <td>1.234</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</main>
+
+

@@ -1,0 +1,39 @@
+﻿
+:root {
+    /* ===== Colors ===== */
+    --body-color: #E4E9F7;
+    --sidebar-color: #FFF;
+    --primary-color: #695CFE;
+    --primary-color-light: #F6F5FF;
+    --toggle-color: #DDD;
+    --text-color: #6c757d;
+    /* ====== Transition ====== */
+    --tran-03: all 0.2s ease;
+    --tran-03: all 0.1s ease;
+    --tran-04: all 0.1s ease;
+    --tran-05: all 0.1s ease;
+    --tran-06: width 0.1s ease;
+    --tran-07: width 0.4s ease;
+}
+
+main {
+    min-height: 100vh;
+}
+
+/*Common Styles*/
+.flex-row {
+    display: flex;
+    align-items: center;
+}
+
+.hr-title svg {
+    width: 2.25rem;
+    height: 2.25rem;
+    margin-right: .75rem;
+}
+
+.hr-title h3, .hr-title-single {
+    margin-top: .5rem;
+    font-size: 1.875rem; /* 30px */
+    line-height: 2.25rem; /* 36px */
+}

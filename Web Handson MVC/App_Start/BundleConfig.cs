@@ -28,12 +28,30 @@ namespace Web_Handson_MVC
                 "~/Scripts/app.js",
                 "~/Scripts/mainMenu.js"));
 
+            bundles.Add(new Bundle("~/bundles/learner").Include(
+                "~/Scripts/Charts.min.js",
+                "~/Scripts/LearningPlan.js"));
+
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css",
                       "~/Content/app.css",
                       "~/Content/boxicons.min.css",
                       "~/Content/HomeSideBar.css"));
+
+            bundles.Add(new StyleBundle("~/Content/learner").Include(
+                      "~/Content/bootstrap.css",
+                      "~/Content/boxicons.min.css",
+                      "~/Content/LearningPlan.css",
+                      "~/Content/Header.css",
+                      "~/Content/Footer.css"));
+
+            bundles.Add(new StyleBundle("~/Content/courseadmin").Include(
+                      "~/Content/bootstrap.css",
+                      "~/Content/boxicons.min.css",
+                      "~/Content/CourseAdmin.css",
+                      "~/Content/CourseAdminSideBar.css",
+                      "~/Content/Header.css",
+                      "~/Content/Footer.css"));
         }
     }
 }
