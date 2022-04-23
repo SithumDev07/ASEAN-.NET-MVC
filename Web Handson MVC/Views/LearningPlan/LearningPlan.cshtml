@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "LearningPlan";
+}
+
+<main id="page-content">
+    <div class="container">
+        <div class="row d-grid gap-1">
+            <div class="col-lg-12">
+                <div class="row">
+                    <!-- Start of the Pie Chart-->
+                    <div class="col-12">
+                        <div><h2 class="text-start fw-bold">My Courses Progress</h2></div>
+                        <div class="chart-monitor">
+                            <div>
+                                <canvas id="myChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of the Pie Chart-->
+                </div>
+            </div>
+            <!-- Start of the Table -->
+            <div class="col-lg-8 grid gap-3">
+                <div><h2 class="text-start fw-bold">Courses and Certifications</h2></div><br>
+                <div class="table leanerplanetable">
+                    <table class="table table-bordered ">
+                        <thead class="text-center table-active">
+                            <tr class="align-text-top fw-bold ">
+                                <th class="fw-bold align-top">Course Title</th>
+                                <th class="fw-bold align-top">Course Category</th>
+                                <th class="fw-bold align-top">Status</th>
+                                <th class="fw-bold align-top">Due Date</th>
+                                <th class="fw-bold align-top">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableData" class="text-wrap">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- End of the Table -->
+        </div>
+    </div>
+</main>
+

@@ -1,0 +1,43 @@
+﻿.chart-monitor {
+    width: 500px;
+}
+
+main {
+    overflow-x: hidden;
+}
+
+@media only screen and (max-width: 1200px) {
+    .chart-monitor {
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .chart-monitor {
+        width: 550px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .chart-monitor {
+        width: 350px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    h2 {
+        font-size: x-small;
+    }
+
+    .chart-monitor {
+        width: 350px;
+        margin: 0 auto;
+    }
+
+    .leanerplanetable {
+        overflow-x: auto;
+        max-width: 98vw !important;
+    }
+}
