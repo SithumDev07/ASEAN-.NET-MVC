@@ -4,20 +4,33 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
     <!-- HEADER -->
-    <nav class="navbar navbar-expand-sm navbar-fixed-top border-bottom">
+    <nav class="navigation-bar border-bottom bg-white h-7">
         <div class="container d-block">
             <div class="row gy-3 flex-md-nowrap">
-                <div class="col-12 col-md-4 col-lg-3 d-flex align-items-center">
-                    <button type="button" class="btn btn-default p-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSideMenu" aria-controls="offcanvasSideMenu">
-                        <img src="~/Content/Icons/HambugerMenu.svg" width="40" height="40" />
+                <div class="col-12 col-md-4 col-lg-4 col-xl-3 d-flex align-items-center header-logo-wrapper">
+                    <button type="button" class="btn btn-default p-0" id="SideBarHandler">
+                        <img src="./Content/Icons/HambugerMenu.svg" width="40" height="40" />
                     </button>
-                    <img src="~/Content/Images/asean-logo.png" style="width: 8rem;" alt="LOGO">
-                    <a href="#" class="navbar-brand fs-1">ASEAN</a>
+                    <div class="d-flex align-items-center">
+                        <img src="./Content/Images/asean-logo.png" class="header-logo" alt="LOGO">
+                        <a href="#" class="navbar-brand fs-2 brand-name user-select-none">ASEAN</a>
+                    </div>
+
+                    <div class="align-items-center justify-content-end mobile-usericon-wrapper">
+                        <img src="./Content/Icons/Bell.svg" width="40" height="40" />
+                        <div class="ms-4 d-inline-flex flex-column align-content-center icon-wrapper" style="height: auto;">
+                            <button type="button" class="border-0 user-icon" style="background-image: url('https://images.unsplash.com/photo-1650477733936-06fa48166e5c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80');">
+                            </button>
+                            <p class="smallest-text m-0 text-center ">James</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
                     <div class="dropdown">
@@ -35,11 +48,10 @@
                         <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
                     </form>
                 </div>
-                <div class="col-3 d-none d-md-flex align-items-center justify-content-end">
-                    <img src="~/Content/Icons/Bell.svg" width="40" height="40" />
-                    <div class="ms-4 d-inline-flex flex-column align-content-center" style="height: auto;">
-                        <button type="button" class="p-3 btn-default rounded-circle flex-column d-flex align-items-center justify-content-center">
-                            <img src="~/Content/Icons/User.svg" width="30" height="30" />
+                <div class="col-2 col-lg-2 col-xl-3 d-none d-md-flex align-items-center justify-content-end last-child">
+                    <img src="./Content/Icons/Bell.svg" width="40" height="40" />
+                    <div class="ms-4 d-inline-flex flex-column align-content-center icon-wrapper" style="height: auto;">
+                        <button type="button" class="border-0 user-icon" style="background-image: url('https://images.unsplash.com/photo-1650477733936-06fa48166e5c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80');">
                         </button>
                         <p class="smallest-text m-0 text-center ">James</p>
                     </div>
@@ -47,24 +59,54 @@
             </div>
         </div>
     </nav>
-    <!-- END OF HEADER -->
+
+
+    <aside class="sidebar close" id="HomeSideBar">
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#">
+                            <box-icon class="icon" type='solid' name='home'></box-icon>
+                            <span class="text nav-text">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="/mycourses">
+                            <box-icon class="icon" type='solid' name='user'></box-icon>
+                            <span class="text nav-text">My Courses</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <box-icon class="icon" name='question-mark'></box-icon>
+                            <span class="text nav-text">FAQ</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+
+    <!-- END HEADER -->
+
     @RenderBody()
 
     <!-- FOOTER -->
-    <footer class="footer mt-auto py-3 bg-light">
-        <div class="container">
-            <div class="row">
-                <img src="~/Content/Images/asean-logo.png" class="col-3" style="width: auto; height: 9rem;" alt="LOGO">
-                <ul class="col-4 row">
-                    <h4 class="text-muted">External Links</h4>
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Services</a>
-                    <a href="#">My Account</a>
-                    <a href="#">FAQ</a>
-                </ul>
-                <span class="text-muted col-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, illo nam quidem pariatur necessitatibus nobis ea quo fugiat assumenda asperiores fugit nesciunt totam ducimus reiciendis est iste hic cumque autem corporis id ad eos animi. Laudantium cumque recusandae odit nihil?</span>
+    <footer class="footer mt-auto py-3 bg-light border-2 border-danger container">
+        <div class="row">
+            <div class="col-12 col-md-3 footer-logo">
+                <img src="./Content/Images/asean-logo.png" alt="LOGO">
             </div>
+            <ul class="col-12 col-md-4 row footer-links">
+                <h4 class="text-muted">External Links</h4>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">My Account</a>
+                <a href="#">FAQ</a>
+            </ul>
+            <span class="text-muted col-12 col-md-4 footer-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, illo nam quidem pariatur necessitatibus nobis ea quo fugiat assumenda asperiores fugit nesciunt totam ducimus reiciendis est iste hic cumque autem corporis id ad eos animi. Laudantium cumque recusandae odit nihil?</span>
         </div>
     </footer>
     <!-- END OF FOOTER -->
