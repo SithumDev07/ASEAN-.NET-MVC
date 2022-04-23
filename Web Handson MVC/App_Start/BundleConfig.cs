@@ -30,7 +30,9 @@ namespace Web_Handson_MVC
 
             bundles.Add(new Bundle("~/bundles/learner").Include(
                 "~/Scripts/Charts.min.js",
-                "~/Scripts/LearningPlan.js"));
+                "~/Scripts/LearningPlan.js",
+                "~/Scripts/LearnerSidebar.js"
+                ));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
@@ -42,6 +44,7 @@ namespace Web_Handson_MVC
                       "~/Content/bootstrap.css",
                       "~/Content/boxicons.min.css",
                       "~/Content/LearningPlan.css",
+                      "~/Content/LearnerSidebar.css",
                       "~/Content/Header.css",
                       "~/Content/Footer.css"));
 
