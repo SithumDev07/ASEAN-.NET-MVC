@@ -24,6 +24,7 @@ body {
 }
 
     .sidebar.close {
+        padding: 0;
         width: 0;
     }
 

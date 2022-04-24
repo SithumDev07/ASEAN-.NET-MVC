@@ -156,11 +156,11 @@
     <Content Include="Content\Footer.css" />
     <Content Include="Content\Header.css" />
     <Content Include="Content\HomeSideBar.css" />
-    <Content Include="Content\Icons\Bell.svg" />
     <Content Include="Content\Icons\HambugerMenu.svg" />
     <Content Include="Content\Icons\Star.svg" />
     <Content Include="Content\Icons\StarGold.svg" />
     <Content Include="Content\Icons\User.svg" />
+    <Content Include="Content\Images\geoedge-logo.png" />
     <Content Include="Content\LearnerSidebar.css" />
     <Content Include="Content\LearningPlan.css" />
     <Content Include="Content\slider.css" />
@@ -233,7 +233,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\Images\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

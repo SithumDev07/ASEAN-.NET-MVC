@@ -42,6 +42,8 @@ namespace Web_Handson_MVC
                       "~/Content/bootstrap.css",
                       "~/Content/ColorsTypography.css",
                       "~/Content/app.css",
+                      "~/Content/Header.css",
+                      "~/Content/Footer.css",
                       "~/Content/HomeSideBar.css"));
 
             bundles.Add(new StyleBundle("~/Content/learner").Include(
