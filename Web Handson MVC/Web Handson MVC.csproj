@@ -150,7 +150,6 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
-    <Content Include="Content\boxicons.min.css" />
     <Content Include="Content\ColorsTypography.css" />
     <Content Include="Content\CourseAdmin.css" />
     <Content Include="Content\CourseAdminSideBar.css" />
@@ -199,6 +198,7 @@
     <Content Include="Content\bootstrap-grid.css.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\Charts.min.js" />
+    <Content Include="Scripts\CourseAdminSideBar.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.js" />
