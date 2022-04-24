@@ -1,11 +1,12 @@
-﻿const mainMenuElement = document.querySelector('#HomeSideBar');
-const sideBarHandler = document.querySelector('#SideBarHandler');
+﻿const body = document.querySelector('body'),
+    sidebar = body.querySelector('aside'),
+    toggle = document.querySelector("#SideBarHandler")
 
-sideBarHandler.addEventListener('click', () => {
-    mainMenuElement.classList.toggle('close');
+toggle.addEventListener("click", () => {
+    sidebar.classList.toggle("close");
 })
 
-sideBarHandler.addEventListener('blur', () => {
-    if (!mainMenuElement.classList.contains('close'))
-        mainMenuElement.classList.toggle('close');
+toggle.addEventListener('blur', () => {
+    if (!sidebar.classList.contains('close'))
+        sidebar.classList.toggle('close');
 })
