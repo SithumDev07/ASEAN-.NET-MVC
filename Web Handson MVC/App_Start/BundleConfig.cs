@@ -24,13 +24,43 @@ namespace Web_Handson_MVC
                       "~/Scripts/bootstrap.bundle.js"));
 
             bundles.Add(new Bundle("~/bundles/app").Include(
+                "~/Scripts/swiper-bundle.min.js",
                 "~/Scripts/app.js",
                 "~/Scripts/mainMenu.js"));
 
+            bundles.Add(new Bundle("~/bundles/learner").Include(
+                "~/Scripts/Charts.min.js",
+                "~/Scripts/LearningPlan.js",
+                "~/Scripts/LearnerSidebar.js"
+                ));
+
+            bundles.Add(new Bundle("~/bundles/courseadmin").Include(
+                "~/Scripts/CourseAdminSideBar.js"
+                ));
+
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css",
-                      "~/Content/app.css"));
+                      "~/Content/ColorsTypography.css",
+                      "~/Content/app.css",
+                      "~/Content/Header.css",
+                      "~/Content/Footer.css",
+                      "~/Content/HomeSideBar.css"));
+
+            bundles.Add(new StyleBundle("~/Content/learner").Include(
+                      "~/Content/bootstrap.css",
+                      "~/Content/ColorsTypography.css",
+                      "~/Content/LearningPlan.css",
+                      "~/Content/LearnerSidebar.css",
+                      "~/Content/Header.css",
+                      "~/Content/Footer.css"));
+
+            bundles.Add(new StyleBundle("~/Content/courseadmin").Include(
+                      "~/Content/bootstrap.css",
+                      "~/Content/ColorsTypography.css",
+                      "~/Content/CourseAdmin.css",
+                      "~/Content/CourseAdminSideBar.css",
+                      "~/Content/Header.css",
+                      "~/Content/Footer.css"));
         }
     }
 }
