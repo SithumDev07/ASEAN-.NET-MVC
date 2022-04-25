@@ -8,7 +8,8 @@ const dataSet = [
         courseTitle: "Introduction to project Managment",
         courseCategory: "Orientation",
         courseStatus: "In Progress",
-        dueDate: "25-MAR-2022 (12 Days Remaining)",
+        dueDate: "25-MAR-2022",
+        remainDays: 12,
         action: "Resume"
     },
     {
@@ -16,7 +17,8 @@ const dataSet = [
         courseTitle: "Basic Mathematics",
         courseCategory: "Skill Development",
         courseStatus: "Completed",
-        dueDate: "15-APR-2022 (30 Days Remaining)",
+        dueDate: "15-APR-2022",
+        remainDays: 5,
         action: "Print Certificate"
     },
     {
@@ -24,19 +26,20 @@ const dataSet = [
         courseTitle: "Basic Concept of Management",
         courseCategory: "Orientation",
         courseStatus: "Pending Action",
-        dueDate: "15-APR-2022 (30 Days Remaining)",
+        dueDate: "18-FEB-2022",
+        remainDays: 30,
         action: "Register"
     }
 ]
 
 const initiateTableData = (element) => {
 
-    dataSet.map(({ courseTitle, courseCategory, courseStatus, dueDate, action }) => {
+    dataSet.map(({ courseTitle, courseCategory, courseStatus, dueDate, action, remainDays }) => {
         const CourseData = `
             <td>${courseTitle}</td>
             <td class="text-nowrap">${courseCategory}</td>
             <td class="text-nowrap">${courseStatus}</td>
-            <td>${dueDate}</td>
+            <td class="d-flex flex-column p-0 remaindayscolum" ><p class="mb-0">${dueDate}</p><p class="mb-1 fst-italic remaindaystext">${remainDays} days more</p></td>
             <td class="text-nowrap "><a href="#">${action}</a></td>
         `;
         let trElemet = document.createElement('tr')

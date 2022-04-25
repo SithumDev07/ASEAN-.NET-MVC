@@ -124,7 +124,10 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\CourseAdministrationController.cs" />
+    <Compile Include="Controllers\DomainExpertController.cs" />
+    <Compile Include="Controllers\EvaluatorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ITAdminController.cs" />
     <Compile Include="Controllers\LearningPlanController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -152,18 +155,13 @@
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\ColorsTypography.css" />
     <Content Include="Content\CourseAdmin.css" />
-    <Content Include="Content\CourseAdminSideBar.css" />
+    <Content Include="Content\DomainExpert.css" />
     <Content Include="Content\Footer.css" />
     <Content Include="Content\Header.css" />
     <Content Include="Content\HomeSideBar.css" />
-    <Content Include="Content\Icons\HambugerMenu.svg" />
-    <Content Include="Content\Icons\Star.svg" />
-    <Content Include="Content\Icons\StarGold.svg" />
-    <Content Include="Content\Icons\User.svg" />
     <Content Include="Content\Images\geoedge-logo.png" />
-    <Content Include="Content\LearnerSidebar.css" />
+    <Content Include="Content\SideBar.css" />
     <Content Include="Content\LearningPlan.css" />
-    <Content Include="Content\slider.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -198,7 +196,9 @@
     <Content Include="Content\bootstrap-grid.css.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\Charts.min.js" />
-    <Content Include="Scripts\CourseAdminSideBar.js" />
+    <Content Include="Scripts\DomainExpertData.js" />
+    <Content Include="Scripts\EvaluatorData.js" />
+    <Content Include="Scripts\ITAdminData.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.js" />
@@ -208,9 +208,8 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\LearnerSidebar.js" />
     <Content Include="Scripts\LearningPlan.js" />
-    <Content Include="Scripts\mainMenu.js" />
+    <Content Include="Scripts\SideBar.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\swiper-bundle.min.js" />
     <Content Include="Web.config" />
@@ -230,6 +229,12 @@
     <Content Include="Views\Shared\_LayoutCourseAdministration.cshtml" />
     <Content Include="Views\CourseAdministration\Index.cshtml" />
     <Content Include="Views\Shared\_LayoutLearner.cshtml" />
+    <Content Include="Views\Shared\_LayoutDomainExpert.cshtml" />
+    <Content Include="Views\DomainExpert\Index.cshtml" />
+    <Content Include="Views\Shared\_LayoutEvaluator.cshtml" />
+    <Content Include="Views\Evaluator\Index.cshtml" />
+    <Content Include="Views\Shared\_LayoutITAdmin.cshtml" />
+    <Content Include="Views\ITAdmin\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
