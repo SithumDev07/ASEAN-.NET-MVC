@@ -3,6 +3,10 @@
     height: auto;
 }
 
+footer {
+    border-top: var(--primary-color)
+}
+
 .footer-left {
     align-items: center;
 }
