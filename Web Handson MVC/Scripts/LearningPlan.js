@@ -39,7 +39,7 @@ const initiateTableData = (element) => {
             <td>${courseTitle}</td>
             <td class="text-nowrap">${courseCategory}</td>
             <td class="text-nowrap">${courseStatus}</td>
-            <td class="d-flex flex-column p-0 remaindayscolum" ><p class="mb-0">${dueDate}</p><p class="mb-1 fst-italic">${remainDays} days more</p></td>
+            <td class="d-flex flex-column p-0 remaindayscolum" ><p class="mb-0">${dueDate}</p><p class="mb-1 fst-italic remaindaystext">${remainDays} days more</p></td>
             <td class="text-nowrap "><a href="#">${action}</a></td>
         `;
         let trElemet = document.createElement('tr')
