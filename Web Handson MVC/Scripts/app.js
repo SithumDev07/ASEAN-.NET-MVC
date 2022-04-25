@@ -2,50 +2,60 @@
 const CoursesData = [
     {
         id: 1,
-        title: "Introduction to Project Management",
+        title: "Enhancing FCV Operations with Geospatial ICT Tools",
         imageSrc: "https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
         rating: 3,
     },
     {
         id: 2,
-        title: "Master CRUD .NET Core Web",
+        title: "Post-Approval Changes to Marketing Authorizations Training",
         imageSrc: "https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
         rating: 3,
     },
     {
         id: 3,
-        title: "Introduction to Project Management",
+        title: "Land Pooling / Readjustment : An Alternative to Compulsory Land Acquisition (Self-Paced)",
         imageSrc: "https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
         rating: 3,
     },
     {
         id: 4,
-        title: "Introduction to Project Management",
+        title: "IFC IQ-Healthcare: Patient Safety Training",
         imageSrc: "https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
         rating: 3,
     },
     {
         id: 4,
-        title: "Introduction to Project Management",
+        title: "Smart Cities for Global Frontier Infrastructure (Virtual Knowledge Exchange)",
         imageSrc: "https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
         rating: 3,
     },
     {
         id: 4,
-        title: "Introduction to Project Management",
+        title: "Land Pooling/Readjustment: An Alternative to Compulsory Land Acquisition (Self-Paced)",
         imageSrc: "https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
         rating: 3,
     },
     {
         id: 4,
-        title: "Introduction to Project Management",
+        title: "Smart Cities for Global Frontier Infrastructure (Virtual Knowledge Exchange)",
         imageSrc: "https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
         rating: 3,
     },
 ];
 
+console.log(CoursesData[1].title.length);
+
 const populdateNews = (element) => {
     CoursesData.map(({ id, title, imageSrc, rating }) => {
+
+        if (title.length > 60) {
+            if (window.innerWidth < 769) {
+                title = title.slice(0, 40) + '...';
+            } else {
+                title = title.slice(0, 60) + '...';
+            }
+        }
 
         const newsEle = `
         <div class="card border-0">

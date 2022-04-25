@@ -140,8 +140,14 @@ html {
 }
 
 .course-card-title {
-    min-height: 3rem;
+    min-height: 4.75rem;
     font-size: 1.25rem;
+}
+
+@media screen and (max-width: 768px) {
+    .course-card-title {
+        min-height: 3.6rem;
+    }
 }
 
 @media screen and (max-width: 960px) {
