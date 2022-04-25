@@ -177,3 +177,39 @@ header .image-text .profession {
 .aside-links{
     padding-left: 0 !important;
 }
+
+@media only screen and (max-width: 992px) {
+
+    .sidebar.close {
+        width: 0;
+        padding: 0;
+    }
+
+    .sidebar {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .sidebar.close {
+        width: 0;
+        padding: 0;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .sidebar.close {
+        width: 0;
+        padding: 0;
+    }
+
+    .sidebar{
+        width: 100%;
+    }
+}
