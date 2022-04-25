@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutEvaluator.cshtml";
+}
+
+<main class="py-3 bg-light" style="margin-top: 6rem;">
+    <div class="container">
+        <div class="flex-row expert-title">
+            <i class="bi bi-gear icon"></i>
+            <h3 class="ms-3">My Assigned Courses</h3>
+        </div>
+
+        <div class="card mt-4">
+            <table class="table table-bordered">
+                <thead class="table-secondary">
+                    <tr>
+                        <th scope="col">Course Title</th>
+                        <th scope="col">Course Category</th>
+                        <th scope="col">Due Date</th>
+                        <th scope="col">Submissions</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="assignedCourses">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</main>
+

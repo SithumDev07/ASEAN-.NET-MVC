@@ -26,16 +26,31 @@ namespace Web_Handson_MVC
             bundles.Add(new Bundle("~/bundles/app").Include(
                 "~/Scripts/swiper-bundle.min.js",
                 "~/Scripts/app.js",
-                "~/Scripts/mainMenu.js"));
+                "~/Scripts/SideBar.js"));
 
             bundles.Add(new Bundle("~/bundles/learner").Include(
                 "~/Scripts/Charts.min.js",
                 "~/Scripts/LearningPlan.js",
-                "~/Scripts/LearnerSidebar.js"
+                "~/Scripts/SideBar.js"
                 ));
 
             bundles.Add(new Bundle("~/bundles/courseadmin").Include(
-                "~/Scripts/CourseAdminSideBar.js"
+                "~/Scripts/SideBar.js"
+                ));
+
+            bundles.Add(new Bundle("~/bundles/domainexpert").Include(
+                "~/Scripts/SideBar.js",
+                "~/Scripts/DomainExpertData.js"
+                ));
+
+            bundles.Add(new Bundle("~/bundles/evaluator").Include(
+                "~/Scripts/SideBar.js",
+                "~/Scripts/EvaluatorData.js"
+                ));
+
+            bundles.Add(new Bundle("~/bundles/itadmin").Include(
+                "~/Scripts/SideBar.js",
+                "~/Scripts/ITAdminData.js"
                 ));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
@@ -44,13 +59,14 @@ namespace Web_Handson_MVC
                       "~/Content/app.css",
                       "~/Content/Header.css",
                       "~/Content/Footer.css",
+                      "~/Content/SideBar.css",
                       "~/Content/HomeSideBar.css"));
 
             bundles.Add(new StyleBundle("~/Content/learner").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/ColorsTypography.css",
                       "~/Content/LearningPlan.css",
-                      "~/Content/LearnerSidebar.css",
+                      "~/Content/SideBar.css",
                       "~/Content/Header.css",
                       "~/Content/Footer.css"));
 
@@ -58,7 +74,31 @@ namespace Web_Handson_MVC
                       "~/Content/bootstrap.css",
                       "~/Content/ColorsTypography.css",
                       "~/Content/CourseAdmin.css",
-                      "~/Content/CourseAdminSideBar.css",
+                      "~/Content/SideBar.css",
+                      "~/Content/Header.css",
+                      "~/Content/Footer.css"));
+
+            bundles.Add(new StyleBundle("~/Content/domainexpert").Include(
+                      "~/Content/bootstrap.css",
+                      "~/Content/ColorsTypography.css",
+                      "~/Content/DomainExpert.css",
+                      "~/Content/SideBar.css",
+                      "~/Content/Header.css",
+                      "~/Content/Footer.css"));
+
+            bundles.Add(new StyleBundle("~/Content/evaluator").Include(
+                      "~/Content/bootstrap.css",
+                      "~/Content/ColorsTypography.css",
+                      "~/Content/DomainExpert.css",
+                      "~/Content/SideBar.css",
+                      "~/Content/Header.css",
+                      "~/Content/Footer.css"));
+
+            bundles.Add(new StyleBundle("~/Content/itadmin").Include(
+                      "~/Content/bootstrap.css",
+                      "~/Content/ColorsTypography.css",
+                      "~/Content/DomainExpert.css",
+                      "~/Content/SideBar.css",
                       "~/Content/Header.css",
                       "~/Content/Footer.css"));
         }

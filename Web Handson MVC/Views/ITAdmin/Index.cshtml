@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutITAdmin.cshtml";
+}
+
+<main class="py-3 bg-light" style="margin-top: 6rem;">
+    <div class="container">
+        <div class="flex-row expert-title">
+            <i class="bi bi-gear icon"></i>
+            <h3 class="ms-3">Assign Users</h3>
+        </div>
+
+        <div class="card mt-4">
+            <table class="table table-bordered">
+                <thead class="table-secondary">
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Role</th>
+                    </tr>
+                </thead>
+                <tbody id="assignedUsers">
+                </tbody>
+            </table>
+        </div>
+
+        <button class="btn btn-dark mt-5 new-user-btn" data-toggle="collapse" data-target="#collapseOne">
+            <i class="bi bi-plus icon"></i>
+            New User
+        </button>
+    </div>
+</main>
+
