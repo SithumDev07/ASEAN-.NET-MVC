@@ -53,12 +53,12 @@ const populdateNews = (element) => {
             <div class="card-body p-0">
                 <h4 class="card-title mt-2 course-card-title">${title}</h4>
                 <div class="d-flex align-items-center justify-content-between">
-                    <div class="lable-container row gx-2">
-                        <img src="/Content/Icons/StarGold.svg" class="col" width="19" height="19" alt="Star Icon">
-                        <img src="/Content/Icons/StarGold.svg" class="col" width="19" height="19" alt="Star Icon">
-                        <img src="/Content/Icons/StarGold.svg" class="col" width="19" height="19" alt="Star Icon">
-                        <img src="/Content/Icons/Star.svg" class="col" width="19" height="19" alt="Star Icon">
-                        <img src="/Content/Icons/Star.svg" class="col" width="19" height="19" alt="Star Icon">
+                    <div class="lable-container row gx-2 star-container d-flex align-items-center">
+                        <i class="bi bi-star-fill icon"></i>
+                        <i class="bi bi-star-fill icon"></i>
+                        <i class="bi bi-star-fill icon"></i>
+                        <i class="bi bi-star icon"></i>
+                        <i class="bi bi-star icon"></i>
                     </div>
                     <div class="dropdown">
                         <button type="button" onCLick="() => console.log('View Dropdown')" class="btn btn-sm btn-outline-dark dropdown-toggle" id="categoryDropDown" data-bs-toggle="dropdown" aria-expanded="false">
