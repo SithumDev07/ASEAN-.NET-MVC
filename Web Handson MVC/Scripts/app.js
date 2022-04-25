@@ -97,6 +97,8 @@ populdateNews(document.querySelector('.swiper-wrapper'));
 
 populdateNews(document.querySelector('#in_progress_courses'));
 
+populdateNews(document.querySelector('#new_recommendations_courses'));
+
 var swiper = new Swiper('.news-slider', {
     effect: 'coverflow',
     grabCursor: true,
