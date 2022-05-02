@@ -46,7 +46,7 @@ const CoursesData = [
 
 console.log(CoursesData[1].title.length);
 
-const populdateNews = (element) => {
+const populdateNews = (element, actions) => {
     CoursesData.map(({ id, title, imageSrc, rating }) => {
 
         if (title.length > 60) {
@@ -70,15 +70,14 @@ const populdateNews = (element) => {
                         <i class="bi bi-star icon"></i>
                         <i class="bi bi-star icon"></i>
                     </div>
-                    <div class="dropdown">
-                        <button type="button" onCLick="() => console.log('View Dropdown')" class="btn btn-sm btn-outline-dark dropdown-toggle" id="categoryDropDown" data-bs-toggle="dropdown" aria-expanded="false">
-                            View
+                    <div class="dropdown relative">
+                        <button type="button" class="btn asean-primary text-white">View</button>
+                        <button type="button" class="btn btn-sm dropdown-toggle text-asean-primary dropdown-trigger">
+
                         </button>
-                        <ul class="dropdown-menu" aria-labelledby="categoryDropDown">
-                            <li><a class="dropdown-item" href="#">Provincial</a></li>
-                            <li><a class="dropdown-item" href="#">Provincial</a></li>
-                            <li><a class="dropdown-item" href="#">Provincial</a></li>
-                            <li><a class="dropdown-item" href="#">Provincial</a></li>
+                        <ul class="absolute course-dropdown-menu shadow-sm d-none">
+                            <li><a class="dropdown-item" href="#">${actions[0]}</a></li>
+                            <li><a class="dropdown-item" href="#">${actions[1]}</a></li>
                         </ul>
                     </div>
                 </div>
@@ -90,14 +89,24 @@ const populdateNews = (element) => {
         divElement.classList.add('swiper-slide')
         divElement.innerHTML = newsEle;
         element.appendChild(divElement);
+
+        divElement.querySelector('.dropdown-trigger').addEventListener('click', () => {
+            console.log('Close Dropdown')
+            divElement.querySelector('.course-dropdown-menu').classList.toggle('d-none')
+        })
+
+        divElement.querySelector('.dropdown-trigger').addEventListener('blur', () => {
+            console.log('Close Dropdown')
+            divElement.querySelector('.course-dropdown-menu').classList.add('d-none')
+        })
     })
 }
 
-populdateNews(document.querySelector('.swiper-wrapper'));
+populdateNews(document.querySelector('.swiper-wrapper'), ['Register', 'Go To Plan']);
 
-populdateNews(document.querySelector('#in_progress_courses'));
+populdateNews(document.querySelector('#in_progress_courses'), ['Resume', 'Go To Plan']);
 
-populdateNews(document.querySelector('#new_recommendations_courses'));
+populdateNews(document.querySelector('#new_recommendations_courses'), ['Resume', 'Go To Plan']);
 
 var swiper = new Swiper('.news-slider', {
     effect: 'coverflow',

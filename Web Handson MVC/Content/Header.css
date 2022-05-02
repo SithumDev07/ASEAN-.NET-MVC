@@ -84,3 +84,20 @@
     color: var(--text-color);
     transition: var(--tran-03);
 }
+
+.asean-primary {
+    background-color: var(--primary-color);
+}
+
+.outline-asean-primary {
+    border-color: var(--primary-color);
+}
+
+    .outline-asean-primary:hover {
+        background-color: var(--primary-color);
+        color: var(--sidebar-color);
+    }
+
+.text-asean-primary {
+    color: var(--primary-color);
+}
