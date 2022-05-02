@@ -2,50 +2,60 @@
 const CoursesData = [
     {
         id: 1,
-        title: "Introduction to Project Management",
+        title: "Enhancing FCV Operations with Geospatial ICT Tools",
         imageSrc: "https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
         rating: 3,
     },
     {
         id: 2,
-        title: "Master CRUD .NET Core Web",
+        title: "Post-Approval Changes to Marketing Authorizations Training",
         imageSrc: "https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
         rating: 3,
     },
     {
         id: 3,
-        title: "Introduction to Project Management",
+        title: "Land Pooling / Readjustment : An Alternative to Compulsory Land Acquisition (Self-Paced)",
         imageSrc: "https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
         rating: 3,
     },
     {
         id: 4,
-        title: "Introduction to Project Management",
+        title: "IFC IQ-Healthcare: Patient Safety Training",
         imageSrc: "https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
         rating: 3,
     },
     {
         id: 4,
-        title: "Introduction to Project Management",
+        title: "Smart Cities for Global Frontier Infrastructure (Virtual Knowledge Exchange)",
         imageSrc: "https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
         rating: 3,
     },
     {
         id: 4,
-        title: "Introduction to Project Management",
+        title: "Land Pooling/Readjustment: An Alternative to Compulsory Land Acquisition (Self-Paced)",
         imageSrc: "https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
         rating: 3,
     },
     {
         id: 4,
-        title: "Introduction to Project Management",
+        title: "Smart Cities for Global Frontier Infrastructure (Virtual Knowledge Exchange)",
         imageSrc: "https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
         rating: 3,
     },
 ];
 
-const populdateNews = (element) => {
+console.log(CoursesData[1].title.length);
+
+const populdateNews = (element, actions) => {
     CoursesData.map(({ id, title, imageSrc, rating }) => {
+
+        if (title.length > 60) {
+            if (window.innerWidth < 769) {
+                title = title.slice(0, 40) + '...';
+            } else {
+                title = title.slice(0, 60) + '...';
+            }
+        }
 
         const newsEle = `
         <div class="card border-0">
@@ -60,15 +70,14 @@ const populdateNews = (element) => {
                         <i class="bi bi-star icon"></i>
                         <i class="bi bi-star icon"></i>
                     </div>
-                    <div class="dropdown">
-                        <button type="button" onCLick="() => console.log('View Dropdown')" class="btn btn-sm btn-outline-dark dropdown-toggle" id="categoryDropDown" data-bs-toggle="dropdown" aria-expanded="false">
-                            View
+                    <div class="dropdown relative">
+                        <button type="button" class="btn asean-primary text-white">View</button>
+                        <button type="button" class="btn btn-sm dropdown-toggle text-asean-primary dropdown-trigger">
+
                         </button>
-                        <ul class="dropdown-menu" aria-labelledby="categoryDropDown">
-                            <li><a class="dropdown-item" href="#">Provincial</a></li>
-                            <li><a class="dropdown-item" href="#">Provincial</a></li>
-                            <li><a class="dropdown-item" href="#">Provincial</a></li>
-                            <li><a class="dropdown-item" href="#">Provincial</a></li>
+                        <ul class="absolute course-dropdown-menu shadow-sm d-none">
+                            <li><a class="dropdown-item" href="#">${actions[0]}</a></li>
+                            <li><a class="dropdown-item" href="#">${actions[1]}</a></li>
                         </ul>
                     </div>
                 </div>
@@ -80,12 +89,24 @@ const populdateNews = (element) => {
         divElement.classList.add('swiper-slide')
         divElement.innerHTML = newsEle;
         element.appendChild(divElement);
+
+        divElement.querySelector('.dropdown-trigger').addEventListener('click', () => {
+            console.log('Close Dropdown')
+            divElement.querySelector('.course-dropdown-menu').classList.toggle('d-none')
+        })
+
+        divElement.querySelector('.dropdown-trigger').addEventListener('blur', () => {
+            console.log('Close Dropdown')
+            divElement.querySelector('.course-dropdown-menu').classList.add('d-none')
+        })
     })
 }
 
-populdateNews(document.querySelector('.swiper-wrapper'));
+populdateNews(document.querySelector('.swiper-wrapper'), ['Register', 'Go To Plan']);
 
-populdateNews(document.querySelector('#in_progress_courses'));
+populdateNews(document.querySelector('#in_progress_courses'), ['Resume', 'Go To Plan']);
+
+populdateNews(document.querySelector('#new_recommendations_courses'), ['Resume', 'Go To Plan']);
 
 var swiper = new Swiper('.news-slider', {
     effect: 'coverflow',

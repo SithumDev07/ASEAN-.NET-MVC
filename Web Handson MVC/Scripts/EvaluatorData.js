@@ -39,6 +39,55 @@
         submissions: 7,
         actionLink: "/assigned-course/5",
     },
+    {
+        id: 5,
+        title: "Climate Mitigation in Action – Sector-Specific Strategies and Approaches",
+        category: "Orientation",
+        duedata: "28-APR-2022 - 28-MAY-2022",
+        submissions: 7,
+        actionLink: "/assigned-course/5",
+    },
+    {
+        id: 5,
+        title: "Climate Mitigation in Action – Sector-Specific Strategies and Approaches",
+        category: "Orientation",
+        duedata: "28-APR-2022 - 28-MAY-2022",
+        submissions: 7,
+        actionLink: "/assigned-course/5",
+    },
+    {
+        id: 5,
+        title: "Climate Mitigation in Action – Sector-Specific Strategies and Approaches",
+        category: "Orientation",
+        duedata: "28-APR-2022 - 28-MAY-2022",
+        submissions: 7,
+        actionLink: "/assigned-course/5",
+    },
+    {
+        id: 5,
+        title: "Climate Mitigation in Action – Sector-Specific Strategies and Approaches",
+        category: "Orientation",
+        duedata: "28-APR-2022 - 28-MAY-2022",
+        submissions: 7,
+        actionLink: "/assigned-course/5",
+    },
+    {
+        id: 5,
+        title: "Climate Mitigation in Action – Sector-Specific Strategies and Approaches",
+        category: "Orientation",
+        duedata: "28-APR-2022 - 28-MAY-2022",
+        submissions: 7,
+        actionLink: "/assigned-course/5",
+    },
+    {
+        id: 5,
+        title: "Climate Mitigation in Action – Sector-Specific Strategies and Approaches",
+        category: "Orientation",
+        duedata: "28-APR-2022 - 28-MAY-2022",
+        submissions: 7,
+        actionLink: "/assigned-course/5",
+    },
+
 ];
 
 const populdateNews = (element) => {

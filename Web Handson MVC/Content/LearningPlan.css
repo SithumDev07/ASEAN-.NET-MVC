@@ -4,6 +4,7 @@
 
 main {
     overflow-x: hidden;
+    height: 100vh;
 }
 
 #page-content {
@@ -22,13 +23,7 @@ main {
     font-size: 0.8rem;
 }
 
-@media only screen and (max-width: 1200px) {
-    .chart-monitor {
-        width: 500px;
-    }
-}
-
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1024px) {
     .chart-monitor {
         width: 550px;
         margin: 0 auto;
@@ -39,7 +34,7 @@ main {
     }
 
     #page-content {
-        margin-top: 6.5rem;
+        padding-top: 6.5rem;
     }
 }
 
@@ -54,9 +49,10 @@ main {
     }
 
     #page-content {
-        margin-top: 7.5rem;
+        padding-top: 7.5rem;
     }
 }
+
 
 @media only screen and (max-width: 600px) {
 
@@ -70,12 +66,18 @@ main {
         max-width: 98vw !important;
     }
 
-    .remaindayscolum{
+    .remaindayscolum {
         min-width: 7.5rem;
     }
 
     #page-content {
-        margin-top: 8rem;
+        padding-top: 4rem !important;
     }
-
 }
+
+
+
+
+
+
+
