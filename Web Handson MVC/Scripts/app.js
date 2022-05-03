@@ -70,10 +70,10 @@ const populdateNews = (element, actions) => {
                         <i class="bi bi-star icon"></i>
                         <i class="bi bi-star icon"></i>
                     </div>
-                    <div class="dropdown relative">
-                        <button type="button" class="btn asean-primary text-white">View</button>
+                    <div class="dropdown relative courses-action-dropdown">
+                        <button type="button" class="btn asean-primary text-white view-btn">View</button>
                         <button type="button" class="btn btn-sm dropdown-toggle text-asean-primary dropdown-trigger">
-
+                            
                         </button>
                         <ul class="absolute course-dropdown-menu shadow-sm d-none">
                             <li><a class="dropdown-item" href="#">${actions[0]}</a></li>
@@ -100,6 +100,7 @@ const populdateNews = (element, actions) => {
             divElement.querySelector('.course-dropdown-menu').classList.add('d-none')
         })
     })
+
 }
 
 populdateNews(document.querySelector('.swiper-wrapper'), ['Register', 'Go To Plan']);

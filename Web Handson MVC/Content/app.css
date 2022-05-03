@@ -172,6 +172,12 @@ html {
     width: auto;
 }
 
+@media screen and (max-width: 1024px) {
+    .star-container .icon {
+        font-size: 1rem;
+    }
+}
+
 .star-container .icon {
     color: var(--star-color-amber);
     transition: var(--tran-03);
@@ -187,3 +193,14 @@ html {
     .course-dropdown-menu li {
         list-style: none;
     }
+
+.courses-action-dropdown .view-btn {
+    font-size: .89rem;
+}
+
+
+@media screen and (max-width: 480px) {
+    .courses-action-dropdown {
+        margin-right: 1rem;
+    }
+}
