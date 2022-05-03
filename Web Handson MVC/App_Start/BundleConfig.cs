@@ -67,6 +67,7 @@ namespace Web_Handson_MVC
                       "~/Content/bootstrap.css",
                       "~/Content/ColorsTypography.css",
                       "~/Content/LearningPlan.css",
+                      "~/Content/CustomTable.css",
                       "~/Content/SideBar.css",
                       "~/Content/Header.css",
                       "~/Content/Footer.css"));
@@ -82,7 +83,7 @@ namespace Web_Handson_MVC
             bundles.Add(new StyleBundle("~/Content/domainexpert").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/ColorsTypography.css",
-                      "~/Content/DomainExpert.css",
+                      "~/Content/CustomTable.css",
                       "~/Content/SideBar.css",
                       "~/Content/Header.css",
                       "~/Content/Footer.css"));
@@ -90,8 +91,8 @@ namespace Web_Handson_MVC
             bundles.Add(new StyleBundle("~/Content/evaluator").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/ColorsTypography.css",
-                      "~/Content/DomainExpert.css",
                       "~/Content/SideBar.css",
+                      "~/Content/CustomTable.css",
                       "~/Content/Header.css",
                       "~/Content/Footer.css"));
 

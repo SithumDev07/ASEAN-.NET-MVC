@@ -82,6 +82,9 @@ html {
     .news-slider__item {
         margin: 0;
     }
+    .news-slider__wrp {
+        margin-bottom: 6rem;
+    }
 }
 
 .news-slider__item.swiper-slide {
