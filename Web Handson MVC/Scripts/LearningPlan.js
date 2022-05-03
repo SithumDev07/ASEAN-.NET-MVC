@@ -51,13 +51,11 @@ const initiateTableData = (element) => {
             <td class="d-flex flex-column" ><p class="mb-0 remaindayscolum">${dueDate}</p><p class="mb-1 fst-italic remaindaystext">${remainDays} days more</p></td>
             <td class="text-nowrap actiontext position-relative"><div class="d-flex align-items-center justify-content-between" ><a href="#">${action}</a><button class="deletebtn">
                 <i class="bi bi-three-dots "></i>
-                
             </button></div>
                 <ul class="optionmenu p-0 m-0 shadow d-none">
                     <li><button>Delete</button></li>
                 </ul>
             </td>
-            
         `;
         let trElemet = document.createElement('tr');
         //trElemet.classList.add("relative");

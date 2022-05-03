@@ -155,7 +155,9 @@
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\ColorsTypography.css" />
     <Content Include="Content\CourseAdmin.css" />
+    <Content Include="Content\CustomTable.css" />
     <Content Include="Content\DomainExpert.css" />
+    <Content Include="Content\Evaluator.css" />
     <Content Include="Content\Footer.css" />
     <Content Include="Content\Header.css" />
     <Content Include="Content\HomeSideBar.css" />
