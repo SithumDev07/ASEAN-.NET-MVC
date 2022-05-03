@@ -1,55 +1,30 @@
 ﻿.chart-monitor {
     width: 500px;
-}
-
-main {
-    overflow-x: hidden;
-    height: 100vh;
+    border-radius: 0.3rem;
 }
 
 #page-content {
     margin-top: 6rem;
 }
 
-.table {
-    margin-bottom: 0 !important;
-}
 
-.table tr th {
-    color: var(--text-color-shaded);
-}
+@media only screen and (max-width: 1025px) {
 
-.remaindaystext {
-    font-size: 0.8rem;
-}
-
-@media only screen and (max-width: 1024px) {
     .chart-monitor {
         width: 550px;
         margin: 0 auto;
     }
 
-    .remaindayscolum {
-        min-width: 8rem;
-    }
-
-    #page-content {
-        padding-top: 6.5rem;
+    .chartmg {
+        padding-left: 0 !important;
     }
 }
 
 @media only screen and (max-width: 768px) {
+
     .chart-monitor {
-        width: 350px;
+        width: 450px;
         margin: 0 auto;
-    }
-
-    .remaindayscolum {
-        min-width: 7.5rem;
-    }
-
-    #page-content {
-        padding-top: 7.5rem;
     }
 }
 
@@ -59,25 +34,10 @@ main {
     .chart-monitor {
         width: 350px;
         margin: 0 auto;
+        padding: 0 !important;
     }
 
-    .leanerplanetable {
-        overflow-x: auto;
-        max-width: 98vw !important;
-    }
-
-    .remaindayscolum {
-        min-width: 7.5rem;
-    }
-
-    #page-content {
-        padding-top: 4rem !important;
+    .chartmg {
+        padding-left: 0 !important;
     }
 }
-
-
-
-
-
-
-

@@ -4,26 +4,28 @@
     Layout = "~/Views/Shared/_LayoutDomainExpert.cshtml";
 }
 
-<main class="py-3 bg-light" style="margin-top: 6rem;">
+<main style="margin-top: 6rem;" class="bg-light py-5 py-md-3">
     <div class="container">
-        <div class="flex-row expert-title">
-            <i class="bi bi-gear icon"></i>
-            <h3 class="ms-3">My Assigned Courses</h3>
-        </div>
-
-        <div class="card mt-4">
-            <table class="table table-bordered">
-                <thead class="table-secondary">
-                    <tr>
-                        <th scope="col">Course Title</th>
-                        <th scope="col">Course Category</th>
-                        <th scope="col">Due Date</th>
-                        <th scope="col">Actions</th>
-                    </tr>
-                </thead>
-                <tbody id="assignedCourses">
-                </tbody>
-            </table>
+        <div class="row d-grid gap-1">
+            <!-- Start of the Table -->
+            <div class="grid m-0 mt-3 tableadjust">
+                <div><h2 class="text-start fw-bold">Courses and Certifications</h2></div>
+                <div class="leanerplanetable m-0 mt-3">
+                    <table class="tabledatawrapper shadow">
+                        <thead class="tableheader">
+                            <tr>
+                                <th class="align-top">Course Title</th>
+                                <th class="align-top">Course Category</th>
+                                <th class="align-top">Duration</th>
+                                <th class="align-top">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="assignedCourses" class="text-wrap">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- End of the Table -->
         </div>
     </div>
 </main>
