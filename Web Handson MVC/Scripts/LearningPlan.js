@@ -29,6 +29,15 @@ const dataSet = [
         dueDate: "18-FEB-2022",
         remainDays: 30,
         action: "Register"
+    },
+    {
+        id: 4,
+        courseTitle: "Land Pooling / Readjustment : An Alternative to Compulsory Land Acquisition (Self-Paced)",
+        courseCategory: "Orientation",
+        courseStatus: "Pending Action",
+        dueDate: "18-FEB-2022",
+        remainDays: 30,
+        action: "Register"
     }
 ]
 
@@ -36,15 +45,34 @@ const initiateTableData = (element) => {
 
     dataSet.map(({ courseTitle, courseCategory, courseStatus, dueDate, action, remainDays }) => {
         const CourseData = `
-            <td>${courseTitle}</td>
+            <td class="coursetile">${courseTitle}</td> 
             <td class="text-nowrap">${courseCategory}</td>
             <td class="text-nowrap">${courseStatus}</td>
-            <td class="d-flex flex-column p-0 remaindayscolum" ><p class="mb-0">${dueDate}</p><p class="mb-1 fst-italic remaindaystext">${remainDays} days more</p></td>
-            <td class="text-nowrap "><a href="#">${action}</a></td>
+            <td class="d-flex flex-column" ><p class="mb-0 remaindayscolum">${dueDate}</p><p class="mb-1 fst-italic remaindaystext">${remainDays} days more</p></td>
+            <td class="text-nowrap actiontext position-relative"><div class="d-flex align-items-center justify-content-between" ><a href="#">${action}</a><button class="deletebtn">
+                <i class="bi bi-three-dots "></i>
+                
+            </button></div>
+                <ul class="optionmenu p-0 m-0 shadow d-none">
+                    <li><button>Delete</button></li>
+                </ul>
+            </td>
+            
         `;
-        let trElemet = document.createElement('tr')
+        let trElemet = document.createElement('tr');
+        //trElemet.classList.add("relative");
+        //trElemet.classList.add("align-items-center");
         trElemet.innerHTML = CourseData;
         element.appendChild(trElemet);
+
+        // Action delete button click funtion
+        trElemet.querySelector(".deletebtn").addEventListener("mousedown", () => {
+            trElemet.querySelector(".optionmenu").classList.toggle("d-none");
+            //console.log("Hellow");
+        })
+        trElemet.querySelector(".deletebtn").addEventListener("blur", () => {
+            trElemet.querySelector(".optionmenu").classList.add("d-none");
+        })
     })
 }
 
