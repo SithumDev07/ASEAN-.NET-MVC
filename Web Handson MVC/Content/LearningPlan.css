@@ -74,10 +74,10 @@
     }
 }
 
-@media only screen and (max-width: 1025px) {
+@media only screen and (max-width: 1024px) {
 
     .chart-monitor {
-        width: 40vw;
+        width: 60vw;
     }
 
     .chartContainer {

@@ -1,4 +1,9 @@
-﻿// Table 
+﻿// Table
+
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+
 
 const CoursesandCertificateContainer = document.querySelector("#tableData");
 
@@ -25,7 +30,7 @@ const dataSet = [
     },
     {
         id: 3,
-        courseTitle: "Basic Concept of Management",
+        courseTitle: "Algebra - Basic Concepts of Algebra",
         courseCategory: "Orientation",
         courseStatus: "Pending",
         lableColor: 'blue',
@@ -39,7 +44,7 @@ const dataSet = [
         courseCategory: "Orientation",
         courseStatus: "Expired",
         lableColor: 'red',
-        dueDate: "18-FEB-2022",
+        dueDate: "18-DEC-2022",
         remainDays: 30,
         action: "Register"
     }
@@ -48,17 +53,20 @@ const dataSet = [
 const initiateTableData = (element) => {
 
     dataSet.map(({ courseTitle, courseCategory, courseStatus, dueDate, action, remainDays, lableColor }) => {
+        let date = new Date(dueDate)
+        let sortingFactor = date.getFullYear().toString() + [date.getMonth() + 1].toString() + date.getDate().toString()
         const CourseData = `
-            <td class="coursetile">${courseTitle}</td> 
-            <td class="text-nowrap">${courseCategory}</td>
-            <td class="text-nowrap">
+            <td class="coursetitle">${courseTitle}</td> 
+            <td class="text-nowrap course-category">${courseCategory}</td>
+            <td class="text-nowrap course-status">
                 <p class="status-label status-label-${lableColor}">${courseStatus}</p>
             </td>
-            <td class="d-flex flex-column" ><p class="mb-0 remaindayscolum">${dueDate}</p><p class="mb-1 fst-italic remaindaystext">${remainDays} days more</p></td>
+            <td data-sort="${sortingFactor}" class="d-flex flex-column" ><p class="mb-0 remaindayscolum">${dueDate}</p><p class="mb-1 fst-italic remaindaystext">${remainDays} days more</p></td>
             <td class="text-nowrap actiontext position-relative"><div class="d-flex align-items-center justify-content-between" ><a href="#">${action}</a><button class="deletebtn">
                 <i class="bi bi-three-dots "></i>
+
             </button></div>
-               <ul class="optionmenu p-0 m-0 shadow d-none">
+                <ul class="optionmenu p-0 m-0 shadow d-none">
                     <li>
                         <button>
                             Drop

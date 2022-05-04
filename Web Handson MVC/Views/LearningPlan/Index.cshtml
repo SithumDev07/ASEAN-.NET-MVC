@@ -17,14 +17,46 @@
         <div class="grid m-0 mt-5 tableadjust">
             <div><h2 class="text-start fw-bold">Learning & Certifications</h2></div>
             <div class="leanerplanetable m-0 mt-3">
-                <table class="tabledatawrapper shadow">
+                <table class="tabledatawrapper shadow sortable">
                     <thead class="tableheader">
                         <tr>
-                            <th class="align-top">Course Title</th>
-                            <th class="align-top">Course Category</th>
-                            <th class="align-top">Status</th>
-                            <th class="align-top">Due Date</th>
-                            <th class="align-top">Action</th>
+                            <th class="align-top">
+                                <button type="button" class="sort-btn-table">
+                                    Course Title
+                                    <div class="header-arrows">
+                                        <i class="bi bi-caret-up-fill icon"></i>
+                                        <i class="bi bi-caret-down-fill icon"></i>
+                                    </div>
+                                </button>
+                            </th>
+                            <th class="align-top">
+                                <button type="button" class="sort-btn-table">
+                                    Course Category
+                                    <div class="header-arrows">
+                                        <i class="bi bi-caret-up-fill icon"></i>
+                                        <i class="bi bi-caret-down-fill icon"></i>
+                                    </div>
+                                </button>
+                            </th>
+                            <th class="align-top">
+                                <button type="button" class="sort-btn-table">
+                                    Status
+                                    <div class="header-arrows">
+                                        <i class="bi bi-caret-up-fill icon"></i>
+                                        <i class="bi bi-caret-down-fill icon"></i>
+                                    </div>
+                                </button>
+                            </th>
+                            <th class="align-top">
+                                <button type="button" class="sort-btn-table">
+                                    Due Date
+                                    <div class="header-arrows">
+                                        <i class="bi bi-caret-up-fill icon"></i>
+                                        <i class="bi bi-caret-down-fill icon"></i>
+                                    </div>
+                                </button>
+                            </th>
+                            <th class="align-top action-header no-sort">Action</th>
                         </tr>
                     </thead>
                     <tbody id="tableData" class="text-wrap">

@@ -94,7 +94,7 @@ const populdateNews = (element) => {
     CoursesData.map(({ title, category, duedata, submissions, actionLink }) => {
 
         const tablerowdata = `
-            <td scope="row" class="coursetile">${title}</td>
+            <td scope="row" class="coursetitle">${title}</td>
             <td>${category}</td>
             <td class="duedate">${duedata}</td>
             <td>${submissions}</td>
