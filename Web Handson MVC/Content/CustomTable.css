@@ -5,6 +5,7 @@
     background-color: rgb(255, 255, 255);
     margin: 25px 0;
     border-radius: 0.4rem;
+    overflow: hidden;
 }
 
     .tabledatawrapper thead tr {
@@ -21,7 +22,6 @@
         text-align: left;
         color: #B3B3B3;
         border-bottom: 1px solid rgb(230, 230, 230);
-        padding: 0.7rem 1rem;
         margin: 15px 0;
         align-items: center;
     }
@@ -87,7 +87,53 @@ a {
         color: #E8F4F7;
     }
 
+.coursetitle {
+    max-width: 25vw;
+}
+
+.sort-btn-table {
+    appearance: none;
+    border: 0;
+    background-color: transparent;
+    width: 100%;
+    color: unset;
+    font-weight: unset;
+    text-align: start;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.action-header, .sort-btn-table {
+    padding: 0.7rem 1rem;
+}
+
+    .sort-btn-table:hover {
+        background-color: #E8F4F7;
+    }
+
+.header-arrows {
+    display: flex;
+    flex-direction: column;
+}
+
+    .header-arrows .icon {
+        font-size: .6rem;
+    }
+
+.duedate p {
+    text-align: right;
+    margin-right: 1rem;
+}
+
+.submissions {
+    text-align: center;
+}
+
 @media only screen and (max-width: 1025px) {
+    .submissions {
+        min-width: 11rem;
+    }
 
     .tableadjust {
         padding-left: 0 !important;
@@ -110,13 +156,21 @@ a {
         min-width: 15.5rem;
     }
 
-    .coursetile {
+    .coursetitle {
         min-width: 30rem;
         max-width: 80vw;
     }
 
+    .course-category {
+        min-width: 15rem;
+    }
+
+    .course-status {
+        min-width: 8rem;
+    }
+
     .duedate {
-        min-width: 8.5rem;
+        min-width: 10rem;
     }
 
     #page-content {
@@ -131,6 +185,10 @@ a {
 
 @media only screen and (max-width: 768px) {
 
+    .duedate p {
+        margin-right: 0;
+    }
+
 
     .leanerplanetable {
         overflow-x: auto;
@@ -141,7 +199,12 @@ a {
         min-width: 7.5rem;
     }
 
-    .coursetile {
+    .submissions {
+        text-align: center;
+        min-width: 11rem;
+    }
+
+    .coursetitle {
         min-width: 30rem;
         max-width: 80vw;
     }
@@ -166,6 +229,10 @@ a {
 
 @media only screen and (max-width: 600px) {
 
+    .duedate p {
+        margin-right: 0;
+    }
+
     .leanerplanetable {
         overflow-x: auto;
         max-width: 98vw !important;
@@ -183,7 +250,7 @@ a {
         min-width: 15.5rem;
     }
 
-    .coursetile {
+    .coursetitle {
         min-width: 30rem;
         max-width: 80vw;
     }

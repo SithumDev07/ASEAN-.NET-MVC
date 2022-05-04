@@ -30,6 +30,7 @@ namespace Web_Handson_MVC
 
             bundles.Add(new Bundle("~/bundles/learner").Include(
                 "~/Scripts/Charts.min.js",
+                "~/Scripts/Sortable.js",
                 "~/Scripts/LearningPlan.js",
                 "~/Scripts/SideBar.js"
                 ));
@@ -40,11 +41,13 @@ namespace Web_Handson_MVC
 
             bundles.Add(new Bundle("~/bundles/domainexpert").Include(
                 "~/Scripts/SideBar.js",
+                "~/Scripts/Sortable.js",
                 "~/Scripts/DomainExpertData.js"
                 ));
 
             bundles.Add(new Bundle("~/bundles/evaluator").Include(
                 "~/Scripts/SideBar.js",
+                "~/Scripts/Sortable.js",
                 "~/Scripts/EvaluatorData.js"
                 ));
 
@@ -84,6 +87,7 @@ namespace Web_Handson_MVC
                       "~/Content/bootstrap.css",
                       "~/Content/ColorsTypography.css",
                       "~/Content/CustomTable.css",
+                      "~/Content/Layout.css",
                       "~/Content/SideBar.css",
                       "~/Content/Header.css",
                       "~/Content/Footer.css"));
@@ -93,6 +97,7 @@ namespace Web_Handson_MVC
                       "~/Content/ColorsTypography.css",
                       "~/Content/SideBar.css",
                       "~/Content/CustomTable.css",
+                      "~/Content/Layout.css",
                       "~/Content/Header.css",
                       "~/Content/Footer.css"));
 
