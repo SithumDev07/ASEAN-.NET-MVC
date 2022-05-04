@@ -1,10 +1,53 @@
-﻿.chart-monitor {
-    width: 500px;
+﻿main {
+    min-height: 100vh;
+}
+
+.chart-monitor {
     border-radius: 0.3rem;
+    width: 40vw;
 }
 
 #page-content {
     margin-top: 6rem;
+}
+
+.chartContainer {
+    position: relative;
+    height: 40vh;
+    width: 30vw;
+}
+
+.chart-title {
+    color: var(--primary-color);
+}
+
+.status-label {
+    margin-bottom: 0;
+    font-size: .7rem;
+    text-align: center;
+    border: 1px solid var(--primary-color);
+    padding: .1rem .5rem;
+    border-radius: 2rem;
+}
+
+.status-label-yellow {
+    color: var(--star-color-amber);
+    border-color: var(--star-color-amber);
+}
+
+.status-label-green {
+    color: var(--success-green);
+    border-color: var(--success-green);
+}
+
+.status-label-blue {
+    color: var(--slider-background-color);
+    border: 1px solid var(--slider-background-color);
+}
+
+.status-label-red {
+    color: var(--danger-red);
+    border: 1px solid var(--danger-red);
 }
 
 
@@ -20,24 +63,50 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
-
+@media only screen and (max-width: 1440px) {
     .chart-monitor {
-        width: 450px;
-        margin: 0 auto;
+        width: 50vw;
+    }
+
+    .chartContainer {
+        height: 40vh;
+        width: 40vw;
     }
 }
 
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1025px) {
 
     .chart-monitor {
-        width: 350px;
-        margin: 0 auto;
-        padding: 0 !important;
+        width: 40vw;
     }
 
-    .chartmg {
-        padding-left: 0 !important;
+    .chartContainer {
+        height: 25vh;
+        width: 50vw;
     }
 }
+
+    @media only screen and (max-width: 768px) {
+
+        .chart-monitor {
+            width: 60vw;
+        }
+
+        .chartContainer {
+            height: 20vh;
+            width: 50vw;
+        }
+    }
+
+
+    @media only screen and (max-width: 600px) {
+
+        .chart-monitor {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .chartmg {
+            padding-left: 0 !important;
+        }
+    }
