@@ -107,7 +107,7 @@ populdateNews(document.querySelector('.swiper-wrapper'), ['Register', 'Go To Pla
 
 populdateNews(document.querySelector('#in_progress_courses'), ['Resume', 'Go To Plan']);
 
-populdateNews(document.querySelector('#new_recommendations_courses'), ['Resume', 'Go To Plan']);
+populdateNews(document.querySelector('#new_recommendations_courses'), ['Register', 'Go To Plan']);
 
 var swiper = new Swiper('.news-slider', {
     effect: 'coverflow',
