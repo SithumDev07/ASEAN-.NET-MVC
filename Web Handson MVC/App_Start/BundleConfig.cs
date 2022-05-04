@@ -41,6 +41,7 @@ namespace Web_Handson_MVC
 
             bundles.Add(new Bundle("~/bundles/domainexpert").Include(
                 "~/Scripts/SideBar.js",
+                "~/Scripts/Sortable.js",
                 "~/Scripts/DomainExpertData.js"
                 ));
 
