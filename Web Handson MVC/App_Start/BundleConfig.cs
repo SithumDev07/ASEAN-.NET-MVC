@@ -84,6 +84,7 @@ namespace Web_Handson_MVC
                       "~/Content/bootstrap.css",
                       "~/Content/ColorsTypography.css",
                       "~/Content/CustomTable.css",
+                      "~/Content/Layout.css",
                       "~/Content/SideBar.css",
                       "~/Content/Header.css",
                       "~/Content/Footer.css"));
@@ -93,6 +94,7 @@ namespace Web_Handson_MVC
                       "~/Content/ColorsTypography.css",
                       "~/Content/SideBar.css",
                       "~/Content/CustomTable.css",
+                      "~/Content/Layout.css",
                       "~/Content/Header.css",
                       "~/Content/Footer.css"));
 

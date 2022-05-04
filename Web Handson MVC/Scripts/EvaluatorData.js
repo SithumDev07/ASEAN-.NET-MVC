@@ -102,7 +102,11 @@ const populdateNews = (element) => {
                 <i class="bi bi-three-dots "></i>
             </button></div>
                 <ul class="optionmenu p-0 m-0 shadow d-none">
-                    <li><button>Delete</button></li>
+                    <li>
+                        <button>
+                            Drop
+                        </button>
+                    </li>
                 </ul>
             </td>
         `;

@@ -170,6 +170,7 @@
     <Content Include="Content\Images\banner-top-mobile.png" />
     <Content Include="Content\Images\career-ladder.jpg" />
     <Content Include="Content\Images\geoedge-logo.png" />
+    <Content Include="Content\Layout.css" />
     <Content Include="Content\SideBar.css" />
     <Content Include="Content\LearningPlan.css" />
     <Content Include="favicon.ico" />
