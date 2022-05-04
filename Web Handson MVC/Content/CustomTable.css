@@ -121,7 +121,19 @@ a {
         font-size: .6rem;
     }
 
+.duedate p {
+    text-align: right;
+    margin-right: 1rem;
+}
+
+.submissions {
+    text-align: center;
+}
+
 @media only screen and (max-width: 1025px) {
+    .submissions {
+        min-width: 11rem;
+    }
 
     .tableadjust {
         padding-left: 0 !important;
@@ -173,6 +185,10 @@ a {
 
 @media only screen and (max-width: 768px) {
 
+    .duedate p {
+        margin-right: 0;
+    }
+
 
     .leanerplanetable {
         overflow-x: auto;
@@ -181,6 +197,11 @@ a {
 
     .remaindayscolum {
         min-width: 7.5rem;
+    }
+
+    .submissions {
+        text-align: center;
+        min-width: 11rem;
     }
 
     .coursetitle {
@@ -207,6 +228,10 @@ a {
 }
 
 @media only screen and (max-width: 600px) {
+
+    .duedate p {
+        margin-right: 0;
+    }
 
     .leanerplanetable {
         overflow-x: auto;

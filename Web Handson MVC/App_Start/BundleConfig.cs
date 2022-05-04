@@ -46,6 +46,7 @@ namespace Web_Handson_MVC
 
             bundles.Add(new Bundle("~/bundles/evaluator").Include(
                 "~/Scripts/SideBar.js",
+                "~/Scripts/Sortable.js",
                 "~/Scripts/EvaluatorData.js"
                 ));
 
