@@ -52,7 +52,7 @@ footer {
 
     .footer-left {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
     }
 
