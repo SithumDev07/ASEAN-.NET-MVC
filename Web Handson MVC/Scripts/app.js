@@ -202,7 +202,7 @@ const populdateNews = (element, actions, dataSet) => {
 
 }
 
-populdateNews(document.querySelector('.swiper-wrapper'), ['Register', 'Go To Plan'], TopRatedCoursesData);
+populdateNews(document.querySelector('#toprated_courses'), ['Register', 'Go To Plan'], TopRatedCoursesData);
 
 populdateNews(document.querySelector('#in_progress_courses'), ['Resume', 'Go To Plan'], InProgressCoursesData);
 
@@ -243,3 +243,11 @@ var swiper = new Swiper('.news-slider', {
 });
 
 
+let swiperInfinite = new Swiper(".mySwiper", {
+    spaceBetween: 0,
+    centeredSlides: true,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
+});

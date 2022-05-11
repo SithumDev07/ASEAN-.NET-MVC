@@ -168,6 +168,9 @@
     <Content Include="Content\Images\banner-mobile.png" />
     <Content Include="Content\Images\banner-sample.png" />
     <Content Include="Content\Images\banner-top-mobile.png" />
+    <Content Include="Content\Images\Banner\banner1.jpg" />
+    <Content Include="Content\Images\Banner\banner2.jpg" />
+    <Content Include="Content\Images\Banner\banner3.jpg" />
     <Content Include="Content\Images\career-ladder.jpg" />
     <Content Include="Content\Images\Courses\ip1.png" />
     <Content Include="Content\Images\Courses\ip2.png" />
@@ -194,6 +197,7 @@
     <Content Include="Content\Layout.css" />
     <Content Include="Content\SideBar.css" />
     <Content Include="Content\LearningPlan.css" />
+    <Content Include="Content\swiper-bundle.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
