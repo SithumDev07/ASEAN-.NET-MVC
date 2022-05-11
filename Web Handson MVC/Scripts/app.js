@@ -2,44 +2,44 @@
 const TopRatedCoursesData = [
     {
         id: 1,
-        title: "e-Learning course on Innovative Business Models for Expanding Fiber-Optic Networks and Closing the Access Gaps",
-        imageSrc: "./Content/Images/Courses/nr1.png",
+        title: "Enhancing FCV Operations with Geospatial ICT Tools",
+        imageSrc: "https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
         rating: 5,
     },
     {
         id: 2,
-        title: "Land Pooling / Land Readjustment: An Alternative to Compulsory Land Acquisition",
-        imageSrc: "./Content/Images/Courses/nr2.png",
+        title: "Post-Approval Changes to Marketing Authorizations Training",
+        imageSrc: "https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
         rating: 5,
     },
     {
         id: 3,
-        title: "Impact Evaluation Methods with Applications in Low- and Middle-Income Countries",
-        imageSrc: "./Content/Images/Courses/nr3.png",
+        title: "Land Pooling / Readjustment : An Alternative to Compulsory Land Acquisition (Self-Paced)",
+        imageSrc: "https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
         rating: 5,
     },
     {
         id: 4,
-        title: "Introduction to Public Expenditure and Financial Accountability (PEFA)",
-        imageSrc: "./Content/Images/Courses/nr4.png",
+        title: "IFC IQ-Healthcare: Patient Safety Training",
+        imageSrc: "https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
         rating: 5,
     },
     {
         id: 5,
-        title: "Investing in Quality Infrastructure for a Green, Inclusive and Resilient Recovery",
-        imageSrc: "./Content/Images/Courses/nr5.png",
+        title: "Smart Cities for Global Frontier Infrastructure (Virtual Knowledge Exchange)",
+        imageSrc: "https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
         rating: 5,
     },
     {
         id: 6,
-        title: "Digital Dividends: Strengthening the Analog Foundation of the Digital Revolution",
-        imageSrc: "./Content/Images/Courses/nr6.png",
+        title: "Land Pooling/Readjustment: An Alternative to Compulsory Land Acquisition (Self-Paced)",
+        imageSrc: "https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
         rating: 5,
     },
     {
         id: 7,
-        title: "The Hidden Side of Energy Access: Clean Cooking",
-        imageSrc: "./Content/Images/Courses/nr7.png",
+        title: "Smart Cities for Global Frontier Infrastructure (Virtual Knowledge Exchange)",
+        imageSrc: "https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
         rating: 5,
     },
 ];
@@ -47,44 +47,44 @@ const TopRatedCoursesData = [
 const InProgressCoursesData = [
     {
         id: 1,
-        title: "Urban Upgrading for Inclusion, Sustainability and Resilience in a time of Global Pandemics",
-        imageSrc: "./Content/Images/Courses/ip1.png",
+        title: "Enhancing FCV Operations with Geospatial ICT Tools",
+        imageSrc: "https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
         rating: 2,
     },
     {
         id: 2,
-        title: "GREENTECH: Mainstreaming Technologies in Green, Blue and Clean Operations",
-        imageSrc: "./Content/Images/Courses/ip2.png",
+        title: "Post-Approval Changes to Marketing Authorizations Training",
+        imageSrc: "https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
         rating: 3,
     },
     {
         id: 3,
-        title: "Strengthening Geospatial Information Management: Using the Integrated Geospatial Information Framework (Virtual Knowledge Exchange)",
-        imageSrc: "./Content/Images/Courses/ip3.png",
+        title: "Land Pooling / Readjustment : An Alternative to Compulsory Land Acquisition (Self-Paced)",
+        imageSrc: "https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
         rating: 5,
     },
     {
         id: 4,
-        title: "e-Learning course on Appraising the wider Economic Benefits of Transport Corridor Investments",
-        imageSrc: "./Content/Images/Courses/ip4.png",
+        title: "IFC IQ-Healthcare: Patient Safety Training",
+        imageSrc: "https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
         rating: 4,
     },
     {
         id: 5,
-        title: "e-Learning course on Railway Financing",
-        imageSrc: "./Content/Images/Courses/ip5.png",
+        title: "Smart Cities for Global Frontier Infrastructure (Virtual Knowledge Exchange)",
+        imageSrc: "https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
         rating: 0,
     },
     {
         id: 6,
-        title: "Strengthening Geospatial Information Management: Using the Integrated Geospatial Information Framework",
-        imageSrc: "./Content/Images/Courses/ip6.png",
+        title: "Land Pooling/Readjustment: An Alternative to Compulsory Land Acquisition (Self-Paced)",
+        imageSrc: "https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
         rating: 1,
     },
     {
         id: 7,
-        title: "The Hidden Side of Energy Access: Understanding Clean Cooking (Virtual Knowledge Exchange)",
-        imageSrc: "./Content/Images/Courses/ip7.png",
+        title: "Smart Cities for Global Frontier Infrastructure (Virtual Knowledge Exchange)",
+        imageSrc: "https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
         rating: 5,
     },
 ];
@@ -92,44 +92,44 @@ const InProgressCoursesData = [
 const newAndRecommendedCoursesData = [
     {
         id: 1,
-        title: "Unlocking Investment and Finance in Emerging Markets and Developing Economies (EMDEs)",
-        imageSrc: "./Content/Images/Courses/tr2.png",
+        title: "Enhancing FCV Operations with Geospatial ICT Tools",
+        imageSrc: "https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
         rating: 3,
     },
     {
         id: 2,
-        title: "Think Road Safety – Road Safety Training for External Partners",
-        imageSrc: "./Content/Images/Courses/tr7.png",
+        title: "Post-Approval Changes to Marketing Authorizations Training",
+        imageSrc: "https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
         rating: 5,
     },
     {
         id: 3,
-        title: "Trading for Development in the Age of Global Value Chains - Word Development Report 2020",
-        imageSrc: "./Content/Images/Courses/tr6.png",
+        title: "Land Pooling / Readjustment : An Alternative to Compulsory Land Acquisition (Self-Paced)",
+        imageSrc: "https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
         rating: 1,
     },
     {
         id: 4,
-        title: "Smart Cities for Sustainable Development",
-        imageSrc: "./Content/Images/Courses/tr4.png",
+        title: "IFC IQ-Healthcare: Patient Safety Training",
+        imageSrc: "https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
         rating: 0,
     },
     {
         id: 5,
-        title: "Data for Better Lives: A New Social Contract - Self Paced",
-        imageSrc: "./Content/Images/Courses/tr5.png",
+        title: "Smart Cities for Global Frontier Infrastructure (Virtual Knowledge Exchange)",
+        imageSrc: "https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
         rating: 4,
     },
     {
         id: 6,
-        title: "e-Learning on Digital Agriculture",
-        imageSrc: "./Content/Images/Courses/tr3.png",
+        title: "Land Pooling/Readjustment: An Alternative to Compulsory Land Acquisition (Self-Paced)",
+        imageSrc: "https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
         rating: 4,
     },
     {
         id: 7,
-        title: "Solid Waste Management",
-        imageSrc: "./Content/Images/Courses/tr1.png",
+        title: "Smart Cities for Global Frontier Infrastructure (Virtual Knowledge Exchange)",
+        imageSrc: "https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
         rating: 5,
     },
 ];
@@ -138,16 +138,16 @@ const newAndRecommendedCoursesData = [
 const populdateNews = (element, actions, dataSet) => {
     dataSet.map(({ id, title, imageSrc, rating }) => {
 
-        if (title.length > 60) {
+        if (title.length > 50) {
             if (window.innerWidth < 769) {
                 title = title.slice(0, 40) + '...';
             } else {
-                title = title.slice(0, 60) + '...';
+                title = title.slice(0, 50) + '...';
             }
         }
 
         const newsEle = `
-        <div class="card border-0 course-card">
+        <div class="card border-0">
             <img class="rounded card-img-top" src="${imageSrc}">
             <div class="card-body p-0">
                 <h4 class="card-title mt-2 course-card-title">${title}</h4>
@@ -208,6 +208,97 @@ populdateNews(document.querySelector('#in_progress_courses'), ['Resume', 'Go To 
 
 populdateNews(document.querySelector('#new_recommendations_courses'), ['Register', 'Go To Plan'], newAndRecommendedCoursesData);
 
+
+const myLearningPlanData = [
+    {
+        id: 1,
+        courseTitle: "Enhancing FCV Operations with Geospatial ICT Tools",
+        courseCategory: "Orientation",
+        courseStatus: "In Progress",
+        lableColor: 'yellow',
+        dueDate: "25-JUN-2022",
+        action: "Resume",
+        mandatory: false,
+    },
+    {
+        id: 2,
+        courseTitle: "Post-Approval Changes to Marketing Authorizations Training",
+        courseCategory: "Skill Development",
+        courseStatus: "Completed",
+        lableColor: 'green',
+        dueDate: "9-MAY-2022",
+        action: "Print Certificate",
+        mandatory: false,
+    },
+    {
+        id: 3,
+        courseTitle: "Land Pooling / Readjustment : An Alternative to Compulsory Land Acquisition (Self-Paced)",
+        courseCategory: "Orientation",
+        courseStatus: "Pending",
+        lableColor: 'blue',
+        dueDate: "18-JULY-2023",
+        action: "Register",
+        mandatory: true,
+    },
+    {
+        id: 4,
+        courseTitle: "IFC IQ-Healthcare: Patient Safety Training",
+        courseCategory: "Orientation",
+        courseStatus: "Expired",
+        lableColor: 'red',
+        dueDate: "18-MAY-2022",
+        action: "Register",
+        mandatory: false,
+    },
+    {
+        id: 5,
+        courseTitle: "Smart Cities for Global Frontier Infrastructure (Virtual Knowledge Exchange)",
+        courseCategory: "Orientation",
+        courseStatus: "Expired",
+        lableColor: 'red',
+        dueDate: "18-MAY-2022",
+        action: "Register",
+        mandatory: false,
+    }
+]
+
+const populateMyLearningCourses = (element, dataSet) => {
+    dataSet.slice(0, 4).map(({ courseTitle, courseStatus, dueDate, action, lableColor }) => {
+        let date = new Date(dueDate);
+        let today = new Date();
+        const oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
+        remainDays = Math.round(Math.abs((date - today) / oneDay));
+        if (courseTitle.length > 50) {
+            if (window.innerWidth < 769) {
+                courseTitle = courseTitle.slice(0, 40) + '...';
+            } else {
+                courseTitle = courseTitle.slice(0, 50) + '...';
+            }
+        }
+        const mylearningCard = `
+        <div class="myiconspan align-items-center position-relative ">
+            <i class="bi bi-mortarboard myplanicon "></i>
+            <i class="bi bi-exclamation-triangle-fill position-absolute warningicon d-block"></i>
+        </div>
+        <div class="content">
+            <h4>${courseTitle}</h4>
+            <p class="status-label status-label-${lableColor} mb-1 mb-xxl-2">${courseStatus}</p>
+            <div class="d-flex align-items-center mb-1 mb-xxl-3" ><p class="mb-0 remaindayscolum">18-DEC-2022</p><span class="mb-1 fst-italic ${remainDays > 5 ? 'remaindaystext' : 'endingremaindaystext'}">${remainDays} days more</span></div>
+            <a href="#">${action}</a>
+            </div>
+        `;
+
+        let divElement = document.createElement('div')
+        divElement.classList.add('d-flex')
+        divElement.classList.add('learning-card')
+        divElement.classList.add('mt-2')
+        divElement.innerHTML = mylearningCard;
+        element.appendChild(divElement);
+    })
+}
+
+populateMyLearningCourses(document.querySelector('.learning-card-wrapper'), myLearningPlanData)
+
 var swiper = new Swiper('.news-slider', {
     effect: 'coverflow',
     grabCursor: true,
@@ -233,6 +324,16 @@ var swiper = new Swiper('.news-slider', {
             spaceBetween: 30,
             slidesPerView: 3,
             centeredSlides: false
+        },
+        1025: {
+            spaceBetween: 30,
+            slidesPerView: 2,
+            centeredSlides: false
+        },
+        1920: {
+            spaceBetween: 30,
+            slidesPerView: 3,
+            centeredSlides: false
         }
     },
     simulateTouch: true,
@@ -242,8 +343,7 @@ var swiper = new Swiper('.news-slider', {
     },
 });
 
-
-let swiperInfinite = new Swiper(".mySwiper", {
+var swiper = new Swiper(".mySwiper", {
     spaceBetween: 0,
     centeredSlides: true,
     autoplay: {
@@ -251,3 +351,7 @@ let swiperInfinite = new Swiper(".mySwiper", {
         disableOnInteraction: false,
     },
 });
+
+const footer = document.querySelector('footer');
+const myPlanning = document.querySelector('.right-my-planning');
+myPlanning.style.bottom = `${footer.clientHeight}px`
