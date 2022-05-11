@@ -278,7 +278,7 @@ const populateMyLearningCourses = (element, dataSet) => {
         const mylearningCard = `
         <div class="myiconspan align-items-center position-relative ">
             <i class="bi bi-mortarboard myplanicon "></i>
-            <i class="bi bi-exclamation-triangle-fill position-absolute warningicon d-block"></i>
+            <i class="bi bi-exclamation-triangle-fill position-absolute warningicon ${mandatory ? 'd-block' : 'd-none'}"></i>
         </div>
         <div class="content">
             <h4>${courseTitle}</h4>
