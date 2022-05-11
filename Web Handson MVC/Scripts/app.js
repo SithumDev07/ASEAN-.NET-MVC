@@ -263,7 +263,7 @@ const myLearningPlanData = [
 ]
 
 const populateMyLearningCourses = (element, dataSet) => {
-    dataSet.slice(0, 4).map(({ courseTitle, courseStatus, dueDate, action, lableColor }) => {
+    dataSet.slice(0, 4).map(({ courseTitle, courseStatus, dueDate, action, lableColor, mandatory }) => {
         let date = new Date(dueDate);
         let today = new Date();
         const oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
