@@ -6,6 +6,11 @@
     z-index: 50;
 }
 
+.header-container-landing {
+    width: 95%;
+    margin: 0 auto;
+}
+
 .brand-name {
     margin-left: -1rem;
     font-weight: 600;

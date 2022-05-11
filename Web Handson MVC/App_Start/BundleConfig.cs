@@ -59,6 +59,7 @@ namespace Web_Handson_MVC
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/ColorsTypography.css",
+                      "~/Content/swiper-bundle.min.css",
                       "~/Content/app.css",
                       "~/Content/Header.css",
                       "~/Content/Footer.css",

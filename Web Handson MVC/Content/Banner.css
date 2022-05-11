@@ -1,14 +1,73 @@
-﻿.asean-banner {
-    height: 450px;
+﻿/* Infinite Swiper */
+
+.swiper-infinite {
+    width: 95%;
+    height: 475px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
     border-radius: 1rem;
-    background-image: url('./Images/banner-bg.png');
+    padding: 0;
+    z-index: 1;
+}
+
+.swiper-slide-infinite {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
+}
+
+    .swiper-slide-infinite img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+.asean-banner {
+    height: 100%;
+    border-radius: 1rem;
     background-repeat: no-repeat;
     background-size: cover;
-    aspect-ratio: 1;
     overflow: hidden;
     display: flex;
     justify-content: flex-end;
 }
+
+    .asean-banner.image1 {
+        background-image: url('./Images/Banner/banner1.jpg');
+    }
+
+    .asean-banner.image2 {
+        background-image: url('./Images/Banner/banner2.jpg');
+    }
+
+    .asean-banner.image3 {
+        background-image: url('./Images/Banner/banner3.jpg');
+    }
 
     .asean-banner a {
         text-decoration: none;
@@ -16,17 +75,26 @@
     }
 
 .title-banner {
-    width: 55%;
-    height: 100%;
+    width: 50%;
     color: var(--primary-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 0;
+    z-index: 30;
+    transform: translate(-25%, -50%);
 }
 
 .title-banner-content {
-    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
     .title-banner-content h2 {
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
+        font-size: 3rem;
     }
 
 .title-banner a {
@@ -45,15 +113,21 @@
     top: 0;
     bottom: 0;
     left: 0;
-    width: 40%;
+    width: 30%;
     border-radius: 0 500px 500px 0;
     color: white;
     padding: 2rem 0;
+    z-index: 40;
 }
 
 .left-floating-container {
     width: 100%;
     height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
 }
 
 .left-floating-banner .logo img, .mobile-banner-logo img {
@@ -64,6 +138,7 @@
 .left-floating-banner h3 {
     padding-left: 2rem;
     margin-top: 1.4rem;
+    margin-bottom: 2rem;
 }
 
 .left-floating-banner ul li {
@@ -87,6 +162,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     transform: translate(45%, 50%);
+    z-index: 20;
     /* overflow: hidden; */
 }
 
@@ -107,20 +183,41 @@
         width: 100%;
     }
 
+.mobile-banner-logo {
+    display: none;
+    position: absolute;
+    z-index: 40;
+    right: 0;
+    top: 0;
+}
+
+.left-floating-banner .logo {
+    display: block;
+}
+
 @media screen and (max-width: 1440px) {
-    .asean-banner {
-        min-height: 380px;
+
+    .swiper-infinite {
+        max-height: 380px;
     }
 
-    .left-floating-banner .logo img {
-        width: 10rem;
-        height: auto;
+    .title-banner-content h2 {
+        font-size: 2rem;
     }
 
-    .left-floating-banner h3 {
-        font-size: 1.2rem;
-        margin-bottom: 1.5rem;
+    .left-floating-banner {
+        width: 35%;
     }
+
+        .left-floating-banner .logo img {
+            width: 10rem;
+            height: auto;
+        }
+
+        .left-floating-banner h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
 
     .left-floating-banner {
         padding: 1rem 0;
@@ -129,61 +226,82 @@
         .left-floating-banner ul li a {
             font-size: 1rem;
         }
+
+    .bottom-floating-image {
+        transform: translate(50%, 63%);
+    }
+
+        .bottom-floating-image p {
+            font-size: 1rem;
+            transform: translate(-25%, -60%);
+        }
 }
 
 @media screen and (max-width: 1024px) {
-    .asean-banner {
-        min-height: 300px;
+    .mobile-banner-logo {
+        display: block;
+    }
+
+    .swiper-infinite {
+        max-height: 320px;
     }
 
     .left-floating-banner {
-        width: 45%;
+        width: 42%;
     }
 
-        .left-floating-banner .logo img, .mobile-banner-logo img {
+        .left-floating-banner .logo {
+            display: none;
+        }
+
+    .mobile-banner-logo {
+        right: -1rem;
+        top: 1rem;
+    }
+
+        .mobile-banner-logo img {
             width: 9rem;
             height: auto;
         }
 
-        .left-floating-banner h3 {
-            margin-bottom: 2rem;
-            margin-top: .8rem;
-        }
+    .left-floating-banner h3 {
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+
+    .left-floating-banner ul li {
+        margin-top: 1rem;
+    }
 
         .left-floating-banner ul li a {
             font-size: 1rem;
         }
 
-        .left-floating-banner .logo, .mobile-banner-logo {
-            position: absolute;
-            right: 1rem;
-            top: 1rem;
-        }
-
     .bottom-floating-image {
-        transform: translate(50%, 65%);
+        transform: translate(49%, 70%);
     }
 
         .bottom-floating-image p {
-            font-size: 1.125rem;
-            transform: translate(-25%, -60%);
-            width: 30%;
+            transform: translate(-25%, -85%);
         }
 
-    .title-banner {
-        width: 50%;
+    .title-banner a {
+        font-size: .9rem !important;
     }
 
-        .title-banner a {
-            font-size: .9rem !important;
-        }
+    .title-banner {
+        transform: translate(-10%, -50%);
+    }
 }
 
 @media screen and (max-width: 786px) {
 
-    .asean-banner {
-        max-height: 275px;
-        min-height: auto;
+    .swiper-infinite {
+        max-height: 300px;
+    }
+
+    .left-floating-banner {
+        width: 48%;
     }
 
     .mobile-banner-logo {
@@ -200,17 +318,27 @@
     }
 
     .left-floating-banner h3 {
+        width: 75%;
         margin-bottom: 1rem;
-        margin-top: 0rem;
+        margin-top: 0.6rem;
     }
+
+    .bottom-floating-image {
+        width: 20rem;
+        height: 20rem;
+        transform: translate(47%, 60%);
+    }
+
+        .bottom-floating-image p {
+            font-size: .9rem;
+            transform: translate(-25%, -62%);
+        }
 }
 
 @media screen and (max-width: 480px) {
 
-    .asean-banner {
-        min-height: 560px !important;
-        background-image: url('./Images/banner-mobile.png');
-        min-height: auto;
+    .swiper-infinite {
+        min-height: 600px;
     }
 
     .left-floating-banner {
@@ -221,7 +349,7 @@
         top: unset;
         left: 50%;
         transform: translateX(-50%);
-        width: 85%;
+        width: 90%;
     }
 
     .mobile-banner-logo {
@@ -231,26 +359,18 @@
     }
 
     .title-banner {
-        padding-top: 9rem;
-        justify-content: flex-start !important;
-    }
-
-    .title-banner-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-        .title-banner-content a {
-            margin-top: -.5rem;
-        }
-
-        .title-banner-content h2 {
-            text-align: center;
-        }
-
-    .title-banner, .title-banner-content {
         width: 100%;
+        top: 32%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .title-banner-content a {
+        margin-top: -.5rem;
+    }
+
+    .title-banner-content h2 {
+        text-align: center;
     }
 
     .bottom-floating-image {
@@ -266,7 +386,7 @@
         .bottom-floating-image p {
             transform: translateX(70%);
             transform: translateY(100%);
-            top: 30%;
+            top: 40%;
             left: unset;
             right: 35%;
             width: 40%;
@@ -274,7 +394,17 @@
         }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 375px) {
+    .swiper-infinite {
+        max-height: unset;
+        min-height: 580px !important;
+    }
+
+    .title-banner {
+        width: 90%;
+        top: 38%;
+    }
+
     .left-floating-banner {
         width: 95%;
     }
@@ -289,5 +419,9 @@
 
     .title-banner-content h2 {
         font-size: 1.2rem;
+    }
+
+    .title-banner-content a {
+        margin-bottom: 2rem;
     }
 }

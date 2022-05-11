@@ -2,18 +2,19 @@
     ViewBag.Title = "Home Page";
 }
 
-<main class="container pt-4 mb-5" style="margin-top: 6rem;">
+<main class="pt-4 mb-5" style="margin-top: 6rem;">
 
-    <div class="container banner-img img-fluid rounded position-relative asean-banner">
-        <div class="mobile-banner-logo logo d-lg-none">
-            <img src="~/Content/Images/asean-logo.png" alt="ASEAN Logo">
+    <!-- Infinite Swiper -->
+    <div class="swiper-infinite mySwiper">
+        <div class="mobile-banner-logo logo">
+            <img src="./Content/Images/asean-logo.png" alt="ASEAN Logo">
         </div>
         <div class="left-floating-banner position-absolute">
             <div class="position-relative left-floating-container">
-                <div class="logo d-none d-lg-block">
-                    <img src="~/Content/Images/asean-logo.png" alt="ASEAN Logo">
+                <div class="logo">
+                    <img src="./Content/Images/asean-logo.png" alt="ASEAN Logo">
                 </div>
-                <h3 class="h3">Shortcuts</h3>
+                <h3 class="h3">Learning Management System</h3>
                 <ul>
                     <li>
                         <a href="">
@@ -58,9 +59,9 @@
                 </ul>
             </div>
         </div>
+
         <div class="d-flex align-content-center justify-content-center flex-column title-banner">
             <div class="title-banner-content">
-                <!-- <h2>Everything you need to know about IFS Re-Certification</h2> -->
                 <h2>ASEAN, AIIB, MCDF, foster partnership in infrastructure</h2>
                 <a href="button" class="ps-4 pe-4 pt-3 pb-3 fs-5">Learn More</a>
             </div>
@@ -71,10 +72,15 @@
                 <p>ASEAN, AIIB, foster partnership in infrastructure</p>
             </div>
         </div>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide asean-banner image1"></div>
+            <div class="swiper-slide asean-banner image2"></div>
+            <div class="swiper-slide asean-banner image3"></div>
+        </div>
     </div>
-
+    <!-- End of Infinite Swiper -->
     <!-- TOP RATED COURSES -->
-    <div class="mt-4">
+    <div class="mt-4 container">
         <div class="title-container d-flex align-items-center justify-content-between">
             <h2>Top Rated</h2>
         </div>
@@ -88,7 +94,7 @@
                         </svg>
                     </span>
                 </button>
-                <div class="news-slider__wrp swiper-wrapper">
+                <div class="news-slider__wrp swiper-wrapper"  id="toprated_courses">
                 </div>
 
                 <button class="news-slider__arrow news-slider-next">
@@ -104,7 +110,7 @@
     </div>
     <!-- END OF TOP RATED COURSES -->
     <!-- IN PROGRESS COURSES -->
-    <div class="top-rated-courses">
+    <div class="top-rated-courses container">
         <div class="title-container d-flex align-items-center justify-content-between">
             <h2>In Progress</h2>
         </div>
@@ -135,7 +141,7 @@
     </div>
     <!-- END OF IN PROGRESS COURSES -->
     <!-- NEW & RECOMMENDATIONS COURSES -->
-    <div class="top-rated-courses mt-4">
+    <div class="top-rated-courses mt-4 container">
         <div class="title-container d-flex align-items-center justify-content-between">
             <h2>New & Recommended</h2>
         </div>

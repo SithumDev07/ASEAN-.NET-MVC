@@ -141,6 +141,10 @@ html {
     font-size: 1.4rem;
 }
 
+.course-card img {
+    min-height: 15rem; /*12.25  13.75 16.25 14.5*/
+}
+
 @media screen and (max-width: 1440px) {
     .course-card-title {
         min-height: 2.5rem;
@@ -149,6 +153,9 @@ html {
 }
 
 @media screen and (max-width: 1024px) {
+    .course-card img {
+        min-height: 12.25rem; /*12.25  13.75 16.25 14.5*/
+    }
     .course-card-title {
         font-size: 1rem;
     }
@@ -162,14 +169,26 @@ html {
 }
 
 @media screen and (max-width: 768px) {
+    .course-card img {
+        min-height: 13.75rem; /*12.25  13.75 16.25 14.5*/
+    }
     .course-card-title {
         min-height: 2.5rem;
     }
 }
 
 @media screen and (max-width: 480px) {
+    .course-card img {
+        min-height: 16.25rem; /*12.25  13.75 16.25 14.5*/
+    }
     .course-card-title {
         font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .course-card img {
+        min-height: 14.5rem; /*12.25  13.75 16.25 14.5*/
     }
 }
 
