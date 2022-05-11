@@ -45,11 +45,9 @@
 
     .table tr th {
         color: var(--text-color-shaded);
+        align-items: center;
     }
 
-.remaindaystext {
-    font-size: 0.7rem;
-}
 
 .remaindayscolum {
     font-size: 0.8rem;
@@ -89,6 +87,12 @@ a {
 
 .coursetitle {
     max-width: 25vw;
+}
+
+.table td {
+    align-items: center;
+    background-color: #0060A9;
+    height: 100%;
 }
 
 .sort-btn-table {
