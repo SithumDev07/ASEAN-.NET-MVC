@@ -2,7 +2,7 @@
 
 .tabledatawrapper {
     width: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     margin: 25px 0;
     border-radius: 0.4rem;
     overflow: hidden;
@@ -11,7 +11,7 @@
     .tabledatawrapper thead tr {
         text-align: left;
         align-items: top;
-        color: #B1B1B1;
+        color: var(--tableheader-text-color);
         padding: 1.7rem 2rem;
     }
 
@@ -20,8 +20,7 @@
         font-size: medium;
         font-weight: 600;
         text-align: left;
-        color: #B3B3B3;
-        border-bottom: 1px solid rgb(230, 230, 230);
+        border-bottom: 1px solid var(--tableheader-bottomline-color);
         margin: 15px 0;
         align-items: center;
     }
@@ -32,11 +31,11 @@
         justify-content: center;
         font-size: medium;
         font-weight: 500;
-        color: #6B736F;
+        color: var(--table-body-text-color);
     }
 
     .tabledatawrapper tbody tr:hover {
-        background-color: #E8F4F7;
+        background-color: var(--table-row-hover-color);
     }
 
 .table {
@@ -45,11 +44,9 @@
 
     .table tr th {
         color: var(--text-color-shaded);
+        align-items: center;
     }
 
-.remaindaystext {
-    font-size: 0.7rem;
-}
 
 .remaindayscolum {
     font-size: 0.8rem;
@@ -58,11 +55,11 @@
 
 a {
     text-decoration: none !important;
-    color: #0060A9 !important;
+    color: var(--primary-color) !important;
 }
 
 .deletebtn {
-    background-color: #F1F3F4;
+    background-color: var(--table-rowdrop-background-color);
     border-radius: 5rem;
     border: 0;
     padding: 0.2rem 0.5rem !important;
@@ -72,7 +69,7 @@ a {
 .optionmenu {
     position: absolute;
     list-style: none;
-    background-color: #FE4A4A;
+    background-color: var(--danger-red);
     text-align: center;
     bottom: -1.4rem;
     right: 1rem;
@@ -84,11 +81,17 @@ a {
         border: 0;
         background-color: transparent;
         padding: 0.3rem 1rem;
-        color: #E8F4F7;
+        color: var(--primary-color-light);
     }
 
 .coursetitle {
     max-width: 25vw;
+}
+
+.table td {
+    align-items: center;
+    background-color: var(--primary-color);
+    height: 100%;
 }
 
 .sort-btn-table {
@@ -109,7 +112,7 @@ a {
 }
 
     .sort-btn-table:hover {
-        background-color: #E8F4F7;
+        background-color: var(--table-sort-hover-color);
     }
 
 .header-arrows {

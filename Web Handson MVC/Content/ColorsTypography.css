@@ -14,9 +14,15 @@
     --toggle-color: #DDD;
     --text-color: #707070;
     --text-color-shaded: #212529;
+    --tableheader-text-color: #B1B1B1;
+    --table-row-hover-color: #E8F4F7;
+    --table-body-text-color: #6B736F;
+    --table-rowdrop-background-color: #F1F3F4;
+    --tableheader-bottomline-color: rgb(230, 230, 230);
+    --table-sort-hover-color: #E8F4F7;
     --star-color-amber: #ffa500;
     --success-green: #22c55e;
-    --danger-red: #dc2626;
+    --danger-red: #FE4A4A;
     --selection-color: #fff;
     --slider-background-color: #222222;
     --slider-arrow-background-color: #fff;
