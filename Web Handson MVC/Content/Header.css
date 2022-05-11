@@ -16,6 +16,10 @@
     font-weight: 600;
 }
 
+.navbar-brand {
+    color: var(--asean-red);
+}
+
 @media screen and (max-width: 480px) {
     .header-logo-wrapper {
         justify-content: space-between;
