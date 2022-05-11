@@ -50,6 +50,34 @@
     border: 1px solid var(--danger-red);
 }
 
+.myiconspan {
+    border-radius: 2rem;
+    padding: 0.4rem 0.8rem;
+    margin-right: 0.8rem;
+    background-color: var(--primary-color);
+}
+
+.myplanicon {
+    font-size: 1.7rem;
+    color: white;
+}
+
+.warningicon {
+    font-size: medium;
+    right: 0;
+    bottom: -0.3rem;
+    color: var(--danger-red);
+}
+
+.remaindaystext {
+    color: var(--text-color);
+    font-size: small;
+}
+
+.endingremaindaystext {
+    color: var(--danger-red);
+    font-size: small;
+}
 
 @media only screen and (max-width: 1025px) {
 
@@ -86,27 +114,28 @@
     }
 }
 
-    @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 
-        .chart-monitor {
-            width: 60vw;
-        }
-
-        .chartContainer {
-            height: 20vh;
-            width: 50vw;
-        }
+    .chart-monitor {
+        width: 60vw;
     }
 
-
-    @media only screen and (max-width: 600px) {
-
-        .chart-monitor {
-            width: 100%;
-            margin: 0 auto;
-        }
-
-        .chartmg {
-            padding-left: 0 !important;
-        }
+    .chartContainer {
+        height: 20vh;
+        width: 50vw;
     }
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .chart-monitor {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .chartContainer {
+        height: 20vh;
+        width: 80vw;
+    }
+}
