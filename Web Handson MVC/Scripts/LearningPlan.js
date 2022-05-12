@@ -10,7 +10,7 @@ const CoursesandCertificateContainer = document.querySelector("#tableData");
 const dataSet = [
     {
         id: 1,
-        courseTitle: "Introduction to project Managment",
+        courseTitle: "Land Pooling / Land Readjustment: An Alternative to Compulsory Land Acquisition",
         courseCategory: "Orientation",
         courseStatus: "In Progress",
         lableColor: 'yellow',
@@ -20,7 +20,7 @@ const dataSet = [
     },
     {
         id: 2,
-        courseTitle: "Basic Mathematics",
+        courseTitle: "Impact Evaluation Methods with Applications in Low- and Middle-Income Countries",
         courseCategory: "Skill Development",
         courseStatus: "Completed",
         lableColor: 'green',
@@ -30,25 +30,56 @@ const dataSet = [
     },
     {
         id: 3,
-        courseTitle: "Algebra - Basic Concepts of Algebra",
+        courseTitle: "Strengthening Geospatial Information Management: Using the Integrated Geospatial Information Framework (Virtual Knowledge Exchange)",
         courseCategory: "Orientation",
         courseStatus: "Pending",
         lableColor: 'blue',
-        dueDate: "18-JULY-2023",
+        dueDate: "18-JUL-2022",
         action: "Register",
         mandatory: true,
     },
     {
         id: 4,
-        courseTitle: "Land Pooling / Readjustment : An Alternative to Compulsory Land Acquisition (Self-Paced)",
+        courseTitle: "Investing in Quality Infrastructure for a Green, Inclusive and Resilient Recovery",
+        courseCategory: "Orientation",
+        courseStatus: "In Progress",
+        lableColor: 'yellow',
+        dueDate: "15-MAY-2022",
+        action: "Register",
+        mandatory: false,
+    },
+    {
+        id: 5,
+        courseTitle: "e - Learning course on Railway Financing",
+        courseCategory: "Orientation",
+        courseStatus: "Completed",
+        lableColor: 'green',
+        dueDate: "12-JUL-2022",
+        action: "Register",
+        mandatory: true,
+    },
+    {
+        id: 6,
+        courseTitle: "Strengthening Geospatial Information Management: Using the Integrated Geospatial Information Framework",
+        courseCategory: "Orientation",
+        courseStatus: "In Progress",
+        lableColor: 'yellow',
+        dueDate: "06-SEP-2022",
+        action: "Register",
+        mandatory: false,
+    },
+    {
+        id: 7,
+        courseTitle: "The Hidden Side of Energy Access: Understanding Clean Cooking(Virtual Knowledge Exchange)",
         courseCategory: "Orientation",
         courseStatus: "Expired",
         lableColor: 'red',
-        dueDate: "18-MAY-2022",
+        dueDate: "11-MAY-2022",
         action: "Register",
-        mandatory: false,
+        mandatory: true,
     }
 ]
+
 
 const initiateTableData = (element) => {
 

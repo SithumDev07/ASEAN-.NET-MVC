@@ -9,7 +9,7 @@
     },
     {
         id: 2,
-        title: "Climate Mitigation in Action – Sector-Specific Strategies and Approaches",
+        title: "Digital Dividends: Strengthening the Analog Foundation of the Digital Revolution",
         category: "Orientation",
         duedata: "28-APR-2022 - 28-MAY-2022",
         actionLink: "View Courses",
@@ -17,7 +17,7 @@
     },
     {
         id: 3,
-        title: "Climate Mitigation in Action – Sector-Specific Strategies and Approaches",
+        title: "The Hidden Side of Energy Access: Clean Cooking",
         category: "Orientation",
         duedata: "28-APR-2022 - 28-MAY-2022",
         actionLink: "View Courses",
@@ -25,7 +25,7 @@
     },
     {
         id: 4,
-        title: "Climate Mitigation in Action – Sector-Specific Strategies and Approaches",
+        title: "Impact Evaluation Methods with Applications in Low- and Middle-Income Countries",
         category: "Orientation",
         duedata: "28-APR-2022 - 28-MAY-2022",
         actionLink: "View Courses",
@@ -33,7 +33,7 @@
     },
     {
         id: 5,
-        title: "Climate Mitigation in Action – Sector-Specific Strategies and Approaches",
+        title: "Strengthening Geospatial Information Management: Using the Integrated Geospatial Information Framework (Virtual Knowledge Exchange)",
         category: "Orientation",
         duedata: "28-APR-2022 - 28-MAY-2022",
         actionLink: "View Courses",
@@ -62,7 +62,7 @@ const populdateNews = (element) => {
                 <i class="bi bi-three-dots "></i>
             </button></div>
                 <ul class="optionmenu p-0 m-0 shadow d-none">
-                    <li><button>Delete</button></li>
+                    <li><button>Drop</button></li>
                 </ul>
             </td>
         `;

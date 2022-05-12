@@ -1,7 +1,7 @@
 ﻿const CoursesData = [
     {
         id: 1,
-        title: "Climate Mitigation in Action – Sector-Specific Strategies and Approaches",
+        title: "Unlocking Investment and Finance in Emerging Markets and Developing Economies (EMDEs)",
         category: "Orientation",
         duedata: "28-APR-2022",
         submissions: 7,
@@ -19,8 +19,8 @@
     },
     {
         id: 3,
-        title: "Climate Mitigation in Action – Sector-Specific Strategies and Approaches",
-        category: "Orientation",
+        title: "Think Road Safety – Road Safety Training for External Partners",
+        category: "Skill Development",
         duedata: "28-APR-2022",
         submissions: 7,
         actionLink: "View Submission",
@@ -28,7 +28,7 @@
     },
     {
         id: 4,
-        title: "Climate Mitigation in Action – Sector-Specific Strategies and Approaches",
+        title: "Smart Cities for Sustainable Development",
         category: "Orientation",
         duedata: "28-APR-2022",
         submissions: 7,
@@ -37,7 +37,7 @@
     },
     {
         id: 5,
-        title: "Climate Mitigation in Action – Sector-Specific Strategies and Approaches",
+        title: "e-Learning on Digital Agriculture",
         category: "Orientation",
         duedata: "28-APR-2022",
         submissions: 7,
@@ -45,8 +45,8 @@
         mandatory: true,
     },
     {
-        id: 5,
-        title: "Climate Mitigation in Action – Sector-Specific Strategies and Approaches",
+        id: 6,
+        title: "Strengthening Geospatial Information Management: Using the Integrated Geospatial Information Framework (Virtual Knowledge Exchange)",
         category: "Orientation",
         duedata: "28-APR-2022",
         submissions: 7,
@@ -54,8 +54,8 @@
         mandatory: false,
     },
     {
-        id: 5,
-        title: "Climate Mitigation in Action – Sector-Specific Strategies and Approaches",
+        id: 7,
+        title: "e-Learning course on Appraising the wider Economic Benefits of Transport Corridor Investments",
         category: "Orientation",
         duedata: "28-APR-2022",
         submissions: 7,
@@ -63,7 +63,16 @@
         mandatory: true,
     },
     {
-        id: 5,
+        id: 8,
+        title: "The Hidden Side of Energy Access: Understanding Clean Cooking (Virtual Knowledge Exchange)",
+        category: "Orientation",
+        duedata: "28-APR-2022",
+        submissions: 7,
+        actionLink: "View Submission",
+        mandatory: false,
+    },
+    {
+        id: 9,
         title: "Climate Mitigation in Action – Sector-Specific Strategies and Approaches",
         category: "Orientation",
         duedata: "28-APR-2022",
@@ -72,17 +81,8 @@
         mandatory: false,
     },
     {
-        id: 5,
-        title: "Climate Mitigation in Action – Sector-Specific Strategies and Approaches",
-        category: "Orientation",
-        duedata: "28-APR-2022",
-        submissions: 7,
-        actionLink: "View Submission",
-        mandatory: false,
-    },
-    {
-        id: 5,
-        title: "Climate Mitigation in Action – Sector-Specific Strategies and Approaches",
+        id: 10,
+        title: "Unlocking Investment and Finance in Emerging Markets and Developing Economies (EMDEs)",
         category: "Orientation",
         duedata: "28-APR-2022",
         submissions: 7,
@@ -90,8 +90,8 @@
         mandatory: true,
     },
     {
-        id: 5,
-        title: "Climate Mitigation in Action – Sector-Specific Strategies and Approaches",
+        id: 11,
+        title: "Trading for Development in the Age of Global Value Chains - Word Development Report 2020",
         category: "Orientation",
         duedata: "28-APR-2022",
         submissions: 7,
@@ -123,7 +123,7 @@ const populdateNews = (element) => {
                 <i class="bi bi-three-dots "></i>
             </button></div>
                 <ul class="optionmenu p-0 m-0 shadow d-none">
-                    <li><button>Delete</button></li>
+                    <li><button>Drop</button></li>
                 </ul>
             </td>
         `;
