@@ -17,8 +17,12 @@
 }
 
 .navbar-brand {
-    color: var(--asean-red);
+    color: var(--primary-color);
 }
+
+    .navbar-brand:hover {
+        color: var(--primary-color);
+    }
 
 @media screen and (max-width: 480px) {
     .header-logo-wrapper {

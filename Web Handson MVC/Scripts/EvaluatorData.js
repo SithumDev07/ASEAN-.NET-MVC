@@ -1,93 +1,130 @@
-﻿$(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-})
-
-const CoursesData = [
+﻿const CoursesData = [
     {
         id: 1,
         title: "Climate Mitigation in Action – Sector-Specific Strategies and Approaches",
         category: "Orientation",
-        dueDate: "28-APR-2022",
+        duedata: "28-APR-2022",
         submissions: 7,
         actionLink: "View Submission",
+        mandatory: false,
     },
     {
         id: 2,
-        title: "ClimInvesting in Quality Infrastructure for a Green, Inclusive and Resilient Recovery",
+        title: "Climate Mitigation in Action – Sector-Specific Strategies and Approaches",
         category: "Orientation",
-        dueDate: "12-DEC-2022",
-        submissions: 21,
+        duedata: "28-APR-2022",
+        submissions: 7,
         actionLink: "View Submission",
+        mandatory: true,
     },
     {
         id: 3,
-        title: "Leadership and Innovation Program (E-Course1) (Self-Paced)",
+        title: "Climate Mitigation in Action – Sector-Specific Strategies and Approaches",
         category: "Orientation",
-        dueDate: "12-MAR-2022",
-        submissions: 1,
+        duedata: "28-APR-2022",
+        submissions: 7,
         actionLink: "View Submission",
+        mandatory: false,
     },
     {
         id: 4,
-        title: "Improve the Safety of High-Alert Medications (HAMs) (Self-Paced)",
+        title: "Climate Mitigation in Action – Sector-Specific Strategies and Approaches",
         category: "Orientation",
-        dueDate: "04-JAN-2022",
-        submissions: 44,
+        duedata: "28-APR-2022",
+        submissions: 7,
         actionLink: "View Submission",
+        mandatory: false,
     },
     {
         id: 5,
-        title: "Leadership and Innovation Program (E-Course2) (Self-Paced)",
+        title: "Climate Mitigation in Action – Sector-Specific Strategies and Approaches",
         category: "Orientation",
-        dueDate: "28-JAN-2022",
-        submissions: 78,
-        actionLink: "View Submission",
-    },
-    {
-        id: 6,
-        title: "Building a Safe Surgery Culture (Self-Paced)",
-        category: "Orientation",
-        dueDate: "28-JUL-2022",
-        submissions: 2,
-        actionLink: "View Submission",
-    },
-    {
-        id: 7,
-        title: "Improving Effective Communication (Self-Paced)",
-        category: "Orientation",
-        dueDate: "28-FEB-2021",
-        submissions: 5,
-        actionLink: "View Submission",
-    },
-    {
-        id: 8,
-        title: "Introduction to the Geo-Enabling Initiative for Monitoring and Supervision (GEMS) (Self-Paced)",
-        category: "Orientation",
-        dueDate: "28-NOV-2022",
+        duedata: "28-APR-2022",
         submissions: 7,
         actionLink: "View Submission",
+        mandatory: true,
     },
+    {
+        id: 5,
+        title: "Climate Mitigation in Action – Sector-Specific Strategies and Approaches",
+        category: "Orientation",
+        duedata: "28-APR-2022",
+        submissions: 7,
+        actionLink: "View Submission",
+        mandatory: false,
+    },
+    {
+        id: 5,
+        title: "Climate Mitigation in Action – Sector-Specific Strategies and Approaches",
+        category: "Orientation",
+        duedata: "28-APR-2022",
+        submissions: 7,
+        actionLink: "View Submission",
+        mandatory: true,
+    },
+    {
+        id: 5,
+        title: "Climate Mitigation in Action – Sector-Specific Strategies and Approaches",
+        category: "Orientation",
+        duedata: "28-APR-2022",
+        submissions: 7,
+        actionLink: "View Submission",
+        mandatory: false,
+    },
+    {
+        id: 5,
+        title: "Climate Mitigation in Action – Sector-Specific Strategies and Approaches",
+        category: "Orientation",
+        duedata: "28-APR-2022",
+        submissions: 7,
+        actionLink: "View Submission",
+        mandatory: false,
+    },
+    {
+        id: 5,
+        title: "Climate Mitigation in Action – Sector-Specific Strategies and Approaches",
+        category: "Orientation",
+        duedata: "28-APR-2022",
+        submissions: 7,
+        actionLink: "View Submission",
+        mandatory: true,
+    },
+    {
+        id: 5,
+        title: "Climate Mitigation in Action – Sector-Specific Strategies and Approaches",
+        category: "Orientation",
+        duedata: "28-APR-2022",
+        submissions: 7,
+        actionLink: "View Submission",
+        mandatory: false,
+    },
+
 ];
 
 const populdateNews = (element) => {
-    CoursesData.map(({ title, category, dueDate, submissions, actionLink }) => {
-        let date = new Date(dueDate)
-        let sortingFactor = date.getFullYear().toString() + [date.getMonth() + 1].toString() + date.getDate().toString()
+    CoursesData.map(({ title, category, duedata, submissions, actionLink, mandatory }) => {
+
         const tablerowdata = `
-            <td scope="row" class="coursetitle">${title}</td>
-            <td class="course-category">${category}</td>
-            <td class="duedate" data-sort="${sortingFactor}"><p>${dueDate}</p></td>
-            <td data-sort="${submissions}" class="submissions">${submissions}</td>
+            <td>
+                <div class="d-flex flex-row justify-content-start align-items-center">
+                    <div class="myiconspan align-items-center position-relative ">
+                        <i class="bi bi-mortarboard myplanicon "></i>
+                        <i class="bi bi-exclamation-triangle-fill position-absolute warningicon ${mandatory ? 'd-block' : 'd-none'}"></i>
+                    </div>
+                    <div class="coursetitle">
+                        ${title}
+                    </div>
+                </div>
+            </td>
+            <td>${category}</td>
+            <td class="duedate">${duedata}</td>
+            <td>${submissions}</td>
             <td class="text-nowrap actiontext position-relative"><div class="d-flex align-items-center justify-content-between" ><a href="#">${actionLink}</a><button class="deletebtn">
                 <i class="bi bi-three-dots "></i>
             </button></div>
-            <ul class="optionmenu p-0 m-0 shadow d-none">
-            <li>
-                <button>
-                    Drop
-                </button>
-            </li>
-        </ul>
+                <ul class="optionmenu p-0 m-0 shadow d-none">
+                    <li><button>Delete</button></li>
+                </ul>
             </td>
         `;
         let tableRowElement = document.createElement('tr')

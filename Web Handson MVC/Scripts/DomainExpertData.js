@@ -1,83 +1,69 @@
-﻿$(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-})
-
-
-const CoursesData = [
+﻿const CoursesData = [
     {
         id: 1,
         title: "Climate Mitigation in Action – Sector-Specific Strategies and Approaches",
         category: "Orientation",
-        startDate: "28-APR-2022",
-        endDate: "06-JUN-2022",
-        submissions: 7,
-        actionLink: "View Course",
+        duedata: "28-APR-2022 - 28-MAY-2022",
+        actionLink: "View Courses",
+        mandatory: true,
     },
     {
         id: 2,
-        title: "ClimInvesting in Quality Infrastructure for a Green, Inclusive and Resilient Recovery",
+        title: "Climate Mitigation in Action – Sector-Specific Strategies and Approaches",
         category: "Orientation",
-        startDate: "12-DEC-2022",
-        endDate: "28-MAR-2023",
-        submissions: 21,
-        actionLink: "View Course",
+        duedata: "28-APR-2022 - 28-MAY-2022",
+        actionLink: "View Courses",
+        mandatory: false,
     },
     {
         id: 3,
-        title: "Leadership and Innovation Program (E-Course1) (Self-Paced)",
+        title: "Climate Mitigation in Action – Sector-Specific Strategies and Approaches",
         category: "Orientation",
-        startDate: "12-MAR-2022",
-        endDate: "23-SEP-2022",
-        submissions: 1,
-        actionLink: "View Course",
+        duedata: "28-APR-2022 - 28-MAY-2022",
+        actionLink: "View Courses",
+        mandatory: false,
     },
     {
         id: 4,
-        title: "Improve the Safety of High-Alert Medications (HAMs) (Self-Paced)",
+        title: "Climate Mitigation in Action – Sector-Specific Strategies and Approaches",
         category: "Orientation",
-        startDate: "04-JAN-2022",
-        endDate: "06-JUL-2022",
-        submissions: 44,
-        actionLink: "View Course",
+        duedata: "28-APR-2022 - 28-MAY-2022",
+        actionLink: "View Courses",
+        mandatory: false,
     },
     {
         id: 5,
-        title: "Leadership and Innovation Program (E-Course2) (Self-Paced)",
+        title: "Climate Mitigation in Action – Sector-Specific Strategies and Approaches",
         category: "Orientation",
-        startDate: "28-JAN-2022",
-        endDate: "09-NOV-2022",
-        submissions: 78,
-        actionLink: "View Course",
+        duedata: "28-APR-2022 - 28-MAY-2022",
+        actionLink: "View Courses",
+        mandatory: true,
     },
-    {
-        id: 6,
-        title: "Building a Safe Surgery Culture (Self-Paced)",
-        category: "Orientation",
-        startDate: "28-JUL-2022",
-        endDate: "31-DEC-2022",
-        submissions: 2,
-        actionLink: "View Course",
-    }
 ];
 
 const populdateNews = (element) => {
-    CoursesData.map(({ title, category, startDate, endDate, actionLink }) => {
-        let date = new Date(startDate)
-        let sortingFactor = date.getFullYear().toString() + [date.getMonth() + 1].toString() + date.getDate().toString()
+    CoursesData.map(({ title, category, duedata, actionLink, mandatory }) => {
+
         const tablerowdata = `
-            <td scope="row" class="coursetitle" >${title}</td>
-            <td class="course-category">${category}</td>
-            <td data-sort="${sortingFactor}" class="duration">${startDate} - ${endDate}</td>
+            <td>
+                <div class="d-flex flex-row justify-content-start align-items-center">
+                    <div class="myiconspan align-items-center position-relative ">
+                        <i class="bi bi-mortarboard myplanicon "></i>
+                        <i class="bi bi-exclamation-triangle-fill position-absolute warningicon ${mandatory ? 'd-block' : 'd-none'}"></i>
+                    </div>
+                    <div class="coursetitle">
+                        ${title}
+                    </div>
+                </div>
+            </td>
+            <td>${category}</td>
+            <td class="duration">${duedata}</td>
             <td class="text-nowrap actiontext position-relative"><div class="d-flex align-items-center justify-content-between" ><a href="#">${actionLink}</a><button class="deletebtn">
                 <i class="bi bi-three-dots "></i>
             </button></div>
-            <ul class="optionmenu p-0 m-0 shadow d-none">
-            <li>
-                <button>
-                    Drop
-                </button>
-            </li>
-        </ul>
+                <ul class="optionmenu p-0 m-0 shadow d-none">
+                    <li><button>Delete</button></li>
+                </ul>
             </td>
         `;
 
