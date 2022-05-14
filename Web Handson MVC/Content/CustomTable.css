@@ -5,7 +5,6 @@
     background-color: white;
     margin: 25px 0;
     border-radius: 0.4rem;
-    overflow: hidden;
 }
 
     .tabledatawrapper thead tr {
@@ -47,13 +46,31 @@
         align-items: center;
     }
 
+.myiconspan {
+    border-radius: 2rem;
+    padding: 0.4rem 0.8rem;
+    margin-right: 0.8rem;
+    background-color: var(--primary-color);
+}
+
+.myplanicon {
+    font-size: 1.7rem;
+    color: white;
+}
+
+.warningicon {
+    font-size: medium;
+    right: 0;
+    bottom: -0.3rem;
+    color: var(--danger-red);
+}
 
 .remaindayscolum {
     font-size: 0.8rem;
     min-width: 5.5rem;
 }
 
-.table a {
+a {
     text-decoration: none !important;
     color: var(--primary-color) !important;
 }

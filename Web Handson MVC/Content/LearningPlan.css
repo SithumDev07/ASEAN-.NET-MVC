@@ -50,25 +50,6 @@
     border: 1px solid var(--danger-red);
 }
 
-.myiconspan {
-    border-radius: 2rem;
-    padding: 0.4rem 0.8rem;
-    margin-right: 0.8rem;
-    background-color: var(--primary-color);
-}
-
-.myplanicon {
-    font-size: 1.7rem;
-    color: white;
-}
-
-.warningicon {
-    font-size: medium;
-    right: 0;
-    bottom: -0.3rem;
-    color: var(--danger-red);
-}
-
 .remaindaystext {
     color: var(--text-color);
     font-size: small;
