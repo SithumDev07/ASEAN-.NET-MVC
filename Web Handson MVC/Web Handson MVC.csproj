@@ -129,6 +129,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ITAdminController.cs" />
     <Compile Include="Controllers\LearningPlanController.cs" />
+    <Compile Include="Controllers\LearningProfileController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -194,7 +195,9 @@
     <Content Include="Content\Images\Courses\tr6.png" />
     <Content Include="Content\Images\Courses\tr7.png" />
     <Content Include="Content\Images\geoedge-logo.png" />
+    <Content Include="Content\Images\LearnerProfile\propic.png" />
     <Content Include="Content\Layout.css" />
+    <Content Include="Content\LearningProfile.css" />
     <Content Include="Content\SideBar.css" />
     <Content Include="Content\LearningPlan.css" />
     <Content Include="Content\swiper-bundle.min.css" />
@@ -245,6 +248,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\LearningPlan.js" />
+    <Content Include="Scripts\LearningProfile.js" />
     <Content Include="Scripts\SideBar.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\Sortable.js" />
@@ -272,6 +276,8 @@
     <Content Include="Views\Evaluator\Index.cshtml" />
     <Content Include="Views\Shared\_LayoutITAdmin.cshtml" />
     <Content Include="Views\ITAdmin\Index.cshtml" />
+    <Content Include="Views\LearningProfile\index.cshtml" />
+    <Content Include="Views\Shared\_LayoutLearningProfile.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
