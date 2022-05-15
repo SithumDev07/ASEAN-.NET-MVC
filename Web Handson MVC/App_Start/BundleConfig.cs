@@ -35,6 +35,12 @@ namespace Web_Handson_MVC
                 "~/Scripts/SideBar.js"
                 ));
 
+            bundles.Add(new Bundle("~/bundles/learningprofile").Include(
+                "~/Scripts/Sortable.js",
+                "~/Scripts/SideBar.js",
+                "~/Scripts/LearningProfile.js"
+                ));
+
             bundles.Add(new Bundle("~/bundles/courseadmin").Include(
                 "~/Scripts/SideBar.js"
                 ));
@@ -75,6 +81,15 @@ namespace Web_Handson_MVC
                       "~/Content/SideBar.css",
                       "~/Content/Header.css",
                       "~/Content/Footer.css"));
+
+            bundles.Add(new StyleBundle("~/Content/learningprofile").Include(
+                      "~/Content/bootstrap.css",
+                      "~/Content/ColorsTypography.css",
+                      "~/Content/CustomTable.css",
+                      "~/Content/SideBar.css",
+                      "~/Content/Header.css",
+                      "~/Content/Footer.css",
+                      "~/Content/LearningProfile.css"));
 
             bundles.Add(new StyleBundle("~/Content/courseadmin").Include(
                       "~/Content/bootstrap.css",
