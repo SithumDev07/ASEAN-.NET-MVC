@@ -11,7 +11,7 @@
 <body>
     <!-- HEADER -->
     <nav class="navigation-bar border-bottom bg-white h-7">
-        <div class="container d-block">
+        <div class="header-container-landing d-block">
             <div class="row gy-3 flex-md-nowrap">
                 <div class="col-12 col-md-4 col-lg-4 col-xl-3 d-flex align-items-center header-logo-wrapper">
                     <button type="button" class="btn btn-default p-0" id="SideBarHandler">
@@ -19,19 +19,29 @@
                     </button>
                     <div class="d-flex align-items-center">
                         <img src="./Content/Images/asean-logo.png" class="header-logo" alt="LOGO">
-                        <a href="#" class="navbar-brand fs-2 brand-name user-select-none">ASEAN</a>
+                        <a href="/" class="navbar-brand fs-2 brand-name user-select-none">ASEAN</a>
                     </div>
 
                     <div class="align-items-center justify-content-end mobile-usericon-wrapper header-user-wrapper">
                         <i class="bi bi-bell icon"></i>
                         <div class="ms-4 d-inline-flex flex-column align-content-center icon-wrapper" style="height: auto;">
-                            <button type="button" class="border-0 user-icon" style="background-image: url('https://images.unsplash.com/photo-1650241159687-cb8b3ed0ad9e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80');">
+                            <button type="button" class="border-0 user-icon" style="background-image: url('https://images.unsplash.com/photo-1650477733936-06fa48166e5c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80');">
                             </button>
                             <p class="smallest-text m-0 text-center ">James</p>
-                        </div>
+</div>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
+                    <div class="dropdown">
+                        <button type="button" class="btn asean-primary dropdown-toggle text-white" id="categoryDropDown" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="categoryDropDown">
+                            <li><a class="dropdown-item" href="#">Orientation Courses</a></li>
+                            <li><a class="dropdown-item" href="#">Skill Development Courses</a></li>
+                            <li><a class="dropdown-item" href="#">External Courses</a></li>
+                        </ul>
+                    </div>
                     <form class="w-100">
                         <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
                     </form>
@@ -39,9 +49,9 @@
                 <div class="col-2 col-lg-2 col-xl-3 d-none d-md-flex align-items-center justify-content-end last-child header-user-wrapper">
                     <i class="bi bi-bell icon"></i>
                     <div class="ms-4 d-inline-flex flex-column align-content-center icon-wrapper" style="height: auto;">
-                        <button type="button" class="border-0 user-icon" style="background-image: url('https://images.unsplash.com/photo-1650241159687-cb8b3ed0ad9e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80');">
+                        <button type="button" class="border-0 user-icon" style="background-image: url('https://images.unsplash.com/photo-1650477733936-06fa48166e5c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80');">
                         </button>
-                        <p class="smallest-text m-0 text-center ">Lewis</p>
+                        <p class="smallest-text m-0 text-center ">James</p>
                     </div>
                 </div>
             </div>
