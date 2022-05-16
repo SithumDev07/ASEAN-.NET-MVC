@@ -1,4 +1,8 @@
-﻿const CoursesData = [
+﻿$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+
+const CoursesData = [
     {
         id: 1,
         title: "Climate Mitigation in Action – Sector-Specific Strategies and Approaches",
@@ -47,7 +51,7 @@ const populdateNews = (element) => {
         const tablerowdata = `
             <td>
                 <div class="d-flex flex-row justify-content-start align-items-center">
-                    <div class="myiconspan align-items-center position-relative ">
+                   <div class="myiconspan align-items-center position-relative" data-toggle="tooltip" data-placement="right" title="${mandatory ? 'Mandatory' : 'Optional'}">
                         <i class="bi bi-mortarboard myplanicon "></i>
                         <i class="bi bi-exclamation-triangle-fill position-absolute warningicon ${mandatory ? 'd-block' : 'd-none'}"></i>
                     </div>

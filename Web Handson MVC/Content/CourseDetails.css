@@ -1,0 +1,468 @@
+﻿
+main {
+    min-height: 100vh;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.course-details .course-title {
+    font-size: 2rem;
+}
+
+button {
+    appearance: none;
+    border: 0;
+    background-color: transparent;
+}
+
+.star-container .icon {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    width: auto;
+}
+
+.star-container .icon {
+    color: var(--star-color-amber);
+    transition: var(--tran-03);
+}
+
+.course-card-image img {
+    height: auto;
+    width: 24rem;
+}
+
+.status-label {
+    margin-bottom: 0;
+    font-size: .7rem;
+    text-align: center;
+    border: 1px solid var(--primary-color);
+    padding: .1rem .5rem;
+    border-radius: 2rem;
+}
+
+.status-label-yellow {
+    color: var(--star-color-amber);
+    border-color: var(--star-color-amber);
+}
+
+.status-label-green {
+    color: var(--success-green);
+    border-color: var(--success-green);
+}
+
+.status-label-blue {
+    color: var(--slider-background-color);
+    border: 1px solid var(--slider-background-color);
+}
+
+.status-label-red {
+    color: var(--danger-red);
+    border: 1px solid var(--danger-red);
+}
+
+/* Tab Navigation */
+.tab-wrapper {
+    width: 100%;
+    padding-left: 0;
+}
+
+.option-aside {
+    width: 33.33%;
+}
+
+    .option-aside button {
+        color: var(--text-color-shaded);
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+        .option-aside button.active {
+            color: var(--primary-color);
+        }
+
+@media (hover: hover) and (pointer: fine) {
+    .option-aside button:hover {
+        color: var(--primary-color);
+    }
+
+    .review-actions-row button:hover {
+        color: var(--primary-color);
+    }
+}
+
+
+.tab-wrapper li {
+    list-style: none;
+}
+
+.bottom-line-full, .bottom-line-move {
+    height: .2rem;
+    /* border-radius: 1rem; */
+    bottom: -1.4rem;
+}
+
+.bottom-line-full {
+    background-color: var(--tableheader-bottomline-color);
+    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: 20;
+}
+
+.bottom-line-move {
+    background-color: var(--primary-color);
+    z-index: 30;
+    width: 33.33%;
+    top: 0;
+    transition: all .2s ease-in-out;
+}
+
+.bottom-line-start {
+    left: 0;
+}
+
+.bottom-line-middle {
+    left: 33.33%;
+}
+
+.bottom-line-end {
+    left: 66.66%;
+}
+
+/* Content */
+
+.content {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.transform-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    display: flex;
+    align-items: flex-start;
+}
+
+.transform-left {
+    transform: translateX(0%);
+}
+
+.transform-middle {
+    transform: translateX(-100%);
+}
+
+.transform-end {
+    transform: translateX(-200%);
+}
+
+/* Overview */
+
+.content-structure p {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.content-structure .item-row {
+    color: var(--text-color-shaded);
+}
+
+.item-row button {
+    width: 15%;
+}
+
+.item-row-status {
+    font-weight: 500;
+}
+
+.item-row-status-yellow {
+    color: var(--star-color-amber);
+}
+
+.item-row-status-green {
+    color: var(--success-green);
+}
+
+.item-row-status-red {
+    color: var(--danger-red);
+}
+
+.item-row .current-item {
+    font-size: 1.1rem;
+}
+
+    .item-row .current-item .current-item-extra {
+        font-size: 1rem;
+    }
+
+.item-row .icon {
+    font-size: 1.4rem;
+}
+
+/* Other Info */
+.other-info {
+    height: 30vh;
+}
+
+/* Forum */
+textarea {
+    outline: none;
+    overflow: auto;
+}
+
+.text-area-comment {
+    min-height: 10rem;
+    max-width: 50%;
+    width: 100%;
+    padding: .7rem .5rem;
+    border-radius: .6rem;
+    border-color: var(--primary-color);
+}
+
+.review-card {
+    max-width: 50%;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+    .review-card .usericon {
+        margin-right: 1rem;
+    }
+
+        .review-card .usericon img {
+            object-fit: cover;
+            width: 2.7rem;
+            height: 2.7rem;
+            border-radius: 3rem;
+        }
+
+.review-user {
+    font-size: 1rem;
+}
+
+.review-user-comment {
+    font-size: .9rem;
+    padding: 0;
+    margin: 0;
+}
+
+.review-actions-row {
+    margin-top: .5rem;
+    align-items: center;
+}
+
+    .review-actions-row button {
+        appearance: none;
+        border: 0;
+        background-color: transparent;
+        margin-right: .7rem;
+        font-size: .8rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .review-actions-row .icon, .review-actions-row .icon-active {
+        font-size: 1rem;
+        cursor: pointer;
+        margin-right: .3rem;
+    }
+
+    .review-actions-row .icon-active {
+        color: var(--primary-color);
+    }
+
+    .review-actions-row p {
+        font-size: .8rem;
+        margin-left: .5rem;
+        margin-bottom: 0;
+    }
+
+.comment-btn {
+    padding: .5rem 1rem;
+}
+
+@media only screen and (max-width: 1440px) {
+    .course-details .course-title {
+        font-size: 1.8rem;
+    }
+
+    .text-area-comment {
+        min-height: 7rem;
+    }
+
+    .review-card .usericon img {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .course-card-image img {
+        height: auto;
+        width: 34rem;
+    }
+
+    .tab-wrapper {
+        margin-top: 2rem;
+    }
+
+
+
+    .review-user {
+        font-size: 1.2rem;
+    }
+
+    .review-user-comment {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .course-details .course-title {
+        font-size: 1.3rem;
+    }
+
+    .star-container .icon {
+        font-size: 1rem;
+    }
+
+    .option-aside button {
+        font-size: .89rem;
+    }
+
+    .item-row .current-item {
+        font-size: 1rem;
+    }
+
+        .item-row .current-item .current-item-extra {
+            font-size: .85rem;
+        }
+
+    .item-row button {
+        width: 20%;
+    }
+
+    .text-area-comment {
+        max-width: 80%;
+    }
+
+    .review-card {
+        max-width: 80%;
+    }
+
+    .review-user {
+        font-size: 1rem;
+    }
+
+    .review-user-comment {
+        font-size: .9rem;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .course-card-container {
+        flex-direction: column;
+    }
+
+    .course-card-image img {
+        height: 13rem;
+        width: 100%;
+    }
+
+    .tab-wrapper {
+        margin-top: 1rem;
+    }
+
+    .option-aside button {
+        font-size: .78rem;
+    }
+
+    .item-row .current-item {
+        font-size: .8rem;
+    }
+
+        .item-row .current-item .current-item-extra {
+            font-size: .6rem;
+        }
+
+    .star-container .icon {
+        font-size: 1.3rem;
+    }
+
+    .item-row .icon {
+        font-size: 1rem;
+    }
+
+    .item-row-status {
+        font-size: .8rem;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        margin-right: .5rem;
+    }
+
+    .item-row button {
+        width: 30%;
+        font-size: .8rem;
+    }
+
+    .text-area-comment {
+        max-width: 100%;
+    }
+
+    .review-card {
+        max-width: 100%;
+    }
+}
+
+/* Custom Container */
+.custom-container {
+    min-width: 95vw;
+}
+
+@media only screen and (min-width: 390px) {
+    .custom-container {
+        min-width: 390px;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .custom-container {
+        min-width: 516px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .custom-container {
+        min-width: 696px;
+        padding: 0 .75rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .custom-container {
+        min-width: 936px;
+        padding: 0 .75rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .custom-container {
+        min-width: 1140px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .custom-container {
+        min-width: 1320px;
+    }
+}
