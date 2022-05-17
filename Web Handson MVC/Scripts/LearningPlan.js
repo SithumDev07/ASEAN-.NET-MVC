@@ -110,7 +110,9 @@ const initiateTableData = (element) => {
                     <div>
                         <p class="mb-0 remaindayscolum">${dueDate}</p>
                     </div>
-
+                    <div>
+                        <p class="mb-1 fst-italic ${remainDays > 5 ? 'remaindaystext' : 'endingremaindaystext'} ">${remainDays} days more</p>
+                    </div>
                 </div>
             </td>
             <td class="text-nowrap actiontext position-relative"><div class="d-flex align-items-center justify-content-between" ><a href="#">${action}</a><button class="deletebtn">
