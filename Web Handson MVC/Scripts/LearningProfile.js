@@ -14,6 +14,7 @@ const dataSet = [
         completeddate: "17-FEB-2022",
         action: "View Certivicate",
         mandatory: false,
+        isRenewable: true,
     },
     {
         id: 2,
@@ -22,6 +23,7 @@ const dataSet = [
         completeddate: "15-JUN-2022",
         action: "View Certivicate",
         mandatory: false,
+        isRenewable: false,
     },
     {
         id: 3,
@@ -30,6 +32,7 @@ const dataSet = [
         completeddate: "12-MAY-2022",
         action: "View Certivicater",
         mandatory: true,
+        isRenewable: true,
     },
     {
         id: 4,
@@ -38,12 +41,13 @@ const dataSet = [
         completeddate: "21-JUL-2022",
         action: "View Certivicate",
         mandatory: false,
+        isRenewable: false,
     }
 ]
 
 const initiateTableData = (element) => {
 
-    dataSet.map(({ courseTitle, courseCategory, completeddate, action, mandatory }) => {
+    dataSet.map(({ courseTitle, courseCategory, completeddate, action, mandatory, isRenewable }) => {
         const CourseData = `
             <td>
                 <div class="d-flex flex-row justify-content-start align-items-center">
@@ -60,12 +64,21 @@ const initiateTableData = (element) => {
             <td class="text-wrap compltedate ">
                 <p class="mb-0">Successfully Completed <br>on ${completeddate}</p>
             </td>
-            <td class="text-nowrap actiontext position-relative"><div class="d-flex align-items-center justify-content-between" ><a href="#">${action}</a><button class="deletebtn">
-                <i class="bi bi-three-dots "></i>
-            </button></div>
+            <td class="text-nowrap actiontext position-relative">
+                <div class="d-flex align-items-center justify-content-between" >
+                    <a href="#">${action}</a>
+                    <button class="deletebtn">
+                    <i class="bi bi-three-dots "></i>
+                    </button>
+                </div>
                 <ul class="optionmenu p-0 m-0 shadow d-none">
-                    <li>
+                    <li class="${isRenewable ? 'optionmenurenewable' : 'optionmenunotrenewable'}">
                         <button>
+                            Renew
+                        </button>
+                    </li>
+                    <li>
+                        <button class="dropbutton">
                             Drop
                         </button>
                     </li>
