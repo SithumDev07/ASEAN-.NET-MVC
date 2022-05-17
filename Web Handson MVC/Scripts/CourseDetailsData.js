@@ -32,100 +32,157 @@ const CourseStructureData = [
 const ForumComments = [
     {
         id: 1,
-        usericon: "https://images.unsplash.com/photo-1554230505-919a13968970?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80",
-        reviewUser: "Carolyn J. Haight",
-        reviewUserComment: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic quis assumenda modi minus sapiente numquam expedita ab, saepe nisi suscipit.",
-        liked: false,
-        reviewTimeStamp: "2022-05-15T20:56:23",
-        repliies: [
-            {
-                id: 1,
-                replyUserIcon: "",
-                reply: ""
-            }
-        ]
+        type: "user",
+        user: {
+            usericon:
+                "https://images.unsplash.com/photo-1554230505-919a13968970?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80",
+            reviewUser: "Carolyn J. Haight",
+            reviewUserComment:
+                "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic quis assumenda modi minus sapiente numquam expedita ab, saepe nisi suscipit.",
+            liked: false,
+            reviewTimeStamp: "2022-05-15T20:56:23",
+            replies: [
+                {
+                    id: 1,
+                    type: "user",
+                    user: {
+                        usericon:
+                            "https://images.unsplash.com/photo-1560238970-cc0ae073d3a5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80",
+                        reviewUser: "Carolyn J. Haight",
+                        reviewUserComment:
+                            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic quis assumenda modi minus sapiente numquam expedita ab, saepe nisi suscipit.",
+                        liked: false,
+                        reviewTimeStamp: "2022-05-15T20:56:23",
+                    },
+                },
+                {
+                    id: 2,
+                    type: "anonymous",
+                    user: {
+                        reviewUserComment:
+                            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic quis assumenda modi minus sapiente numquam expedita ab, saepe nisi suscipit.",
+                        liked: true,
+                        reviewTimeStamp: "2022-05-15T20:56:23",
+                    },
+                },
+            ],
+        },
     },
     {
         id: 2,
-        usericon: "https://images.unsplash.com/photo-1516522973472-f009f23bba59?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-        reviewUser: "Jennifer A. Martinez",
-        reviewUserComment: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic quis assumenda modi minus sapiente numquam expedita ab, saepe nisi suscipit.",
-        liked: true,
-        reviewTimeStamp: "2022-05-15T19:20:00",
-        repliies: [
-            {
-                id: 1,
-                replyUserIcon: "",
-                reply: ""
-            }
-        ]
+        type: "user",
+        user: {
+            usericon:
+                "https://images.unsplash.com/photo-1516522973472-f009f23bba59?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+            reviewUser: "Carolyn J. Haight",
+            reviewUserComment:
+                "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic quis assumenda modi minus sapiente numquam expedita ab, saepe nisi suscipit.",
+            liked: false,
+            reviewTimeStamp: "2022-05-15T20:56:23",
+            repliies: [],
+        },
     },
     {
         id: 3,
-        usericon: "https://images.unsplash.com/photo-1560238970-cc0ae073d3a5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80",
-        reviewUser: "Donna J. Stahl",
-        reviewUserComment: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic quis assumenda modi minus sapiente numquam expedita ab, saepe nisi suscipit.",
-        liked: true,
-        reviewTimeStamp: "2022-05-15T10:32:00",
-        repliies: [
-            {
-                id: 1,
-                replyUserIcon: "",
-                reply: ""
-            }
-        ]
+        type: "anonymous",
+        user: {
+            reviewUserComment:
+                "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic quis assumenda modi minus sapiente numquam expedita ab, saepe nisi suscipit.",
+            liked: false,
+            reviewTimeStamp: "2022-05-15T20:56:23",
+            repliies: [],
+        },
     },
     {
         id: 4,
-        usericon: "https://images.unsplash.com/photo-1464863979621-258859e62245?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80",
-        reviewUser: "Janice T. Castro",
-        reviewUserComment: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic quis assumenda modi minus sapiente numquam expedita ab, saepe nisi suscipit.",
-        liked: false,
-        reviewTimeStamp: "2022-05-09T10:32:00",
-        repliies: [
-            {
-                id: 1,
-                replyUserIcon: "",
-                reply: ""
-            }
-        ]
+        type: "user",
+        user: {
+            usericon:
+                "https://images.unsplash.com/photo-1560238970-cc0ae073d3a5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80",
+            reviewUser: "Carolyn J. Haight",
+            reviewUserComment:
+                "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic quis assumenda modi minus sapiente numquam expedita ab, saepe nisi suscipit.",
+            liked: false,
+            reviewTimeStamp: "2022-05-15T20:56:23",
+            repliies: [],
+        },
     },
     {
         id: 5,
-        usericon: "https://images.unsplash.com/photo-1516195851888-6f1a981a862e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=705&q=80",
-        reviewUser: "Linda D. Treadway",
-        reviewUserComment: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic quis assumenda modi minus sapiente numquam expedita ab, saepe nisi suscipit.",
-        liked: false,
-        reviewTimeStamp: "2022-05-05T10:32:00",
-        repliies: [
-            {
-                id: 1,
-                replyUserIcon: "",
-                reply: ""
-            }
-        ]
-    },
-    {
-        id: 6,
-        usericon: "https://images.unsplash.com/photo-1599900554895-5e0fc7bbc9c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-        reviewUser: "Raymond G. Catlin",
-        reviewUserComment: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic quis assumenda modi minus sapiente numquam expedita ab, saepe nisi suscipit.",
-        liked: true,
-        reviewTimeStamp: "2022-04-10T10:32:00",
-        repliies: [
-            {
-                id: 1,
-                replyUserIcon: "",
-                reply: ""
-            }
-        ]
+        type: "anonymous",
+        user: {
+            reviewUserComment:
+                "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic quis assumenda modi minus sapiente numquam expedita ab, saepe nisi suscipit.",
+            liked: true,
+            reviewTimeStamp: "2022-05-15T20:56:23",
+            replies: [
+                {
+                    id: 1,
+                    type: "user",
+                    user: {
+                        usericon:
+                            "https://images.unsplash.com/photo-1560238970-cc0ae073d3a5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80",
+                        reviewUser: "Carolyn J. Haight",
+                        reviewUserComment:
+                            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic quis assumenda modi minus sapiente numquam expedita ab, saepe nisi suscipit.",
+                        liked: false,
+                        reviewTimeStamp: "2022-05-15T20:56:23",
+                    },
+                },
+                {
+                    id: 2,
+                    type: "anonymous",
+                    user: {
+                        reviewUserComment:
+                            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic quis assumenda modi minus sapiente numquam expedita ab, saepe nisi suscipit.",
+                        liked: true,
+                        reviewTimeStamp: "2022-05-15T20:56:23",
+                    },
+                },
+            ],
+        },
     },
 ];
 
+const populateReplyCards = (replies, commentID) => {
+    let allReplies = "";
+
+    replies.map(({ id, user }) => {
+        allReplies =
+            allReplies +
+            `<div class="d-flex align-items-start reply-card">
+                         <div class="usericon">
+            <img class="border-0" src="https://images.unsplash.com/photo-1554230505-919a13968970?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80" alt="usericon">
+        </div>
+        <div class="review-content">
+            <h4 class="review-user">Carolyn J. Haight</h4>
+            <p class="review-user-comment">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic quis assumenda modi minus sapiente numquam expedita ab, saepe nisi suscipit.</p>
+            <div class="d-flex review-actions-row">
+                <button type="button" class="likeBtn likeBtn-reply-${id}-${commentID} ${user.liked ? "text-asean-primary" : ""
+            }">
+                    <i class="bi bi-hand-thumbs-up icon icon-reply-${id}-${commentID} ${user.liked ? "d-none" : "d-block"
+            }"></i>
+                    <i class="bi bi-hand-thumbs-up-fill icon-active icon-active-reply-${id}-${commentID} ${user.liked ? "d-block" : "d-none"
+            }"></i>
+                    Like
+                </button>
+                <p>10 weeks ago</p>
+            </div>
+        </div>
+                    </div>
+  `;
+    });
+    return allReplies;
+};
+
+const activeReplyForms = [];
+
+
 const populateUserReviews = (element, dataSet) => {
-    dataSet.map(({ id, usericon, reviewUser, reviewUserComment, liked, repliies, reviewTimeStamp }) => {
+    // dataSet.map(({ id, type, user }) => {
+    ForumComments.map(({ id, type, user }) => {
         const now = new Date();
-        let reviewDate = Date.parse(reviewTimeStamp);
+        let reviewDate = Date.parse(user.reviewTimeStamp);
         // get total seconds between the times
         let delta = Math.abs(now - reviewDate) / 1000;
 
@@ -146,47 +203,174 @@ const populateUserReviews = (element, dataSet) => {
         delta -= minutes * 60;
 
         // what's left is seconds
-        let seconds = Math.floor(delta) % 60;  // in theory the modulus is not required
+        let seconds = Math.floor(delta) % 60; // in theory the modulus is not required
+
         const reviewCard = `
         <div class="usericon">
-            <img class="border-0" src="${usericon}" alt="usericon">
+            <img class="border-0" src="${type === "user"
+                ? user.usericon
+                : "./Content/Images/CourseDetails/user-placeholder.jpg"
+            }" alt="usericon">
         </div>
         <div class="review-content">
-            <h4 class="review-user">${reviewUser}</h4>
-            <p class="review-user-comment">${reviewUserComment}</p>
+            <h4 class="review-user">${type === "user" ? user.reviewUser : "Anonymous User"
+            }</h4>
+            <p class="review-user-comment">${user.reviewUserComment}</p>
             <div class="d-flex review-actions-row">
-                <button type="button" class="likeBtn likeBtn-${id} ${liked ? 'text-asean-primary' : ''}">
-                    <i class="bi bi-hand-thumbs-up icon icon-${id} ${liked ? 'd-none' : 'd-block'}"></i>
-                    <i class="bi bi-hand-thumbs-up-fill icon-active icon-active-${id} ${liked ? 'd-block' : 'd-none'}"></i>
+                <button type="button" class="likeBtn likeBtn-${id} ${user.liked ? "text-asean-primary" : ""
+            }">
+                    <i class="bi bi-hand-thumbs-up icon icon-${id} ${user.liked ? "d-none" : "d-block"
+            }"></i>
+                    <i class="bi bi-hand-thumbs-up-fill icon-active icon-active-${id} ${user.liked ? "d-block" : "d-none"
+            }"></i>
                     Like
                 </button>
-                <button type="button" class="d-flex align-items-center">
+                <button type="button" class="d-flex align-items-center reply-btn-${id}">
                     <i class="bi bi-chat-square icon"></i>
                     Reply
                 </button>
-                <p>${weeks === 0 ? days == 0 ? hours === 0 ? minutes === 0 ? seconds === 0 ? 'Just now' : `${seconds} Seconds ago` : minutes === 1 ? `${minutes} Minute ago` : `${minutes} Minutes ago` : hours === 1 ? `${hours} Hour ago` : `${hours} Hours ago` : days === 1 ? `${days} Day ago` : `${days} Days ago` : weeks === 1 ? `${weeks} Week ago` : `${weeks} Weeks ago`}</p>
+                <p>${weeks === 0
+                ? days == 0
+                    ? hours === 0
+                        ? minutes === 0
+                            ? seconds === 0
+                                ? "Just now"
+                                : `${seconds} Seconds ago`
+                            : minutes === 1
+                                ? `${minutes} Minute ago`
+                                : `${minutes} Minutes ago`
+                        : hours === 1
+                            ? `${hours} Hour ago`
+                            : `${hours} Hours ago`
+                    : days === 1
+                        ? `${days} Day ago`
+                        : `${days} Days ago`
+                : weeks === 1
+                    ? `${weeks} Week ago`
+                    : `${weeks} Weeks ago`
+            }</p>
+                <button type="button" class="ms-3 replies-count-${id}">${user.replies && user.replies.length
+                ? user.replies.length + " replies"
+                : ""
+            }</button>
+            </div>
+            <div class="replies-container-${id} d-none flex-column align-items-baseline ms-5">${user.replies && user.replies.length > 0
+                ? populateReplyCards(user.replies, id)
+                : ""
+            }
+            <div class="reply-form reply-form-${id} mt-3 ${user.replies && user.replies.length > 1 ? "d-block" : "d-none"
+            }">
+                        <h3 class="forum-reply-title fs-6">Reply</h3>
+                        <form method="get">
+                            <textarea name="comment" class="mt-1 text-area-reply" id="floatingTextarea2"></textarea>
+                            <div class="dropdown mt-3">
+                                <button type="button" class="btn asean-primary dropdown-toggle text-white comment-btn" id="categoryDropDown" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Reply
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="categoryDropDown">
+                                    <li><button type="submit" name="comment_type" class="dropdown-item" value="Post">Reply</button></li>
+                                    <li><button type="submit" name="comment_type" class="dropdown-item" value="Post_Anonymously">Reply Anonymously</button></li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
             </div>
         </div>
     `;
 
-        let divElement = document.createElement('div')
-        divElement.classList.add('d-flex')
-        divElement.classList.add('align-items-start')
-        divElement.classList.add('review-card')
+        let divElement = document.createElement("div");
+        divElement.classList.add("d-flex");
+        divElement.classList.add("align-items-start");
+        divElement.classList.add("review-card");
         divElement.innerHTML = reviewCard;
         element.appendChild(divElement);
 
-        //Like Functionality
-        document.querySelector(`.likeBtn-${id}`).addEventListener('click', () => {
-            document.querySelector('#Forum').querySelector(`.icon-${id}`).classList.toggle('d-block')
-            document.querySelector('#Forum').querySelector(`.icon-${id}`).classList.toggle('d-none')
-            document.querySelector('#Forum').querySelector(`.icon-active-${id}`).classList.toggle('d-block')
-            document.querySelector('#Forum').querySelector(`.icon-active-${id}`).classList.toggle('d-none')
-        })
-    })
-}
+        //Reply Section Toggler
+        function replyStateChange() {
+            document
+                .querySelector(`.replies-container-${id}`)
+                .classList.toggle("d-flex");
+            document
+                .querySelector(`.replies-container-${id}`)
+                .classList.toggle("d-none");
+            if (activeReplyForms && activeReplyForms.length > 0) {
+                activeReplyForms.map((item) => {
+                    item.classList.toggle("d-none");
+                    item.classList.toggle("d-flex");
+                    activeReplyForms.pop(item);
+                });
+            }
+            activeReplyForms.push(document.querySelector(`.replies-container-${id}`));
+            console.warn(activeReplyForms);
+            //Set Page Size
+            setPageSize(2);
+            document.querySelector(`.reply-form-${id}`).scrollIntoView();
+        }
 
-populateUserReviews(document.querySelector('#Forum'), ForumComments);
+        // Reply Icon onClick Handler
+        document.querySelector(`.reply-btn-${id}`).addEventListener("click", () => {
+            if (!user.replies || user.replies.length == 0) {
+                document.querySelector(`.reply-form-${id}`).classList.toggle("d-none");
+                document.querySelector(`.reply-form-${id}`).classList.toggle("d-block");
+            }
+            replyStateChange();
+        });
+
+        // Replies Count Button onClick Handler
+        document
+            .querySelector(`.replies-count-${id}`)
+            .addEventListener("click", () => {
+                replyStateChange();
+            });
+
+        //Like Functionality
+        document.querySelector(`.likeBtn-${id}`).addEventListener("click", () => {
+            document
+                .querySelector("#Forum")
+                .querySelector(`.icon-${id}`)
+                .classList.toggle("d-block");
+            document
+                .querySelector("#Forum")
+                .querySelector(`.icon-${id}`)
+                .classList.toggle("d-none");
+            document
+                .querySelector("#Forum")
+                .querySelector(`.icon-active-${id}`)
+                .classList.toggle("d-block");
+            document
+                .querySelector("#Forum")
+                .querySelector(`.icon-active-${id}`)
+                .classList.toggle("d-none");
+        });
+        // // Like Functionality Replies
+        if (user.replies && user.replies.length > 0) {
+            user.replies.map((item) => {
+                document
+                    .querySelector(`.likeBtn-reply-${item.id}-${id}`)
+                    .addEventListener("click", () => {
+                        document
+                            .querySelector("#Forum")
+                            .querySelector(`.icon-reply-${item.id}-${id}`)
+                            .classList.toggle("d-block");
+                        document
+                            .querySelector("#Forum")
+                            .querySelector(`.icon-reply-${item.id}-${id}`)
+                            .classList.toggle("d-none");
+                        document
+                            .querySelector("#Forum")
+                            .querySelector(`.icon-active-reply-${item.id}-${id}`)
+                            .classList.toggle("d-block");
+                        document
+                            .querySelector("#Forum")
+                            .querySelector(`.icon-active-reply-${item.id}-${id}`)
+                            .classList.toggle("d-none");
+                    });
+            });
+        }
+    });
+};
+
+populateUserReviews(document.querySelector("#Forum"), ForumComments);
 
 const populateCourseStructure = (element, dataSet) => {
     dataSet.map(({ type, title, status, statusColor, action }) => {
@@ -219,8 +403,8 @@ const populateCourseStructure = (element, dataSet) => {
 populateCourseStructure(document.querySelector('#CourseStructure'), CourseStructureData);
 
 const contentElementsArray = [
-    document.querySelector('#CourseStructure'),
     document.querySelector('#OtherInfo'),
+    document.querySelector('#CourseStructure'),
     document.querySelector('#Forum'),
 ]
 
@@ -236,8 +420,8 @@ setPageSize(0)
 let pageStatus = "Overview"
 
 const tabElementsArray = [
-    document.querySelector('#OverviewLink'),
     document.querySelector('#OtherInfoLink'),
+    document.querySelector('#OverviewLink'),
     document.querySelector('#ForumLink'),
 ]
 

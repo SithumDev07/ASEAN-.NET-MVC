@@ -236,7 +236,7 @@ const myLearningPlanData = [
         courseCategory: "Orientation",
         courseStatus: "Pending",
         lableColor: 'blue',
-        dueDate: "18-JULY-2023",
+        dueDate: "18-JULY-2022",
         action: "Register",
         mandatory: true,
     },
@@ -246,7 +246,7 @@ const myLearningPlanData = [
         courseCategory: "Orientation",
         courseStatus: "Expired",
         lableColor: 'red',
-        dueDate: "18-MAY-2022",
+        dueDate: "11-MAY-2022",
         action: "Register",
         mandatory: false,
     },
@@ -256,7 +256,7 @@ const myLearningPlanData = [
         courseCategory: "Orientation",
         courseStatus: "Expired",
         lableColor: 'red',
-        dueDate: "18-MAY-2022",
+        dueDate: "24-MAY-2022",
         action: "Register",
         mandatory: false,
     }
@@ -267,7 +267,7 @@ const populateMyLearningCourses = (element, dataSet) => {
         let date = new Date(dueDate);
         let today = new Date();
         const oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
-        remainDays = Math.round(Math.abs((date - today) / oneDay));
+        remainDays = Math.round((date - today) / oneDay);
         if (courseTitle.length > 50) {
             if (window.innerWidth < 769) {
                 courseTitle = courseTitle.slice(0, 40) + '...';
@@ -283,8 +283,9 @@ const populateMyLearningCourses = (element, dataSet) => {
         <div class="content">
             <h4>${courseTitle}</h4>
             <p class="status-label status-label-${lableColor} mb-1 mb-xxl-2">${courseStatus}</p>
-            <div class="d-flex align-items-center mb-1 mb-xxl-3" ><p class="mb-0 remaindayscolum">18-DEC-2022</p><span class="mb-1 fst-italic ${remainDays > 5 ? 'remaindaystext' : 'endingremaindaystext'}">${remainDays} days more</span></div>
-            <a href="#">${action}</a>
+            <div class="d-flex align-items-center mb-1 mb-xxl-3" ><p class="mb-0 remaindayscolum">${dueDate}</p><span class="mb-1 ${remainDays < 1 ? "d-none" : "d-block"
+        } fst-italic ${remainDays > 5 ? 'remaindaystext' : 'endingremaindaystext'}">${remainDays} days more</span></div>
+            <a href="#" class="">${action}</a>
             </div>
         `;
 

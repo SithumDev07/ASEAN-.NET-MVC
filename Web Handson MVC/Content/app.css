@@ -398,6 +398,11 @@
     margin-bottom: 1rem;
 }
 
+    .learning-card a {
+        text-decoration: none !important;
+        color: var(--primary-color) !important;
+    }
+
     .learning-card:hover {
         border-radius: 1rem;
         border: 0;

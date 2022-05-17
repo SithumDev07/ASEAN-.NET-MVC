@@ -175,6 +175,7 @@
     <Content Include="Content\Images\Banner\banner2.jpg" />
     <Content Include="Content\Images\Banner\banner3.jpg" />
     <Content Include="Content\Images\career-ladder.jpg" />
+    <Content Include="Content\Images\CourseDetails\user-placeholder.jpg" />
     <Content Include="Content\Images\Courses\ip1.png" />
     <Content Include="Content\Images\Courses\ip2.png" />
     <Content Include="Content\Images\Courses\ip3.png" />
