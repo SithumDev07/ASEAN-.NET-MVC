@@ -1,5 +1,4 @@
-﻿
-main {
+﻿main {
     min-height: 100vh;
 }
 
@@ -38,10 +37,10 @@ button {
 
 .status-label {
     margin-bottom: 0;
-    font-size: .7rem;
+    font-size: 0.7rem;
     text-align: center;
     border: 1px solid var(--primary-color);
-    padding: .1rem .5rem;
+    padding: 0.1rem 0.5rem;
     border-radius: 2rem;
 }
 
@@ -95,13 +94,13 @@ button {
     }
 }
 
-
 .tab-wrapper li {
     list-style: none;
 }
 
-.bottom-line-full, .bottom-line-move {
-    height: .2rem;
+.bottom-line-full,
+.bottom-line-move {
+    height: 0.2rem;
     /* border-radius: 1rem; */
     bottom: -1.4rem;
 }
@@ -119,7 +118,7 @@ button {
     z-index: 30;
     width: 33.33%;
     top: 0;
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .bottom-line-start {
@@ -148,7 +147,7 @@ button {
     left: 0;
     right: 0;
     width: 100%;
-    transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
     display: flex;
     align-items: flex-start;
 }
@@ -219,27 +218,49 @@ textarea {
     overflow: auto;
 }
 
-.text-area-comment {
+.text-area-comment,
+.text-area-reply {
     min-height: 10rem;
-    max-width: 50%;
     width: 100%;
-    padding: .7rem .5rem;
-    border-radius: .6rem;
+    padding: 0.7rem 0.5rem;
+    border-radius: 0.6rem;
     border-color: var(--primary-color);
 }
 
-.review-card {
-    max-width: 50%;
+.reply-form {
     width: 100%;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
 }
 
-    .review-card .usericon {
+.text-area-comment {
+    max-width: 50%;
+}
+
+.text-area-reply {
+    max-width: 100%;
+}
+
+.review-card,
+.reply-card {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.review-card {
+    margin-bottom: 2rem;
+    max-width: 50%;
+}
+
+.reply-card {
+    max-width: 100%;
+}
+
+    .review-card .usericon,
+    .reply-card .usericon {
         margin-right: 1rem;
     }
 
-        .review-card .usericon img {
+        .review-card .usericon img,
+        .reply-card .usericon img {
             object-fit: cover;
             width: 2.7rem;
             height: 2.7rem;
@@ -251,13 +272,13 @@ textarea {
 }
 
 .review-user-comment {
-    font-size: .9rem;
+    font-size: 0.9rem;
     padding: 0;
     margin: 0;
 }
 
 .review-actions-row {
-    margin-top: .5rem;
+    margin-top: 0.5rem;
     align-items: center;
 }
 
@@ -265,16 +286,17 @@ textarea {
         appearance: none;
         border: 0;
         background-color: transparent;
-        margin-right: .7rem;
-        font-size: .8rem;
+        margin-right: 0.7rem;
+        font-size: 0.8rem;
         display: flex;
         align-items: center;
     }
 
-    .review-actions-row .icon, .review-actions-row .icon-active {
+    .review-actions-row .icon,
+    .review-actions-row .icon-active {
         font-size: 1rem;
         cursor: pointer;
-        margin-right: .3rem;
+        margin-right: 0.3rem;
     }
 
     .review-actions-row .icon-active {
@@ -282,13 +304,13 @@ textarea {
     }
 
     .review-actions-row p {
-        font-size: .8rem;
-        margin-left: .5rem;
+        font-size: 0.8rem;
+        margin-left: 0.5rem;
         margin-bottom: 0;
     }
 
 .comment-btn {
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
 }
 
 @media only screen and (max-width: 1440px) {
@@ -316,8 +338,6 @@ textarea {
         margin-top: 2rem;
     }
 
-
-
     .review-user {
         font-size: 1.2rem;
     }
@@ -337,7 +357,7 @@ textarea {
     }
 
     .option-aside button {
-        font-size: .89rem;
+        font-size: 0.89rem;
     }
 
     .item-row .current-item {
@@ -345,7 +365,7 @@ textarea {
     }
 
         .item-row .current-item .current-item-extra {
-            font-size: .85rem;
+            font-size: 0.85rem;
         }
 
     .item-row button {
@@ -365,7 +385,7 @@ textarea {
     }
 
     .review-user-comment {
-        font-size: .9rem;
+        font-size: 0.9rem;
     }
 }
 
@@ -384,15 +404,15 @@ textarea {
     }
 
     .option-aside button {
-        font-size: .78rem;
+        font-size: 0.78rem;
     }
 
     .item-row .current-item {
-        font-size: .8rem;
+        font-size: 0.8rem;
     }
 
         .item-row .current-item .current-item-extra {
-            font-size: .6rem;
+            font-size: 0.6rem;
         }
 
     .star-container .icon {
@@ -404,15 +424,15 @@ textarea {
     }
 
     .item-row-status {
-        font-size: .8rem;
+        font-size: 0.8rem;
         margin-bottom: 0;
         padding-bottom: 0;
-        margin-right: .5rem;
+        margin-right: 0.5rem;
     }
 
     .item-row button {
         width: 30%;
-        font-size: .8rem;
+        font-size: 0.8rem;
     }
 
     .text-area-comment {
@@ -444,14 +464,14 @@ textarea {
 @media only screen and (min-width: 768px) {
     .custom-container {
         min-width: 696px;
-        padding: 0 .75rem;
+        padding: 0 0.75rem;
     }
 }
 
 @media only screen and (min-width: 992px) {
     .custom-container {
         min-width: 936px;
-        padding: 0 .75rem;
+        padding: 0 0.75rem;
     }
 }
 

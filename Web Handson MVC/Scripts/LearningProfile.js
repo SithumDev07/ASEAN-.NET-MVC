@@ -12,7 +12,7 @@ const dataSet = [
         courseTitle: "Introduction to project Managment",
         courseCategory: "Orientation",
         completeddate: "17-FEB-2022",
-        action: "View Certivicate",
+        action: "View Certificate",
         mandatory: false,
     },
     {
@@ -20,7 +20,7 @@ const dataSet = [
         courseTitle: "Basic Mathematics",
         courseCategory: "Skill Development",
         completeddate: "15-JUN-2022",
-        action: "View Certivicate",
+        action: "View Certificate",
         mandatory: false,
     },
     {
@@ -28,7 +28,7 @@ const dataSet = [
         courseTitle: "Algebra - Basic Concepts of Algebra",
         courseCategory: "Orientation",
         completeddate: "12-MAY-2022",
-        action: "View Certivicater",
+        action: "View Certificate",
         mandatory: true,
     },
     {
@@ -36,7 +36,7 @@ const dataSet = [
         courseTitle: "Land Pooling / Readjustment : An Alternative to Compulsory Land Acquisition (Self-Paced)",
         courseCategory: "Orientation",
         completeddate: "21-JUL-2022",
-        action: "View Certivicate",
+        action: "View Certificate",
         mandatory: false,
     }
 ]
@@ -44,10 +44,12 @@ const dataSet = [
 const initiateTableData = (element) => {
 
     dataSet.map(({ courseTitle, courseCategory, completeddate, action, mandatory }) => {
+        const date = new Date(completeddate)
+        let sortingFactor = date.getFullYear().toString() + [date.getMonth() + 1].toString() + date.getDate().toString()
         const CourseData = `
             <td>
                 <div class="d-flex flex-row justify-content-start align-items-center">
-                    <div class="myiconspan align-items-center position-relative ">
+                    <div class="myiconspan align-items-center position-relative" data-toggle="tooltip" data-placement="right" title="${mandatory ? 'Mandatory' : 'Optional'}">
                         <i class="bi bi-mortarboard myplanicon "></i>
                         <i class="bi bi-exclamation-triangle-fill position-absolute warningicon ${mandatory ? 'd-block' : 'd-none'}"></i>
                     </div>
@@ -57,7 +59,7 @@ const initiateTableData = (element) => {
                 </div>
             </td>
             <td class="text-nowrap course-category">${courseCategory}</td>
-            <td class="text-wrap compltedate ">
+            <td class="text-wrap compltedate " data-sort="${sortingFactor}" >
                 <p class="mb-0">Successfully Completed <br>on ${completeddate}</p>
             </td>
             <td class="text-nowrap actiontext position-relative"><div class="d-flex align-items-center justify-content-between" ><a href="#">${action}</a><button class="deletebtn">
@@ -73,8 +75,6 @@ const initiateTableData = (element) => {
             </td>
         `;
         let trElemet = document.createElement('tr');
-        //trElemet.classList.add("relative");
-        //trElemet.classList.add("align-items-center");
         trElemet.innerHTML = CourseData;
         element.appendChild(trElemet);
 
