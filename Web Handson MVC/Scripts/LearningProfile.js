@@ -48,7 +48,7 @@ const dataSet = [
 const initiateTableData = (element) => {
 
 
-    dataSet.map(({ courseTitle, courseCategory, completeddate, action, mandatory }) => {
+    dataSet.map(({ courseTitle, courseCategory, completeddate, action, mandatory,isRenewable }) => {
         const date = new Date(completeddate)
         let sortingFactor = date.getFullYear().toString() + [date.getMonth() + 1].toString() + date.getDate().toString()
 
@@ -113,9 +113,9 @@ const profilledatacontainer = document.querySelector("#profiledetails");
 const profileData =
 {
     propicCover: "./Content/Images/LearnerProfile/propic.png", //use a squre size profile picture
-    name: "Hannah Muyeen",
+    name: "Jammy",
     studentId: "VP - ASEAN",
-    email: "jamesmarith@asean.org"
+    email: "jammymarith@asean.org"
 }
 
 profilledatacontainer.querySelector(".profilepic").src = profileData.propicCover;

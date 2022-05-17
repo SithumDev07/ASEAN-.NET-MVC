@@ -19,7 +19,11 @@
 }
 
 .profilewrapper {
-    margin: 40px 0px 50px 0;
+    margin: 40px 0;
+}
+
+.profilepic {
+    object-fit: cover;
 }
 
 .uploadicon {
