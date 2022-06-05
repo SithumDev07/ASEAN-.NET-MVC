@@ -48,7 +48,7 @@ const dataSet = [
 const initiateTableData = (element) => {
 
 
-    dataSet.map(({ courseTitle, courseCategory, completeddate, action, mandatory,isRenewable }) => {
+    dataSet.map(({ id, courseTitle, courseCategory, completeddate, action, mandatory,isRenewable }) => {
         const date = new Date(completeddate)
         let sortingFactor = date.getFullYear().toString() + [date.getMonth() + 1].toString() + date.getDate().toString()
 
@@ -82,7 +82,7 @@ const initiateTableData = (element) => {
                         </button>
                     </li>
                     <li>
-                        <button class="dropbutton">
+                        <button class="dropbutton dropbutton-${id}">
                             Drop
                         </button>
                     </li>
@@ -104,7 +104,27 @@ const initiateTableData = (element) => {
     })
 }
 
+function onDropBtn() {
+    let confirmation = document.getElementById("confirmation");
+    dataSet.map(({ id, courseTitle }) => {
+        document.querySelector(`.dropbutton-${id}`).addEventListener('mousedown', function () {
+            if (!confirmation.classList.contains("model-open")) {
+                document.querySelector('#delete-course-description').innerHTML = `Are you sure you want to drop <span class="highlightCourseName">${courseTitle}</span> course?`;
+                confirmation.classList.remove("model-close");
+                confirmation.classList.add("model-open");
+            }
+        })
+    })
+
+}
+
+function onCancel() {
+    document.querySelector("#confirmation").classList.remove("model-open");
+    document.querySelector("#confirmation").classList.add("model-close");
+}
+
 initiateTableData(CoursesandCertificateContainer);
+onDropBtn();
 
 //Profile Details
 

@@ -1,0 +1,106 @@
+﻿.model-container {
+    z-index: 9999;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.model {
+    border-radius: 0.8rem 0.8rem 0 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    max-width: 80%;
+}
+
+.model-open {
+    display: flex;
+}
+
+.model-close {
+    display: none;
+}
+
+.model-header {
+    background-color: white;
+    background-color: var(--primary-color);
+    padding: 1rem 1.8rem;
+    font-size: small !important;
+    color: var(--primary-color-light);
+    font-weight: 0.1rem !important;
+}
+
+.model-content {
+    font-size: large !important;
+    padding: 2rem 1.8rem;
+    background-color: white;
+    border: none;
+    border-bottom: 0.1rem solid rgb(95, 95, 95);
+}
+
+.model-footer {
+    text-transform: uppercase;
+    padding: 0.8rem 1rem;
+    border: none;
+    display: flex;
+    justify-content: flex-end;
+    background-color: white;
+}
+
+.model-button {
+    text-transform: uppercase;
+    padding: 0.5em 1em;
+    border: none;
+    color: #fff;
+    border-radius: 3px;
+    margin-left: 0.5em;
+}
+
+.model-confirm-button {
+    background-color: var(--danger-red);
+    color: var(--hover-blue);
+}
+
+.model-cancel-button {
+    margin-right: 0.5rem;
+    background-color: white;
+    border: 00.1rem solid rgb(218, 213, 213);
+    color: var(--text-color-shaded);
+}
+
+.highlightCourseName {
+    font-weight: bold;
+    font-style: italic;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .model {
+        width: 350px;
+        border-radius: 0.8rem 0.8rem 0 0;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .model-content {
+        font-size: large !important;
+        padding: 1rem 1.8rem;
+        background-color: white;
+        border: none;
+        border-bottom: 0.1rem solid rgb(95, 95, 95);
+    }
+}
+
+@media only screen and (max-width: 1025px){
+    .model{
+        max-width: 95%;
+    }
+}
