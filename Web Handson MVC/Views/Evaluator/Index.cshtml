@@ -6,7 +6,7 @@
 
 <main style="margin-top: 6rem;" class="bg-light py-5 py-md-3">
     <div class="container">
-            <!-- Start of the Table -->
+        <!-- Start of the Table -->
         <div class="grid m-0 mt-3 tableadjust">
             <div><h2 class="text-start fw-bold">My Courses</h2></div>
             <div class="leanerplanetable m-0 mt-3">
@@ -57,7 +57,17 @@
                 </table>
             </div>
         </div>
-            <!-- End of the Table -->
+        <div id="confirmation" class="model-container model-close">
+            <div class="model">
+                <header class="model-header"><h3>Are you sure?</h3></header>
+                <section class="model-content"><p id="delete-course-description"></p></section>
+                <div class="model-footer">
+                    <button class="model-button model-cancel-button" onclick="onCancel()">Cancel</button>
+                    <button class="model-button model-confirm-button" onclick="onDrop()">Drop</button>
+                </div>
+            </div>
+        </div>
+        <!-- End of the Table -->
     </div>
 </main>
 

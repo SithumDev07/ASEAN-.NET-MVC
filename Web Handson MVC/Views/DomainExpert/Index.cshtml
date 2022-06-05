@@ -6,49 +6,59 @@
 
 <main style="margin-top: 6rem;" class="bg-light py-5 py-md-3">
     <div class="container">
-            <!-- Start of the Table -->
-            <div class="grid m-0 mt-3 tableadjust">
-                <div><h2 class="text-start fw-bold">My Courses</h2></div>
-                <div class="leanerplanetable m-0 mt-3">
-                    <table class="tabledatawrapper shadow sortable">
-                        <thead class="tableheader">
-                            <tr>
-                                <th class="align-top">
-                                    <button type="button" class="sort-btn-table">
-                                        Course Title
-                                        <div class="header-arrows">
-                                            <i class="bi bi-caret-up-fill icon"></i>
-                                            <i class="bi bi-caret-down-fill icon"></i>
-                                        </div>
-                                    </button>
-                                </th>
-                                <th class="align-top">
-                                    <button type="button" class="sort-btn-table">
-                                        Course Category
-                                        <div class="header-arrows">
-                                            <i class="bi bi-caret-up-fill icon"></i>
-                                            <i class="bi bi-caret-down-fill icon"></i>
-                                        </div>
-                                    </button>
-                                </th>
-                                <th class="align-top">
-                                    <button type="button" class="sort-btn-table">
-                                        Due Date
-                                        <div class="header-arrows">
-                                            <i class="bi bi-caret-up-fill icon"></i>
-                                            <i class="bi bi-caret-down-fill icon"></i>
-                                        </div>
-                                    </button>
-                                </th>
-                                <th class="align-top action-header no-sort">Actions</th>
-                            </tr>
-                        </thead>
-                        <tbody id="assignedCourses" class="text-wrap">
-                        </tbody>
-                    </table>
+        <!-- Start of the Table -->
+        <div class="grid m-0 mt-3 tableadjust">
+            <div><h2 class="text-start fw-bold">Courses</h2></div>
+            <div class="leanerplanetable m-0 mt-3">
+                <table class="tabledatawrapper shadow sortable">
+                    <thead class="tableheader">
+                        <tr>
+                            <th class="align-top">
+                                <button type="button" class="sort-btn-table">
+                                    Course Title
+                                    <div class="header-arrows">
+                                        <i class="bi bi-caret-up-fill icon"></i>
+                                        <i class="bi bi-caret-down-fill icon"></i>
+                                    </div>
+                                </button>
+                            </th>
+                            <th class="align-top">
+                                <button type="button" class="sort-btn-table">
+                                    Course Category
+                                    <div class="header-arrows">
+                                        <i class="bi bi-caret-up-fill icon"></i>
+                                        <i class="bi bi-caret-down-fill icon"></i>
+                                    </div>
+                                </button>
+                            </th>
+                            <th class="align-top">
+                                <button type="button" class="sort-btn-table">
+                                    Due Date
+                                    <div class="header-arrows">
+                                        <i class="bi bi-caret-up-fill icon"></i>
+                                        <i class="bi bi-caret-down-fill icon"></i>
+                                    </div>
+                                </button>
+                            </th>
+                            <th class="align-top action-header no-sort">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="assignedCourses" class="text-wrap">
+                    </tbody>
+                </table>
+            </div>
+            </div>
+        <div id="confirmation" class="model-container model-close">
+            <div class="model">
+                <header class="model-header"><h3>Are you sure?</h3></header>
+                <section class="model-content"><p id="delete-course-description"></p></section>
+                <div class="model-footer">
+                    <button class="model-button model-cancel-button" onclick="onCancel()">Cancel</button>
+                    <button class="model-button model-confirm-button" onclick="onDrop()">Drop</button>
                 </div>
             </div>
-            <!-- End of the Table -->
+        </div>    
+        <!-- End of the Table -->
     </div>
 </main>
 

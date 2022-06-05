@@ -157,6 +157,7 @@
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\ColorsTypography.css" />
+    <Content Include="Content\ConfirmationModal.css" />
     <Content Include="Content\CourseAdmin.css" />
     <Content Include="Content\CourseDetails.css" />
     <Content Include="Content\CustomTable.css" />

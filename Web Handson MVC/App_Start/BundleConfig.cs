@@ -85,7 +85,8 @@ namespace Web_Handson_MVC
                       "~/Content/CustomTable.css",
                       "~/Content/SideBar.css",
                       "~/Content/Header.css",
-                      "~/Content/Footer.css"));
+                      "~/Content/Footer.css",
+                      "~/Content/ConfirmationModal.css"));
 
             bundles.Add(new StyleBundle("~/Content/learningprofile").Include(
                       "~/Content/bootstrap.css",
@@ -94,7 +95,8 @@ namespace Web_Handson_MVC
                       "~/Content/SideBar.css",
                       "~/Content/Header.css",
                       "~/Content/Footer.css",
-                      "~/Content/LearningProfile.css"));
+                      "~/Content/LearningProfile.css",
+                      "~/Content/ConfirmationModal.css"));
 
             bundles.Add(new StyleBundle("~/Content/coursedetails").Include(
                       "~/Content/bootstrap.css",
@@ -102,7 +104,8 @@ namespace Web_Handson_MVC
                       "~/Content/SideBar.css",
                       "~/Content/Header.css",
                       "~/Content/Footer.css",
-                      "~/Content/CourseDetails.css"));
+                      "~/Content/CourseDetails.css",
+                      "~/Content/ConfirmationModal.css"));
 
             bundles.Add(new StyleBundle("~/Content/courseadmin").Include(
                       "~/Content/bootstrap.css",
@@ -119,7 +122,8 @@ namespace Web_Handson_MVC
                       "~/Content/Layout.css",
                       "~/Content/SideBar.css",
                       "~/Content/Header.css",
-                      "~/Content/Footer.css"));
+                      "~/Content/Footer.css",
+                      "~/Content/ConfirmationModal.css"));
 
             bundles.Add(new StyleBundle("~/Content/evaluator").Include(
                       "~/Content/bootstrap.css",
@@ -128,7 +132,8 @@ namespace Web_Handson_MVC
                       "~/Content/CustomTable.css",
                       "~/Content/Layout.css",
                       "~/Content/Header.css",
-                      "~/Content/Footer.css"));
+                      "~/Content/Footer.css",
+                      "~/Content/ConfirmationModal.css"));
 
             bundles.Add(new StyleBundle("~/Content/itadmin").Include(
                       "~/Content/bootstrap.css",

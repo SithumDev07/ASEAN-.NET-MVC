@@ -107,7 +107,7 @@ const CoursesData = [
 ];
 
 const populdateNews = (element) => {
-    CoursesData.map(({ title, category, duedata, submissions, actionLink, mandatory }) => {
+    CoursesData.map(({ id, title, category, duedata, submissions, actionLink, mandatory }) => {
 
         const tablerowdata = `
             <td>
@@ -128,7 +128,7 @@ const populdateNews = (element) => {
                 <i class="bi bi-three-dots "></i>
             </button></div>
                 <ul class="optionmenu p-0 m-0 shadow d-none">
-                    <li><button>Drop</button></li>
+                    <li><button class="dropbutton dropbutton-${id}">Drop</button></li>
                 </ul>
             </td>
         `;
@@ -146,8 +146,31 @@ const populdateNews = (element) => {
         })
     })
 }
+
+function onDropBtn() {
+    let confirmation = document.getElementById("confirmation");
+    CoursesData.map(({ id, title }) => {
+        document.querySelector(`.dropbutton-${id}`).addEventListener('mousedown', function () {
+            if (!confirmation.classList.contains("model-open")) {
+                document.querySelector('#delete-course-description').innerHTML = `Are you sure you want to drop <span class="highlightCourseName">${title}</span> course?`;
+                confirmation.classList.remove("model-close");
+                confirmation.classList.add("model-open");
+            }
+        })
+    })
+
+}
+
+function onCancel() {
+    document.querySelector("#confirmation").classList.remove("model-open");
+    document.querySelector("#confirmation").classList.add("model-close");
+}
+
+
+
 //15.5
 //<td><a href="${actionLink}" class="link-primary">View Course</a></td>
 populdateNews(document.querySelector('#assignedCourses'));
+onDropBtn();
 
 
