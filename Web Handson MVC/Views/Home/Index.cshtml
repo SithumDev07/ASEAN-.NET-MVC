@@ -5,15 +5,19 @@
 <main class="pt-4 mb-5" style="margin-top: 6rem;">
     <!-- Infinite Swiper -->
     <div class="swiper-infinite mySwiper">
-        <div class="mobile-banner-logo logo">
-            <img src="./Content/Images/asean-logo.png" alt="ASEAN Logo">
-        </div>
         <div class="left-floating-banner position-absolute">
+            <div class="logo">
+                                <picture>
+                                    <source media="(min-width: 1440px)" srcset="~/Content/Images/Logos/2XL.png">
+                                    <source media="(min-width: 1336px)" srcset="~/Content/Images/Logos/XL.png">
+                                    <source media="(min-width: 1020px)" srcset="~/Content/Images/Logos/LG.png">
+                                    <source media="(min-width: 768px)" srcset="~/Content/Images/Logos/MD.png">
+                                    <source media="(min-width: 400px)" srcset="~/Content/Images/Logos/SM.png">
+                                    <img src="~/Content/Images/Logos/Default.png" alt="ASEAN Logo">
+                                </picture>
+                            </div>
             <div class="position-relative left-floating-container">
-                <div class="logo">
-                    <img src="./Content/Images/asean-logo.png" alt="ASEAN Logo">
-                </div>
-                <h3 class="h3">Learning Management System</h3>
+                <h3 class="h3">EXELLEARN</h3>
                 <ul>
                     <li>
                         <a href="">
@@ -179,7 +183,7 @@
         <!-- RIGHT CONTAINER -->
         <div class="col-12 col-xl-5 col-xxl-4">
             <div class="mt-4 right-my-planning">
-                <h3 class="my-learning">My Learning</h3>
+                <a href="#"><h3 class="my-learning">My Learning</h3></a>
                 <div class="mt-1 learning-card-wrapper">
                     <!-- DYNAMIC CARDS GOES HERE -->
                 </div>
@@ -187,5 +191,4 @@
         </div>
     </div>
     <!-- END OF     RIGHT CONTAINER -->
-    </div>
 </main>

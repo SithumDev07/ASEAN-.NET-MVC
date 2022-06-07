@@ -7,6 +7,8 @@
 
 :root {
     /* ===== Colors ===== */
+    --banner-circle-color: #d0e6f5;
+    --banner-links-color: #0060A9;
     --body-color: #E4E9F7;
     --asean-red: #ed1c24;
     --hover-blue: #E8F4F7;
@@ -31,7 +33,6 @@
     --slider-pagination-color: #fff;
     /* ====== Transition ====== */
     --tran-03: all 0.2s ease;
-    --tran-03: all 0.3s ease;
     --tran-04: all 0.3s ease;
     --tran-05: all 0.3s ease;
     --tran-06: width 0.1s ease;
