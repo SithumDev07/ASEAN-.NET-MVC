@@ -1,0 +1,89 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutCourseDetails.cshtml";
+}
+
+<main class="py-3 bg-light border-2 border-danger" style="margin-top: 6rem;">
+    <div class="container">
+        <h2 class="text-start fw-bold">Course Details</h2>
+
+        <!-- Course Card -->
+        <div class="mb-3 mt-3">
+            <div class="d-flex w-auto course-card-container">
+                <div class="course-card-image rounded-3 overflow-hidden">
+                    <img src="./Content/Images/Courses/ip1.png" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="ms-md-3 mt-2 mt-md-0">
+                    <div class="d-block d-flex flex-column course-details">
+                        <h6 class="mb-2 text-muted">ID: <span>ASEAN0001</span></h6>
+                        <h5 class="h2 mb-2 course-title">Urban Upgrading for Inclusion, Sustainability and Resilience in a time of Global Pandemics</h5>
+                        <div class="lable-container row gx-2 star-container d-flex align-items-center">
+                            <i class="bi bi-star-fill icon"></i>
+                            <i class="bi bi-star-fill icon"></i>
+                            <i class="bi bi-star icon"></i>
+                            <i class="bi bi-star icon"></i>
+                            <i class="bi bi-star icon"></i>
+                        </div>
+                        <p class="status-label status-label-yellow mb-1 mt-3 mb-xxl-2 align-self-baseline">In Progress</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <ul class="position-relative d-flex align-items-center tab-wrapper custom-container">
+            <li class="option-aside d-flex justify-content-center text-center">
+                <button type="button" id="OtherInfoLink">
+                    <p class="hidden sm:block ps-2">Overview And Other Information</p>
+                </button>
+            </li>
+            <li class="option-aside d-flex justify-content-center text-center">
+                <button type="button" id="OverviewLink" class="active">
+                    <p class="hidden sm:block ps-2">Structure</p>
+                </button>
+            </li>
+            <li class="option-aside d-flex justify-content-center text-center">
+                <button type="button" id="ForumLink">
+                    <p class="hidden sm:block ps-2">Forum</p>
+                </button>
+            </li>
+            <span class="position-absolute bottom-line-full">
+                <span class="position-absolute bottom-line-move bottom-line-start" id="BottomLine" />
+            </span>
+        </ul>
+
+        <div class="content mt-4 custom-container">
+            <div class="transform-container transform-left" id="TransformContainer">
+                <!-- Overview & Other Information -->
+                <div class="other-info mt-3 custom-container" id="OtherInfo">
+                    <h1 class="fs-1">Overview & Other Information</h1>
+                </div>
+                <!-- END OF Overview & Other Information -->
+                <!-- Course Structure Content -->
+                <div class="course-structure custom-container" id="CourseStructure">
+                </div>
+                <!-- END OF Course Structure Content -->
+                <!-- Forum -->
+                <div class="forum mt-3 custom-container" id="Forum">
+                    <h3 class="forum-title">Post</h3>
+                    <form method="get">
+                        <textarea name="comment" class="mt-3 text-area-comment" id="floatingTextarea2"></textarea>
+                        <div class="dropdown mt-3">
+                            <button type="button" class="btn asean-primary dropdown-toggle text-white comment-btn" id="categoryDropDown" data-bs-toggle="dropdown" aria-expanded="false">
+                                Post
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="categoryDropDown">
+                                <li><button type="submit" name="comment_type" class="dropdown-item" value="Post">Post</button></li>
+                                <li><button type="submit" name="comment_type" class="dropdown-item" value="Post_Anonymously">Post Anonymously</button></li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+                <!-- END OF Forum -->
+            </div>
+        </div>
+
+    </div>
+</main>
+

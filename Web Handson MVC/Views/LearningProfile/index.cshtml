@@ -1,0 +1,74 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutLearningProfile.cshtml";
+}
+
+<main id="page-content" style="margin-top: 6rem;" class="bg-light py-5 py-md-3">
+    <div class="container">
+        <h1>My Profile</h1>
+        <div id="profiledetails" class="d-flex flex-row align-items-center profilewrapper profilealign">
+            <div>
+                <!-- <i class="bi bi-person usericone"></i> -->
+                <img class="profilepic" alt="profile image">
+                <button type="button" class="position-relative border-0"><i class="bi bi-camera uploadicon"></i></button>
+            </div>
+            <div class="details">
+                <h2 class="username"></h2>
+                <p class="mb-2 studentid"></p>
+                <p class="mb-0 studentemail"></p>
+            </div>
+        </div>
+        <div>
+            <h1>My Completed Courses</h1>
+            <div class="leanerplanetable m-0 mt-3">
+                <table class="tabledatawrapper shadow sortable">
+                    <thead class="tableheader">
+                        <tr>
+                            <th class="align-top">
+                                <button type="button" class="sort-btn-table">
+                                    Course Title
+                                    <div class="header-arrows">
+                                        <i class="bi bi-caret-up-fill icon"></i>
+                                        <i class="bi bi-caret-down-fill icon"></i>
+                                    </div>
+                                </button>
+                            </th>
+                            <th class="align-top">
+                                <button type="button" class="sort-btn-table">
+                                    Course Category
+                                    <div class="header-arrows">
+                                        <i class="bi bi-caret-up-fill icon"></i>
+                                        <i class="bi bi-caret-down-fill icon"></i>
+                                    </div>
+                                </button>
+                            </th>
+                            <th class="align-top">
+                                <button type="button" class="sort-btn-table">
+                                    Status
+                                    <div class="header-arrows">
+                                        <i class="bi bi-caret-up-fill icon"></i>
+                                        <i class="bi bi-caret-down-fill icon"></i>
+                                    </div>
+                                </button>
+                            </th>
+                            <th class="align-top action-header no-sort">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableData"></tbody>
+                </table>
+            </div>
+        </div>
+        <div id="confirmation" class="model-container model-close">
+            <div class="model">
+                <header class="model-header"><h3>Are you sure?</h3></header>
+                <section class="model-content"><p id="delete-course-description"></p></section>
+                <div class="model-footer">
+                    <button class="model-button model-cancel-button" onclick="onCancel()">Cancel</button>
+                    <button class="model-button model-confirm-button" onclick="onDrop()">Drop</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+

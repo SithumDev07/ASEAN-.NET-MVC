@@ -1,8 +1,67 @@
-﻿
-html {
+﻿html {
     position: relative;
     overflow-x: hidden !important;
 }
+
+
+.navigation-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+}
+
+.brand-name {
+    margin-left: -1rem;
+}
+
+@media screen and (max-width: 480px) {
+    .header-logo-wrapper {
+        justify-content: space-between;
+        height: 5rem;
+    }
+}
+
+.header-logo {
+    width: 8rem;
+}
+
+@media screen and (max-width: 768px) {
+    .header-logo {
+        width: 7rem;
+        margin-left: -1rem;
+    }
+}
+
+.icon-wrapper {
+    margin-top: 1rem;
+}
+
+.user-icon {
+    border-radius: 4rem;
+    width: 3rem;
+    height: 3rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.mobile-usericon-wrapper {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .mobile-usericon-wrapper {
+        display: flex;
+    }
+}
+
+/* Banner */
 
 .banner-img {
     width: auto;
@@ -23,8 +82,25 @@ html {
     }
 }
 
+/* End Banner */
+
+.right-my-planning a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
 .smallest-text {
     font-size: .8rem;
+}
+
+.h-7 {
+    height: 6rem;
+}
+
+@media screen and (max-width: 480px) {
+    .h-7 {
+        height: 9rem;
+    }
 }
 
 .wrapper {
@@ -36,6 +112,7 @@ html {
     z-index: 2;
     max-width: 1300px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 @media screen and (max-width: 1300px) {
@@ -61,6 +138,7 @@ html {
     align-items: flex-start;
     position: relative;
     z-index: 2;
+    margin-bottom: 4rem;
 }
 
 .news-slider__item {
@@ -80,6 +158,10 @@ html {
     .news-slider__item {
         margin: 0;
     }
+
+    .news-slider__wrp {
+        margin-bottom: 6rem;
+    }
 }
 
 .news-slider__item.swiper-slide {
@@ -94,7 +176,7 @@ html {
 }
 
 .news-slider__arrow {
-    background: var(--slider-arrow-background-color);
+    background: #fff;
     border: none;
     display: inline-flex;
     width: 50px;
@@ -132,25 +214,33 @@ html {
 }
 
 .course-card-title {
-    min-height: 4.75rem;
-    font-size: 1.25rem;
+    min-height: 4rem;
+    font-size: 1.4rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1440px) {
     .course-card-title {
-        min-height: 3.6rem;
+        min-height: 2.5rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .course-card-title {
+        font-size: 1rem;
     }
 }
 
 @media screen and (max-width: 960px) {
     .course-card-title {
         min-height: 2rem;
+        font-size: 1rem;
     }
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 768px) {
     .course-card-title {
-        font-size: 1rem;
+        min-height: 2.5rem;
     }
 }
 
@@ -160,17 +250,235 @@ html {
     }
 }
 
-
-.star-container .icon  {
+.header-user-wrapper .icon,
+#SideBarHandler .icon {
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.25rem;
-    width: auto;
+    font-size: 2rem;
 }
+
+#SideBarHandler .icon {
+    font-size: 2.25rem;
+}
+
+.header-user-wrapper .icon,
+#SideBarHandler .icon {
+    color: var(--text-color);
+    transition: var(--tran-03);
+}
+
+/* Header */
+
+.brand-name {
+    font-weight: 600;
+}
+
+.asean-primary {
+    background-color: var(--primary-color);
+}
+
+.outline-asean-primary {
+    border-color: var(--primary-color);
+}
+
+    .outline-asean-primary:hover {
+        background-color: var(--primary-color);
+        color: var(--sidebar-color);
+    }
+
+.text-asean-primary {
+    color: var(--primary-color);
+}
+
+/* Stars */
+
+.star-container .icon {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    width: auto;
+    margin-right: .4rem;
+}
+
+.rating-label {
+    margin-left: .5rem;
+    margin-bottom: 0;
+    /* margin-top: .3rem; */
+    color: var(--text-color);
+    display: flex;
+    align-items: flex-start;
+    font-size: .9rem;
+}
+
+    .rating-label .rating-count {
+        color: var(--star-color-amber);
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+        margin-right: .2rem;
+    }
+
+@media screen and (max-width: 1440px) {
+    .star-container .icon {
+        font-size: 1rem;
+    }
+
+    .star-container .icon {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .star-container .icon {
+        font-size: 1.3rem;
+    }
+}
+
 
 .star-container .icon {
     color: var(--star-color-amber);
     transition: var(--tran-03);
+}
+
+.course-dropdown-menu {
+    padding-left: 0 !important;
+    margin-top: .7rem;
+    position: absolute;
+    z-index: 9999999;
+}
+
+    .course-dropdown-menu li {
+        list-style: none;
+    }
+
+.courses-action-dropdown .view-btn {
+    font-size: .89rem;
+}
+
+
+@media screen and (max-width: 480px) {
+    .courses-action-dropdown {
+        margin-right: 1rem;
+    }
+}
+
+/* My Learning */
+
+.right-my-planning {
+    position: sticky;
+    top: 7.5rem;
+}
+
+/* Learning Card */
+
+.myiconspan {
+    border-radius: 2rem;
+    padding: 0.4rem 0.8rem;
+    margin-right: 0.8rem;
+    background-color: var(--primary-color);
+    align-self: baseline;
+}
+
+.myplanicon {
+    font-size: 1.7rem;
+    color: white;
+}
+
+.warningicon {
+    font-size: medium;
+    right: 0;
+    bottom: -0.3rem;
+    color: var(--danger-red);
+}
+
+.learning-card {
+    padding: 2rem 1.5rem 1rem;
+    border-radius: 1rem 1rem 0 0rem;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+    border-bottom: 1px solid var(--text-color);
+    margin-bottom: 1rem;
+}
+
+    .learning-card a {
+        text-decoration: none !important;
+        color: var(--primary-color) !important;
+    }
+
+    .learning-card:hover {
+        border-radius: 1rem;
+        border: 0;
+        background-color: var(--hover-blue);
+    }
+
+    .learning-card .content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        margin-left: 1rem;
+    }
+
+        .learning-card .content h4 {
+            font-size: 1rem;
+        }
+
+.status-label {
+    margin-bottom: 0;
+    font-size: .7rem;
+    text-align: center;
+    border: 1px solid var(--primary-color);
+    padding: .1rem .5rem;
+    border-radius: 2rem;
+    align-self: baseline;
+}
+
+.status-label-yellow {
+    color: var(--star-color-amber);
+    border-color: var(--star-color-amber);
+}
+
+.status-label-green {
+    color: var(--success-green);
+    border-color: var(--success-green);
+}
+
+.status-label-blue {
+    color: var(--slider-background-color);
+    border: 1px solid var(--slider-background-color);
+}
+
+.status-label-red {
+    color: var(--danger-red);
+    border: 1px solid var(--danger-red);
+}
+
+.remaindayscolum {
+    font-size: 0.8rem;
+    min-width: 5.5rem;
+}
+
+.remaindaystext {
+    font-size: 0.8rem;
+    margin-bottom: 0 !important;
+}
+
+.endingremaindaystext {
+    font-size: 0.8rem;
+    margin-bottom: 0 !important;
+    color: var(--danger-red);
+}
+
+@media screen and (max-width: 1440px) {
+    .learning-card {
+        padding: 1rem .75rem .5rem;
+        margin-bottom: .675rem;
+    }
+
+        .learning-card .icon {
+            width: 3rem;
+            height: 3rem;
+        }
 }

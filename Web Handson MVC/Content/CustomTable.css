@@ -1,0 +1,313 @@
+﻿/* Table CSS */
+
+.tabledatawrapper {
+    width: 100%;
+    background-color: white;
+    margin: 25px 0;
+    border-radius: 0.4rem;
+    overflow: auto;
+}
+
+    .tabledatawrapper thead tr {
+        text-align: left;
+        align-items: top;
+        color: var(--tableheader-text-color);
+        padding: 1.7rem 2rem;
+    }
+
+    .tabledatawrapper th {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: medium;
+        font-weight: 600;
+        text-align: left;
+        border-bottom: 1px solid var(--tableheader-bottomline-color);
+        margin: 15px 0;
+        align-items: center;
+    }
+
+    .tabledatawrapper td {
+        padding: 0.8rem 1rem;
+        align-items: start;
+        justify-content: center;
+        font-size: medium;
+        font-weight: 500;
+        color: var(--table-body-text-color);
+    }
+
+    .tabledatawrapper tbody tr:hover {
+        background-color: var(--table-row-hover-color);
+    }
+
+.table {
+    margin-bottom: 0 !important;
+}
+
+    .table tr th {
+        color: var(--text-color-shaded);
+        align-items: center;
+    }
+
+.myiconspan {
+    border-radius: 2rem;
+    padding: 0.4rem 0.8rem;
+    margin-right: 0.8rem;
+    background-color: var(--primary-color);
+}
+
+.myplanicon {
+    font-size: 1.7rem;
+    color: white;
+}
+
+.warningicon {
+    font-size: medium;
+    right: 0;
+    bottom: -0.3rem;
+    color: var(--danger-red);
+}
+
+.remaindayscolum {
+    font-size: 0.8rem;
+    min-width: 5.5rem;
+}
+
+a {
+    text-decoration: none !important;
+    color: var(--primary-color) !important;
+}
+
+.deletebtn {
+    background-color: var(--table-rowdrop-background-color);
+    border-radius: 5rem;
+    border: 0;
+    padding: 0.2rem 0.5rem !important;
+    margin-left: 1.2rem;
+}
+
+.optionmenu {
+    position: absolute;
+    list-style: none;
+    text-align: center;
+    right: 1rem;
+    border-radius: 0.2rem;
+    z-index: 99;
+}
+
+    .optionmenu button {
+        background-color: var(--danger-red);
+        border: 0;
+        border-radius: 0.2rem;
+        padding: 0.3rem 1rem;
+        color: var(--primary-color-light);
+    }
+
+.optionmenurenewable {
+    display: block;
+    bottom: -2.7rem;
+    border-radius: 0.2rem;
+}
+
+    .optionmenurenewable button {
+        background-color: rgb(239, 239, 240) !important;
+        color: black !important;
+    }
+
+        .optionmenurenewable button:hover {
+            opacity: 0.7;
+        }
+
+.optionmenunotrenewable {
+    display: none;
+}
+
+.dropbutton {
+    width: 100%;
+}
+
+    .dropbutton:hover {
+        opacity: 0.9;
+    }
+
+.coursetitle {
+    max-width: 25vw;
+}
+
+.table td {
+    align-items: center;
+    background-color: var(--primary-color);
+    height: 100%;
+}
+
+.sort-btn-table {
+    appearance: none;
+    border: 0;
+    background-color: transparent;
+    width: 100%;
+    color: unset;
+    font-weight: unset;
+    text-align: start;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.action-header, .sort-btn-table {
+    padding: 0.7rem 1rem;
+}
+
+    .sort-btn-table:hover {
+        background-color: var(--table-sort-hover-color);
+    }
+
+.header-arrows {
+    display: flex;
+    flex-direction: column;
+}
+
+    .header-arrows .icon {
+        font-size: .6rem;
+    }
+
+.duedate p {
+    text-align: right;
+    margin-right: 1rem;
+}
+
+.submissions {
+    text-align: center;
+}
+
+@media only screen and (max-width: 1025px) {
+    .submissions {
+        min-width: 11rem;
+    }
+
+    .tableadjust {
+        padding-left: 0 !important;
+    }
+
+    .container {
+        max-width: 95vw !important;
+    }
+
+    .leanerplanetable {
+        overflow-x: auto;
+        max-width: 98vw !important;
+    }
+
+    .remaindayscolum {
+        min-width: 6rem;
+    }
+
+    .duration {
+        min-width: 15.5rem;
+    }
+
+    .coursetitle {
+        min-width: 30rem;
+        max-width: 80vw;
+    }
+
+    .course-category {
+        min-width: 15rem;
+    }
+
+    .course-status {
+        min-width: 8rem;
+    }
+
+    .duedate {
+        min-width: 10rem;
+    }
+
+    #page-content {
+        padding-top: 6.5rem;
+    }
+
+    main {
+        overflow-x: hidden;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .duedate p {
+        margin-right: 0;
+    }
+
+
+    .leanerplanetable {
+        overflow-x: auto;
+        max-width: 98vw !important;
+    }
+
+    .remaindayscolum {
+        min-width: 7.5rem;
+    }
+
+    .submissions {
+        text-align: center;
+        min-width: 11rem;
+    }
+
+    .coursetitle {
+        min-width: 30rem;
+        max-width: 80vw;
+    }
+
+    #page-content {
+        padding-top: 7.5rem;
+    }
+
+    main {
+        overflow-x: unset;
+        height: auto;
+    }
+
+    .duedate {
+        min-width: 8.5rem;
+    }
+
+    .duration {
+        min-width: 15.5rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .duedate p {
+        margin-right: 0;
+    }
+
+    .leanerplanetable {
+        overflow-x: auto;
+        max-width: 98vw !important;
+    }
+
+    .remaindayscolum {
+        min-width: 5.5rem;
+    }
+
+    .duedate {
+        min-width: 8.5rem;
+    }
+
+    .duration {
+        min-width: 15.5rem;
+    }
+
+    .coursetitle {
+        min-width: 30rem;
+        max-width: 80vw;
+    }
+
+    #page-content {
+        padding-top: 4rem !important;
+    }
+
+    main {
+        overflow-x: hidden;
+        height: auto;
+    }
+}

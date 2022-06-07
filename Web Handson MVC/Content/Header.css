@@ -6,10 +6,23 @@
     z-index: 50;
 }
 
+.header-container-landing {
+    width: 95%;
+    margin: 0 auto;
+}
+
 .brand-name {
     margin-left: -1rem;
     font-weight: 600;
 }
+
+.navbar-brand {
+    color: var(--primary-color);
+}
+
+    .navbar-brand:hover {
+        color: var(--primary-color);
+    }
 
 @media screen and (max-width: 480px) {
     .header-logo-wrapper {
@@ -83,4 +96,21 @@
 #SideBarHandler .icon {
     color: var(--text-color);
     transition: var(--tran-03);
+}
+
+.asean-primary {
+    background-color: var(--primary-color);
+}
+
+.outline-asean-primary {
+    border-color: var(--primary-color);
+}
+
+    .outline-asean-primary:hover {
+        background-color: var(--primary-color);
+        color: var(--sidebar-color);
+    }
+
+.text-asean-primary {
+    color: var(--primary-color);
 }
