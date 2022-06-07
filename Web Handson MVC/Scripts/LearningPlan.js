@@ -207,10 +207,17 @@ const data = {
 
 const config = {
     type: 'pie',
-    data: data,
+    data,
+    plugins: [ChartDataLabels],
     options: {
         maintainAspectRatio: false,
         plugins: {
+            datalabels: {
+                color: '#404040',
+                font: {
+                    size: '14px'
+                }
+            },
             legend: {
                 display: true,
                 position: 'right',
@@ -218,12 +225,15 @@ const config = {
                     color: 'rgb(0, 0, 0)',
                     padding: 15
                 },
-            }
+            },
+            tooltip: {
+                enabled: false
+            },
         },
     }
-};
+}
 
 const myChart = new Chart(
     document.getElementById('myChart'),
     config
-);
+).getContext('2d');

@@ -32,7 +32,8 @@ namespace Web_Handson_MVC
                 "~/Scripts/Charts.min.js",
                 "~/Scripts/Sortable.js",
                 "~/Scripts/LearningPlan.js",
-                "~/Scripts/SideBar.js"
+                "~/Scripts/SideBar.js",
+                "~/Scripts/ChartDataLabels.js"
                 ));
 
             bundles.Add(new Bundle("~/bundles/learningprofile").Include(
