@@ -205,6 +205,8 @@ const data = {
     }]
 };
 
+
+
 const config = {
     type: 'pie',
     data,
@@ -232,6 +234,8 @@ const config = {
         },
     }
 }
+
+debugger;
 
 const myChart = new Chart(
     document.getElementById('myChart'),
