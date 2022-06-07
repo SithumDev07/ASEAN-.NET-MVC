@@ -84,6 +84,11 @@
 
 /* End Banner */
 
+.right-my-planning a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
 .smallest-text {
     font-size: .8rem;
 }

@@ -7,7 +7,8 @@ const CoursesData = [
         id: 1,
         title: "Climate Mitigation in Action – Sector-Specific Strategies and Approaches",
         category: "Orientation",
-        duedata: "28-APR-2022 - 28-MAY-2022",
+        from: "28-APR-2022",
+        to: "28-MAY-2022",
         actionLink: "View Courses",
         mandatory: true,
     },
@@ -15,7 +16,8 @@ const CoursesData = [
         id: 2,
         title: "Digital Dividends: Strengthening the Analog Foundation of the Digital Revolution",
         category: "Orientation",
-        duedata: "28-APR-2022 - 28-MAY-2022",
+        from: "28-APR-2022",
+        to: "28-MAY-2022",
         actionLink: "View Courses",
         mandatory: false,
     },
@@ -23,7 +25,8 @@ const CoursesData = [
         id: 3,
         title: "The Hidden Side of Energy Access: Clean Cooking",
         category: "Orientation",
-        duedata: "28-APR-2022 - 28-MAY-2022",
+        from: "28-APR-2022",
+        to: "28-MAY-2022",
         actionLink: "View Courses",
         mandatory: false,
     },
@@ -31,7 +34,8 @@ const CoursesData = [
         id: 4,
         title: "Impact Evaluation Methods with Applications in Low- and Middle-Income Countries",
         category: "Orientation",
-        duedata: "28-APR-2022 - 28-MAY-2022",
+        from: "28-APR-2022",
+        to: "28-MAY-2022",
         actionLink: "View Courses",
         mandatory: false,
     },
@@ -39,14 +43,15 @@ const CoursesData = [
         id: 5,
         title: "Strengthening Geospatial Information Management: Using the Integrated Geospatial Information Framework (Virtual Knowledge Exchange)",
         category: "Orientation",
-        duedata: "28-APR-2022 - 28-MAY-2022",
+        from: "28-APR-2022",
+        to: "28-MAY-2022",
         actionLink: "View Courses",
         mandatory: true,
     },
 ];
 
 const populdateNews = (element) => {
-    CoursesData.map(({ id, title, category, duedata, actionLink, mandatory }) => {
+    CoursesData.map(({ id, title, category, from, to, actionLink, mandatory }) => {
 
         const tablerowdata = `
             <td>
@@ -61,7 +66,8 @@ const populdateNews = (element) => {
                 </div>
             </td>
             <td>${category}</td>
-            <td class="duration">${duedata}</td>
+            <td class="duration">${from}</td>
+            <td class="duration">${to}</td>
             <td class="text-nowrap actiontext position-relative"><div class="d-flex align-items-center justify-content-between" ><a href="#">${actionLink}</a><button class="deletebtn">
                 <i class="bi bi-three-dots "></i>
             </button></div>
