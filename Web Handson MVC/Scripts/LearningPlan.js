@@ -214,12 +214,6 @@ const config = {
     options: {
         maintainAspectRatio: false,
         plugins: {
-            datalabels: {
-                color: '#404040',
-                font: {
-                    size: '14px'
-                }
-            },
             legend: {
                 display: true,
                 position: 'right',
@@ -227,9 +221,34 @@ const config = {
                     color: 'rgb(0, 0, 0)',
                     padding: 15
                 },
+                title: {
+                    display: true,
+                    text: 'Course Category',
+                    font: {
+                        size: 16,
+                    },
+                    color: '#0060A9'
+                },
+
             },
             tooltip: {
                 enabled: false
+            },
+            datalabels: {
+                color: '#404040',
+                font: {
+                    size: '14px'
+                },
+                formatter: (value, context) => {
+                    //console.log(context.chart.data.datasets[0].data);
+                    const datapoints = context.chart.data.datasets[0].data;
+                    function totalSum(total, datapoint) {
+                        return total + datapoint;
+                    }
+                    const totalPercentage = datapoints.reduce(totalSum, 0);
+                    const percentageValue = (value / totalPercentage * 100).toFixed(1);
+                    return `${percentageValue}%`;
+                }
             },
         },
     }

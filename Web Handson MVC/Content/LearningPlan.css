@@ -1,4 +1,5 @@
-﻿main {
+﻿
+main {
     min-height: 100vh;
 }
 
@@ -19,6 +20,11 @@
 
 .chart-title {
     color: var(--primary-color);
+}
+
+.table-title {
+    color: var(--primary-color);
+    padding-left: 0.1rem;
 }
 
 .status-label {
@@ -60,6 +66,8 @@
     font-size: small;
 }
 
+
+
 @media only screen and (max-width: 1025px) {
 
     .chart-monitor {
@@ -72,33 +80,28 @@
     }
 }
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1024px) {
+
     .chart-monitor {
-        width: 50vw;
+        width: 100%;
     }
 
     .chartContainer {
         height: 40vh;
-        width: 40vw;
-    }
-}
-
-@media only screen and (max-width: 1024px) {
-
-    .chart-monitor {
-        width: 60vw;
+        width: 65vw;
     }
 
-    .chartContainer {
-        height: 25vh;
-        width: 50vw;
+    .table-title {
+        color: var(--primary-color);
+        padding-left: 1rem;
+        padding-top: 1rem;
     }
 }
 
 @media only screen and (max-width: 768px) {
 
     .chart-monitor {
-        width: 60vw;
+        width: 100%;
     }
 
     .chartContainer {
@@ -116,7 +119,7 @@
     }
 
     .chartContainer {
-        height: 20vh;
+        height: 25vh;
         width: 80vw;
     }
 }

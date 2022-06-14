@@ -132,7 +132,7 @@ const profilledatacontainer = document.querySelector("#profiledetails");
 
 const profileData =
 {
-    propicCover: "./Content/Images/LearnerProfile/propic.png", //use a squre size profile picture
+    propicCover: "./Content/Images/LearnerProfile/user_pic.png", //use a squre size profile picture
     name: "Jammy",
     studentId: "VP - ASEAN",
     email: "jammymarith@asean.org"

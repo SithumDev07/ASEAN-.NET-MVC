@@ -200,6 +200,7 @@
     <Content Include="Content\Images\Courses\tr7.png" />
     <Content Include="Content\Images\geoedge-logo.png" />
     <Content Include="Content\Images\LearnerProfile\propic.png" />
+    <Content Include="Content\Images\LearnerProfile\user_pic.png" />
     <Content Include="Content\Images\Logos\2XL.png" />
     <Content Include="Content\Images\Logos\Default.png" />
     <Content Include="Content\Images\Logos\LG.png" />
