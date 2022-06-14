@@ -174,7 +174,6 @@ const chartData =
 {
     pendingAction: 2,
     inprogress: 3,
-    completed: 3,
     expired: 2,
     overide: 1
 }
@@ -183,7 +182,6 @@ const data = {
     labels: [
         'Pending Action',
         'Inprogress',
-        'Completed',
         'Expired',
         'Overdue',
     ],
@@ -192,12 +190,11 @@ const data = {
 
         // Pie Chart data add here
         // Pending Action, Inprogress, Completed, Expired, Overdue
-        data: [chartData.pendingAction, chartData.inprogress, chartData.completed, chartData.expired, chartData.overide],
+        data: [chartData.pendingAction, chartData.inprogress, chartData.expired, chartData.overide],
 
         backgroundColor: [
             'rgb(255, 243, 128)',
             'rgb(229, 103, 23)',
-            'rgb(102, 205, 170)',
             'rgb(229, 84, 81)',
             'rgb(255, 205, 150)',
         ],

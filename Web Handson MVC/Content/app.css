@@ -3,6 +3,18 @@
     overflow-x: hidden !important;
 }
 
+.rounded-button {
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: var(--sidebar-color) !important;
+    border-radius: 5rem;
+    font-size: .9rem;
+}
+
+.rounded-button:hover {
+    color: var(--sidebar-color);
+}
+
 
 .navigation-bar {
     position: fixed;

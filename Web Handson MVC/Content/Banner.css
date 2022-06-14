@@ -108,7 +108,7 @@
 }
 
 .left-floating-banner {
-    background-color: var(--banner-circle-color);
+    background-color: var(--primary-color);
     height: 100%;
     top: 0;
     bottom: 0;
@@ -117,7 +117,7 @@
     border-radius: 0 500px 500px 0;
     overflow: hidden;
     z-index: 40;
-    color: var(--banner-links-color);
+    color: var(--sidebar-color);
     position: relative;
 }
 
