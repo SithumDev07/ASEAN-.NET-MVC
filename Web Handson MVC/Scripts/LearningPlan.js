@@ -174,7 +174,6 @@ const chartData =
 {
     pendingAction: 2,
     inprogress: 3,
-    completed: 3,
     expired: 2,
     overide: 1
 }
@@ -183,7 +182,6 @@ const data = {
     labels: [
         'Pending Action',
         'Inprogress',
-        'Completed',
         'Expired',
         'Overdue',
     ],
@@ -192,12 +190,11 @@ const data = {
 
         // Pie Chart data add here
         // Pending Action, Inprogress, Completed, Expired, Overdue
-        data: [chartData.pendingAction, chartData.inprogress, chartData.completed, chartData.expired, chartData.overide],
+        data: [chartData.pendingAction, chartData.inprogress, chartData.expired, chartData.overide],
 
         backgroundColor: [
             'rgb(255, 243, 128)',
             'rgb(229, 103, 23)',
-            'rgb(102, 205, 170)',
             'rgb(229, 84, 81)',
             'rgb(255, 205, 150)',
         ],
@@ -205,9 +202,12 @@ const data = {
     }]
 };
 
+
+
 const config = {
     type: 'pie',
-    data: data,
+    data,
+    plugins: [ChartDataLabels],
     options: {
         maintainAspectRatio: false,
         plugins: {
@@ -218,12 +218,42 @@ const config = {
                     color: 'rgb(0, 0, 0)',
                     padding: 15
                 },
-            }
+                title: {
+                    display: true,
+                    text: 'Course Category',
+                    font: {
+                        size: 16,
+                    },
+                    color: '#0060A9'
+                },
+
+            },
+            tooltip: {
+                enabled: false
+            },
+            datalabels: {
+                color: '#404040',
+                font: {
+                    size: '14px'
+                },
+                formatter: (value, context) => {
+                    //console.log(context.chart.data.datasets[0].data);
+                    const datapoints = context.chart.data.datasets[0].data;
+                    function totalSum(total, datapoint) {
+                        return total + datapoint;
+                    }
+                    const totalPercentage = datapoints.reduce(totalSum, 0);
+                    const percentageValue = (value / totalPercentage * 100).toFixed(1);
+                    return `${percentageValue}%`;
+                }
+            },
         },
     }
-};
+}
+
+debugger;
 
 const myChart = new Chart(
     document.getElementById('myChart'),
     config
-);
+).getContext('2d');

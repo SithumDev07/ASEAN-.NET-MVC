@@ -200,6 +200,7 @@
     <Content Include="Content\Images\Courses\tr7.png" />
     <Content Include="Content\Images\geoedge-logo.png" />
     <Content Include="Content\Images\LearnerProfile\propic.png" />
+    <Content Include="Content\Images\LearnerProfile\user_pic.png" />
     <Content Include="Content\Images\Logos\2XL.png" />
     <Content Include="Content\Images\Logos\Default.png" />
     <Content Include="Content\Images\Logos\LG.png" />
@@ -244,6 +245,7 @@
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\ChartDataLabels.min.js" />
     <Content Include="Scripts\Charts.min.js" />
     <Content Include="Scripts\CourseDetailsData.js" />
     <Content Include="Scripts\DomainExpertData.js" />

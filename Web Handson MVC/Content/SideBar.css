@@ -177,6 +177,12 @@ header .image-text .profession {
     padding-left: 0 !important;
 }
 
+@media only screen and (min-width: 1080px) and (max-width: 1300px) {
+    .container {
+        max-width: 1000px !important;
+    }
+}
+
 @media only screen and (max-width: 1025px) {
 
     .sidebar.close {
